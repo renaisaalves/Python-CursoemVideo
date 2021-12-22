@@ -21,6 +21,7 @@ print(' Soma: {}\n Produto: {}\n Divisão: {:.3f}\n' .format(s, p, d), end= ' ')
 print('Divisão inteira: {}\n Potência: {}\n' .format(di, e))
 # end=' ' serve para não quebrar a linha. 
 #Para quebrar linhas em uma string, use \n.
+#:.2f = duas casas decimais flutuantes (pontos)
 
 
 
