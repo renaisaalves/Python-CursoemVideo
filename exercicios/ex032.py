@@ -12,3 +12,5 @@ else:
 # != : diferente
 # and : e 
 # or : ou
+
+#Resolução do problema: Se o resto da divisão (%) por 4 for igual (==) a 0 e o resto da divisão (%) por 100 for diferente (!=) de zero ou o resto da divisão (%) por 400 for igual (==) a 0, então exiba na tela... 
