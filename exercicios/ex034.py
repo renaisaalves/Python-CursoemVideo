@@ -4,9 +4,9 @@ salario = float(input('Olá! Informe o seu salário: R$'))
 
 if salario > 1250:
     aumento = (salario * 10 / 100) + salario
-    print('O seu salário com o aumento de 10% será de: R$ {:.2f}.' .format(aumento))
+    print('O seu salário com o aumento de \033[1;32m10%\033[m será de: R$ {:.2f}.' .format(aumento))
 else:
     salario <= 1250
     aumento = (salario * 15 / 100) + salario
-    print('O seu salário com o aumento de 15% será de: R$ {:.2f}.' .format(aumento))
+    print('O seu salário com o aumento de \033[1;34m15%\033[m será de: R$ {:.2f}.' .format(aumento))
     
