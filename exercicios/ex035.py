@@ -1,6 +1,6 @@
 #ex035: Desenvolva um programa que leia o comprimento de três retas e diga ao usuário se elas podem ou não formar um triângulo.
 
-print('ANALISANDO TRIÂNGULOS')
+print('\033[1;32mANALISANDO TRIÂNGULOS\033[m')
 
 r1 = float(input('Primeiro segmento: '))
 r2 = float(input('Segundo segmento: '))
