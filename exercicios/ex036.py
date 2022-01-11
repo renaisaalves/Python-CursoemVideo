@@ -11,7 +11,8 @@ trintaporcento = 30 * salario / 100
 if parcelas < trintaporcento:
     print('O seu empréstimo de R${:.2f} em {} anos foi \033[1;32mautorizado\033[m.' .format(parcelas, anos))
     print('O empréstimo foi autorizado porque o valor de R${:.2f} está abaixo de 30% do seu salário (R${:.2f}).' .format(parcelas, trintaporcento))
-elif parcelas > trintaporcento: 
+else:
+    parcelas > trintaporcento
     print('O empréstimo de R${:.2f} em {} anos foi \033[1;31mnegado\033[m.' .format(parcelas, anos))
     print('O empréstimo foi negado porque o valor de R${:.2f} está acima de 30% de seu salário (R${:.2f}).' .format(parcelas, trintaporcento))
     
