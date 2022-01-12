@@ -21,4 +21,4 @@ else:
     idade > 25
     print('Você tem {} anos.\nSua categoria é {}MASTER{}.' .format(idade, '\033[1;36m', '\033[m'))
     
-    #TEM UMA MANEIRA MAIS PRÁTICA DE FAZER ISSO. Basta perguntar diretamente a idade, sem precisar importar ou usar operadores lógicos (and).
+    #TEM UMA MANEIRA MAIS PRÁTICA DE FAZER ISSO sem usar operador lógico. Basta escrever idade <= x
