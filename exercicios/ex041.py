@@ -5,15 +5,20 @@
 #Até 25 anos: SÊNIOR 
 #Acima de 25 anos: MASTER
 
+from datetime import date
 nasc = int(input('Digite seu ano de nascimento: '))
-if nasc <= 9:
-    print('Sua categoria é {}MIRIM{}.' .format('\033[1;31m', '\033[m'))
-elif nasc <= 14:
-    print('Sua categoria é {}INFANTIL{}.' .format('\033[1;33m', '\033[m'))
-elif nasc <= 19:
-    print('Sua categoria é {}JÚNIOR{}.' .format('\033[1;32m', '\033[m'))
-elif nasc <= 25:
-    print('Sua categoria é {}SÊNIOR{}.' .format('\033[1;34m', '\033[m'))
+idade = date.today().year - nasc
+
+if idade <= 9:
+    print('Você tem {} anos.\nSua categoria é {}MIRIM{}.' .format(idade, '\033[1;31m', '\033[m'))
+elif idade > 9 and idade <= 14:
+    print('Você tem {} anos.\nSua categoria é {}INFANTIL{}.' .format(idade, '\033[1;33m', '\033[m'))
+elif idade > 14 and idade <= 19:
+    print('Você tem {} anos.\nSua categoria é {}JÚNIOR{}.' .format(idade, '\033[1;32m', '\033[m'))
+elif idade > 19 and idade <= 25:
+    print('Você tem {} anos.\nSua categoria é {}SÊNIOR{}.' .format(idade, '\033[1;34m', '\033[m'))
 else:
-    nasc > 25
-    print('Sua categoria é {}MASTER{}.' .format('\033[1;36m', '\033[m'))
+    idade > 25
+    print('Você tem {} anos.\nSua categoria é {}MASTER{}.' .format(idade, '\033[1;36m', '\033[m'))
+    
+    #TEM UMA MANEIRA MAIS PRÁTICA DE FAZER ISSO. Basta perguntar diretamente a idade, sem precisar importar ou usar operadores lógicos (and).
