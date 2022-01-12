@@ -11,7 +11,7 @@ idade = atual - nasc
 if idade < 18:
     diferenca = 18 - idade 
     falta = atual + diferenca
-    print('De acordo com a sua idade ({}), você ainda vai alistar no Serviço Militar.' .format(idade))
+    print('De acordo com a sua idade ({}), você ainda vai se alistar no Serviço Militar.' .format(idade))
     print('Falta(m) {} ano(s) para você se alistar.' .format(diferenca))
     print('O seu alistamento está previsto para ser em \033[1;32m{}\033[m.' .format(falta))
 elif idade == 18:
