@@ -16,14 +16,14 @@ if escolha == 1:
     desconto = (valor * 10) / 100
     pagamento = valor - desconto
     print('OPÇÃO ESCOLHIDA: 1 (dinheiro/cheque)')
-    print('O pagamento à vista em dinheiro ou cheque oferece um desconto de 10% do total da compra!')
+    print('O pagamento à vista em dinheiro ou cheque oferece um desconto de {}10%{} do total da compra!' .format('\033[1;32m', '\033[m'))
     print('Valor original: {}R${:.2f}{}' .format('\033[1;37m', valor, '\033[m'))
     print('Valor com desconto de 10%: {}R${:.2f}{}.\nBoas compras!' .format('\033[1;32m', pagamento, '\033[m'))
 elif escolha == 2:
     desconto = (valor * 5) / 100
     pagamento = valor - desconto
     print('OPÇÃO ESCOLHIDA: 2 (à vista no cartão)')
-    print('O pagamento à vista no cartão oferece um desconto de 5% do total da compra!')
+    print('O pagamento à vista no cartão oferece um desconto de {}5%{} do total da compra!' .format('\033[1;32m', '\033[m'))
     print('Valor original: {}R${:.2f}{}' .format('\033[1;37m', valor, '\033[m'))
     print('Valor com desconto de 10%: {}R${:.2f}{}.\nBoas compras!' .format('\033[1;32m', pagamento, '\033[m'))
 elif escolha == 3:
@@ -42,7 +42,7 @@ elif escolha == 4:
     print('Quantidade de parcelas selecionadas: {}{}{}' .format('\033[1;37m', parcelas, '\033[m'))
     print('Valor original: {}R${:.2f}{}' .format('\033[1;37m', valor, '\033[m'))
     print('Valor parcelado com juros de 20%: {}R${:.2f}{}' .format('\033[1;31m', pagamento, '\033[m'))
-    print('Valor final do produto: {}R${}{}.\nBoas compras!' .format('\033[1;37m', total, '\033[m'))
+    print('Valor final do produto: {}R${}{}.\nBoas compras!' .format('\033[1;31m', total, '\033[m'))
 else: 
     escolha != 1 or escolha != 2 or escolha != 3 or escolha != 4
     print('Opção inválida.')
