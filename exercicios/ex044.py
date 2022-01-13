@@ -36,12 +36,14 @@ elif escolha == 4:
     parcela = valor / parcelas
     juros = (parcela * 20) / 100 
     pagamento = parcela + juros
+    total = pagamento * parcelas
     print('OPÇÃO ESCOLHIDA: 4 (3x ou mais no cartão)')
     print('Ao parcelar em 3x ou mais vezes, haverá um acréscimo de juros em {}20%{}.' .format('\033[1;31m', '\033[m'))
     print('Quantidade de parcelas selecionadas: {}{}{}' .format('\033[1;37m', parcelas, '\033[m'))
     print('Valor original: {}R${:.2f}{}' .format('\033[1;37m', valor, '\033[m'))
-    print('Valor parcelado com juros de 20%: {}R${}{}\nBoas compras!' .format('\033[1;32m', pagamento, '\033[m'))
+    print('Valor parcelado com juros de 20%: {}R${:.2f}{}' .format('\033[1;31m', pagamento, '\033[m'))
+    print('Valor final do produto: {}R${}{}.\nBoas compras!' .format('\033[1;37m', total, '\033[m'))
 else: 
-    escolha != 1 or escolha != 2 or escolha != 3 or escolha !=4
+    escolha != 1 or escolha != 2 or escolha != 3 or escolha != 4
     print('Opção inválida.')
     
