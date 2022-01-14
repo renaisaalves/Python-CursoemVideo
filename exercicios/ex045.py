@@ -1,5 +1,7 @@
 #ex45: Crie um programa que faça o computador jogar Jokenpô com você.
 
+#DEU PROBLEMA NO EMPATE! A MENSAGEM APARECE "AMBOS ESCOLHERAM PAPEL" QUANDO NA VDD ERA PARA APARECER PEDRA OU TESOURA.
+
 from time import sleep
 from random import randint
 
@@ -13,11 +15,17 @@ sleep(1)
 print('KEN')
 sleep(1)
 print('PO!!')
-sleep(1)
 if opcao == computador:
     empate = opcao == computador
     print('{}EMPATOU!{}' .format('\033[1;33m', '\033[m'))
-    print('Ambos escolheram {}{}{}' .format('\033[1;33m', empate, '\033[m'))
+    print('{}EMPATOU!{}' .format('\033[1;33m', '\033[m'))
+    if empate == 0:
+        print('Ambos escolheram {}PEDRA{}' .format('\033[1;33m', '\033[m'))
+    elif empate == 1:
+        print('Ambos escolheram {}PAPEL{}' .format('\033[1;33m', '\033[m'))
+    else: 
+        empate == 2
+        print('Ambos escolheram {}TESOURA{}' .format('\033[1;33m', '\033[m'))
 elif opcao == 0 and computador == 1:
     opcao = 'PEDRA'
     computador = 'PAPEL'
