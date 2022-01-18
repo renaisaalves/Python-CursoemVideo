@@ -62,5 +62,8 @@ elif opcao == 2 and computador == 0:
     print('Você escolheu {}{}{} e o Computador escolheu {}{}{}' .format('\033[1;31m', opcao, '\033[m', '\033[1;32m', computador, '\033[m'))
     print('A pedra quebra a tesoura!')
 else: 
-    opcao != 0 or opcao != 1 or opcao != 2
+    opcao != 0 != 1 != 2
     print('Número inválido.')
+    
+    #MUDANÇA NA ORDEM LÓGICA: 
+    #opcao != 0 or opcao != 1 or opcao != 2 PARA opcao != 0 != 1 != 2
