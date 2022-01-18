@@ -18,7 +18,6 @@ print('PO!!')
 if opcao == computador:
     empate = opcao == computador
     print('{}EMPATOU!{}' .format('\033[1;33m', '\033[m'))
-    print('{}EMPATOU!{}' .format('\033[1;33m', '\033[m'))
     if empate == 0:
         print('Ambos escolheram {}PEDRA!{}' .format('\033[1;33m', '\033[m'))
     elif empate == 1:
