@@ -23,49 +23,49 @@ if computador == 0:
     if jogador == 0:
         empate = 'PEDRA'
         print('{}EMPATE!{}\n' .format('\033[1;33m', '\033[m'))
-        print('Ambos escolheram {}{}{} ' .format('\033[1;33m', empate, '\033[m'))
+        print(emoji.emojize('Ambos escolheram {}{}{} :brown_circle:' .format('\033[1;33m', empate, '\033[m')))
     elif jogador == 1:
-        print( '{}VOCÊ VENCEU!{}\n' .format('\033[1;32m', '\033[m'))
+        print(emoji.emojize(':slightly_smiling_face: {}VOCÊ VENCEU!{}:trophy:\n' .format('\033[1;32m', '\033[m')))
         print('O PAPEL EMBRULHA A PEDRA!\n')
-        print('Sua escolha: {}{}{} ({}PAPEL{})' .format('\033[1;32m', jogador, '\033[m', '\033[1;32m', '\033[m'))
-        print('Escolha do computador: {}{}{} ({}PEDRA{})' .format('\033[1;31m', computador, '\033[m', '\033[1;31m', '\033[m'))
+        print(emoji.emojize('Sua escolha: {}{}{} ({}PAPEL{}) :page_with_curl:' .format('\033[1;32m', jogador, '\033[m', '\033[1;32m', '\033[m')))
+        print(emoji.emojize('Escolha do computador: {}{}{} ({}PEDRA{}) :brown_circle:' .format('\033[1;31m', computador, '\033[m', '\033[1;31m', '\033[m')))
     elif jogador == 2:
-        print('{}O COMPUTADOR VENCEU!{}\n' .format('\033[1;32m', '\033[m'))
+        print(emoji.emojize(':desktop_computer: {}O COMPUTADOR VENCEU!{}:trophy:\n' .format('\033[1;32m', '\033[m')))
         print('A PEDRA QUEBRA A TESOURA!\n')
-        print('Sua escolha: {}{}{} ({}TESOURA{})' .format('\033[1;31m', jogador, '\033[m', '\033[1;31m', '\033[m'))
-        print('Escolha do computador: {}{}{} ({}PEDRA{})' .format('\033[1;32m', computador, '\033[m', '\033[1;32m', '\033[m'))
+        print(emoji.emojize('Sua escolha: {}{}{} ({}TESOURA{}) :scissors:' .format('\033[1;31m', jogador, '\033[m', '\033[1;31m', '\033[m')))
+        print(emoji.emojize('Escolha do computador: {}{}{} ({}PEDRA{}) :brown_circle:' .format('\033[1;32m', computador, '\033[m', '\033[1;32m', '\033[m')))
     else:
         print('Jogada inválida.')
 elif computador == 1:
     if jogador == 0: 
-        print('{}O COMPUTADOR VENCEU!{}\n' .format('\033[1;32m', '\033[m'))
+        print(emoji.emojize(':desktop_computer: {}O COMPUTADOR VENCEU!{}:trophy:\n' .format('\033[1;32m', '\033[m')))
         print('O PAPEL EMBRULHA A PEDRA!\n')
-        print('Sua escolha: {}{}{} ({}PEDRA{})' .format('\033[1;31m', jogador, '\033[m', '\033[1;31m', '\033[m'))
-        print('Escolha do computador: {}{}{} ({}PAPEL{})' .format('\033[1;32m', computador, '\033[m', '\033[1;32m', '\033[m'))
+        print(emoji.emojize('Sua escolha: {}{}{} ({}PEDRA{}) :brown_circle:' .format('\033[1;31m', jogador, '\033[m', '\033[1;31m', '\033[m')))
+        print(emoji.emojize('Escolha do computador: {}{}{} ({}PAPEL{}) :page_with_curl:' .format('\033[1;32m', computador, '\033[m', '\033[1;32m', '\033[m')))
     elif jogador == 1:
         empate = 'PAPEL'
         print('{}EMPATE!{}\n' .format('\033[1;33m', '\033[m'))
-        print('Ambos escolheram {}{}{} ' .format('\033[1;33m', empate, '\033[m'))
+        print(emoji.emojize('Ambos escolheram {}{}{} :page_with_curl:' .format('\033[1;33m', empate, '\033[m')))
     elif jogador == 2:
-        print('{}VOCÊ VENCEU!{}\n' .format('\033[1;32m', '\033[m'))
+        print(emoji.emojize(':slightly_smiling_face: {}VOCÊ VENCEU!{}:trophy:\n' .format('\033[1;32m', '\033[m')))
         print('A TESOURA RECORTA O PAPEL!\n')
-        print('Sua escolha: {}{}{} ({}TESOURA{})' .format('\033[1;32m', jogador, '\033[m', '\033[1;32m', '\033[m'))
-        print('Escolha do computador: {}{}{} ({}PAPEL{})' .format('\033[1;31m', computador, '\033[m', '\033[1;31m', '\033[m'))
+        print(emoji.emojize('Sua escolha: {}{}{} ({}TESOURA{}) :scissors:' .format('\033[1;32m', jogador, '\033[m', '\033[1;32m', '\033[m')))
+        print(emoji.emojize('Escolha do computador: {}{}{} ({}PAPEL{}) :page_with_curl:' .format('\033[1;31m', computador, '\033[m', '\033[1;31m', '\033[m')))
 elif computador == 2:
     if jogador == 0:
-        print('{}VOCÊ VENCEU!{}\n' .format('\033[1;32m', '\033[m'))
+        print(emoji.emojize(':slightly_smiling_face: {}VOCÊ VENCEU!{}:trophy:\n' .format('\033[1;32m', '\033[m')))
         print('A PEDRA QUEBRA A TESOURA!\n')
-        print('Sua escolha: {}{}{} ({}PEDRA{})' .format('\033[1;32m', jogador, '\033[m', '\033[1;32m', '\033[m'))
-        print('Escolha do computador: {}{}{} ({}TESOURA{})' .format('\033[1;31m', computador, '\033[m', '\033[1;31m', '\033[m'))
+        print(emoji.emojize('Sua escolha: {}{}{} ({}PEDRA{}) :brown_circle:' .format('\033[1;32m', jogador, '\033[m', '\033[1;32m', '\033[m')))
+        print(emoji.emojize('Escolha do computador: {}{}{} ({}TESOURA{}) :scissors:' .format('\033[1;31m', computador, '\033[m', '\033[1;31m', '\033[m')))
     elif jogador == 1:
-        print('{}O COMPUTADOR VENCEU!{}\n' .format('\033[1;32m', '\033[m'))
+        print(emoji.emojize(':desktop_computer: {}O COMPUTADOR VENCEU!{}:trophy:\n' .format('\033[1;32m', '\033[m')))
         print('A TESOURA RECORTA O PAPEL!\n')
-        print('Sua escolha: {}{}{} ({}PAPEL{})' .format('\033[1;31m', jogador, '\033[m', '\033[1;31m', '\033[m'))
-        print('Escolha do computador: {}{}{} ({}TESOURA{})' .format('\033[1;32m', computador, '\033[m', '\033[1;32m', '\033[m'))
+        print(emoji.emojize('Sua escolha: {}{}{} ({}PAPEL{}) :page_with_curl:' .format('\033[1;31m', jogador, '\033[m', '\033[1;31m', '\033[m')))
+        print(emoji.emojize('Escolha do computador: {}{}{} ({}TESOURA{}) :scissors:' .format('\033[1;32m', computador, '\033[m', '\033[1;32m', '\033[m')))
     elif jogador == 2:
         empate = 'TESOURA'
         print('{}EMPATE!{}\n' .format('\033[1;33m', '\033[m'))
-        print('Ambos escolheram {}{}{} ' .format('\033[1;33m', empate, '\033[m'))
+        print(emoji.emojize('Ambos escolheram {}{}{} :scissors:' .format('\033[1;33m', empate, '\033[m')))
 else: 
     print('Jogada inválida.')
 print('*{}*{}' .format('\033[33m', '\033[m') * 25 )
