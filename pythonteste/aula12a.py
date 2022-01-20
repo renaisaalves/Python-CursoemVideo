@@ -1,4 +1,4 @@
-#AULA6 - ESTRUTURAS CONDICIONAIS ANINHADAS: IF, ELIF, ELSE
+#AULA12 - ESTRUTURAS CONDICIONAIS ANINHADAS: IF, ELIF, ELSE
 
 nome = str(input('Qual é o seu nome? ')).strip().capitalize()
 if nome == 'Renaisa':
