@@ -4,8 +4,8 @@ from time import sleep
 from random import randint
 import emoji
 
-for c in range(10, 0, -1):
-    print(c)
+for contagem in range(10, 0, -1):
+    print(contagem)
     sleep(1)
 print('*' * 20)
 print(emoji.emojize(':sparkler: FELIZ ANO NOVO!!!:sparkles:'))
