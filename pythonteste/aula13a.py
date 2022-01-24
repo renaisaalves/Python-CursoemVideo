@@ -1,7 +1,6 @@
 #AULA13: ESTRUTURA DE CONTROLE DE REPETIÇÃO
 from re import S
 
-
 for c in range(0, 6):
     print('Olá, Mundo!')
 print('FIM')
