@@ -7,7 +7,7 @@ print('=' * 30)
 a1 = int(input('Primeiro termo: '))
 r = int(input('Razão: '))
 
-for c in range(0, 10):
+for c in range(1, 11):
     a1 = a1 + r
     print('➝ ', a1, end=' ')
 print('ACABOU')
