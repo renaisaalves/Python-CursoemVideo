@@ -4,7 +4,7 @@ print('=' * 30)
 print('10 TERMOS DE UMA PA')
 print('=' * 30)
 
-#MEU RACIOCÍNIO 
+#MEU RACIOCÍNIO / não consegui colocar o 1º termo
 
 a1 = int(input('Primeiro termo: '))
 r = int(input('Razão: '))
