@@ -7,7 +7,7 @@ totalmenor = 0
 totalmaior = 0
 
 for c in range(1, 8):
-    nasc = int(input('Digite o ano de nascimento ({}): ' .format(c)))
+    nasc = int(input('Digite o ano de nascimento ({}ª pessoa): ' .format(c)))
     if date.today().year - nasc < 18:
         totalmenor = totalmenor + 1
     else:
