@@ -1,5 +1,7 @@
 #ex054: Crie um programa que leia o ano de nascimento de sete pessoas. No final, mostre quantas pessoas ainda não atingiram a maioridade e quantas já são maiores.
 
+#FEITO POR MIM 
+
 from datetime import date
 import datetime 
 
