@@ -1,4 +1,5 @@
-#AULA13: ESTRUTURA DE CONTROLE DE REPETIÇÃO
+#AULA13: ESTRUTURA DE CONTROLE DE REPETIÇÃO FOR 
+
 from re import S
 
 for c in range(0, 6):
