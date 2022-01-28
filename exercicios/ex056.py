@@ -22,7 +22,6 @@ for p in range(1, 5):
         nomevelho = nome
     if sexo in 'Ff' and idade < 20:
         totmulher20 = totmulher20 + 1
-        
 mediaidade = somaidade / 4
 print('A média da idade do grupo é de {} anos' .format(mediaidade))
 print('O nome do homem mais velho é {} e ele tem {} anos.' .format(nomevelho, maioridadehomem))
