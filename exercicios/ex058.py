@@ -3,12 +3,9 @@
 from random import randint
 
 tentativas = 0
-computador = randint(0, 2)
+computador = randint(0, 3)
 print('=' * 30)
 print('REMAKE DO JOGO DO DESAFIO 28!')
 print('=' * 30)
 print('Tente adivinhar o número que o computador escolheu.')
-jogador = int(input('Digite um número [0/10]: '))
-#while 
-    #int(input('Você errou! Tente outro número: '))
-#print('Acertou! No entanto, você teve que fazer {} tentativas para descobrir.' .format(tentativas))
+jogador = int(input('Digite um número [0/3]: '))
