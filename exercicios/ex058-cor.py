@@ -7,11 +7,11 @@ print('=' * 30)
 print('REMAKE DO JOGO DO DESAFIO 28!')
 print('=' * 30)
 tentativas = 1
-computador = randint(0, 3)
-jogador = int(input('Digite um número [0/3]: '))
+computador = randint(0, 10)
+jogador = int(input('Digite um número [0/10]: '))
 while jogador != computador:
     tentativas = tentativas + 1
-    jogador = int(input('{}ERROU!{}\nDigite outro número [0/3]: ' .format('\033[1;31m', '\033[m')))
+    jogador = int(input('{}ERROU!{}\nDigite outro número [0/10]: ' .format('\033[1;31m', '\033[m')))
 if tentativas == 1:
     jogador == computador
     print('{}PARABÉNS!{} Você acertou na primeira tentativa!' .format('\033[1;32m', '\033[m'))
