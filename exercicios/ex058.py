@@ -5,11 +5,17 @@ print('=' * 30)
 print('REMAKE DO JOGO DO DESAFIO 28!')
 print('=' * 30)
 print('Tente adivinhar o número que o computador escolheu.')
-tentativas = 0
+tentativas = 1
 computador = randint(0, 3)
 jogador = int(input('Digite um número [0/3]: '))
 while jogador != computador:
     tentativas = tentativas + 1
-    jogador = int(input('Digite outro número [0/3]: '))
-print('Acertou! Você conseguiu acertar em {} tentativas.' .format(tentativas))
-print('Seu número: {}\nNúmero do computador: {}' .format(jogador, computador))
+    jogador = int(input('ERROU! Digite outro número [0/3]: '))
+if tentativas == 1:
+    jogador == computador
+    print('{}PARABÉNS!{} Você acertou na primeira tentativa!' .format('\033[1;32m', '\033[m'))
+else: 
+    jogador == computador and tentativas > 1
+    print('ACERTOU!')
+    print('Foram necessárias {}{}{} tentativas para você acertar.' .format('\033[1;31m', tentativas, '\033[m'))
+
