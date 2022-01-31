@@ -5,6 +5,8 @@
 #[ 4 ] novos números
 #Seu programa deverá realizar a operação solicitada em cada caso.
 
+#FEITO POR MIM
+
 valor1 = int(input('Primeiro valor: '))
 valor2 = int(input('Segundo valor: '))
 programa = False
