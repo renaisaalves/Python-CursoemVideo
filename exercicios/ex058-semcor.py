@@ -15,7 +15,7 @@ while jogador != computador:
 if tentativas == 1:
     jogador == computador
     print('PARABÉNS! Você acertou na primeira tentativa!')
-else: 
+else:
     jogador == computador and tentativas > 1
     print('ACERTOU!')
     print('Foram necessárias {} tentativas para você acertar.' .format(tentativas))
