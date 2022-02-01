@@ -41,10 +41,10 @@ while not programa:
             print('{} > {}' .format(valor2, valor1))
             print('=' * 30)
     elif opcao == 4: 
-        print('*' * 30)
+        print('=' * 30)
         valor1 = int(input('Primeiro novo valor: '))
         valor2 = int(input('Segundo novo valor: '))
-        print('*' * 30)
+        print('=' * 30)
     else:
         opcao == 5
         programa = True
