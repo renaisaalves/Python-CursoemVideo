@@ -17,6 +17,8 @@ while not programa:
 [ 4 ] NOVOS NÚMEROS
 [ 5 ] SAIR DO PROGRAMA''')
     opcao = int(input('Escolha uma opção: '))
+    while opcao > 5: 
+        opcao = int(input('Opção inválida. Tente outra opção: '))
     if opcao == 1:
         resultado = valor1 + valor2
         print('=' * 30)
@@ -34,11 +36,11 @@ while not programa:
             print('=' * 30)
         elif valor1 > valor2:
             print('=' * 30)
-            print('{} > {}' .format(valor1, valor2))
+            print('Entre {} e {} o maior é {}' .format(valor1, valor2))
             print('=' * 30)
         else:
             print('=' * 30)
-            print('{} > {}' .format(valor2, valor1))
+            print('Entre {} e {} o maior é {}' .format(valor2, valor1))
             print('=' * 30)
     elif opcao == 4: 
         print('=' * 30)
