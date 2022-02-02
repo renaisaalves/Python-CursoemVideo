@@ -17,7 +17,7 @@ while not programa:
 [ 4 ] NOVOS NÚMEROS
 [ 5 ] SAIR DO PROGRAMA''')
     opcao = int(input('Escolha uma opção: '))
-    while opcao > 5:
+    while opcao > 5 or opcao == 0:
         opcao = int(input('Opção inválida. Digite outro número: '))
     if opcao == 1:
         resultado = valor1 + valor2
