@@ -32,15 +32,15 @@ while not programa:
     elif opcao == 3:
         if valor1 == valor2: 
             print('=' * 30)
-            print('{} == {} (são iguais)' .format(valor1, valor2))
+            print('{} e {} são IGUAIS' .format(valor1, valor2))
             print('=' * 30)
         elif valor1 > valor2:
             print('=' * 30)
-            print('{} > {}' .format(valor1, valor2))
+            print('{} é MAIOR que {}' .format(valor1, valor2))
             print('=' * 30)
         else:
             print('=' * 30)
-            print('{} > {}' .format(valor2, valor1))
+            print('{} é MAIOR que {}' .format(valor2, valor1))
             print('=' * 30)
     elif opcao == 4: 
         print('=' * 30)
