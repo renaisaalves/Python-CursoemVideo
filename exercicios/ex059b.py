@@ -35,7 +35,6 @@ while opcao != 5:
         n2 = int(input('Segundo número: '))
     elif opcao == 5:
         print('Finalizando...')
-        
     else: 
         print('Opção inválida. Tente novamente: ')
     print('=-=' * 10)
