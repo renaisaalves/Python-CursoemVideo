@@ -9,7 +9,7 @@ termo = 0
 while termo != 10:
     termo = termo + 1
     an = a1 + (termo - 1) * r
-    print('➝ ', an, end=' ')
+    print(an, '➝ ', end=' ')
 else:
     termo == 10
-    print('\nFim do Programa.')
+    print('Fim do Programa.')
