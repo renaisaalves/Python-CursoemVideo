@@ -10,6 +10,4 @@ while termo != 10:
     termo = termo + 1
     an = a1 + (termo - 1) * r
     print(an, '➝ ', end=' ')
-else:
-    termo == 10
-    print('Fim do Programa.')
+print('Fim do Programa.')
