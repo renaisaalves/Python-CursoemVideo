@@ -18,5 +18,4 @@ while termo < 10:
             print('')
         else:
             novotermo == 0
-            print('FIM DO PROGRAMA.')
 print('FIM DO PROGRAMA.')
