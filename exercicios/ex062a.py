@@ -2,9 +2,6 @@
 
 #FEITO POR MIM
 
-from multiprocessing import Condition
-
-
 a1 = int(input('Primeiro termo: '))
 r = int(input('Razão: '))
 
