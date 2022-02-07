@@ -20,7 +20,7 @@ while termo < 10:
                 an = a1 + (termo - 1) * r
                 print(an, '➝ ', end=' ')
                 if novotermo2 == termo:
-                    print('FIM.')
+                    print('PAUSA')
                     novotermo = int(input('\nQuantos termos você quer mostrar a mais? '))
         else: 
             novotermo == 0
