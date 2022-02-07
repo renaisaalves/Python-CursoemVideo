@@ -24,7 +24,7 @@ while termo < 10:
                     novotermo = int(input('\nQuantos termos você quer mostrar a mais? '))
         else: 
             novotermo == 0
-print('FIM DO PROGRAMA.')
+print('Fim do programa. Ao todo, foram exibidos {} termos.' .format(termo))
 
 #novotermo vai definir se o usuário quer continuar ou não exibindo os termos. 
 #novotermo receberá o valor de quantos termos ele quer mostrar a mais e o termo estará com a configuração anterior (10)
