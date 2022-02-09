@@ -1,8 +1,9 @@
 # Escreva um programa que leia um número N inteiro qualquer e mostre na tela os N primeiros elementos de uma Sequência de Fibonacci. Exemplo: 0 – 1 – 1 – 2 – 3 – 5 – 8
 
 contagem = 0
-valor1 = 0
-valor2 = 1
+valor1 = 1
+valor2 = 0
+resultado = 0
 print('=' * 30)
 print('Sequência de Fibonacci')
 print('=' * 30)
@@ -10,15 +11,15 @@ termos = int(input('Quantos termos você quer mostrar? '))
 
 while contagem != termos:
     contagem = contagem + 1
-    if contagem == 1:
-        resultado = valor1 + valor2
-    resultado = resultado + valor2
+    resultado = valor1 + valor2
+    valor2 = valor1
+    valor1 = resultado
     print(resultado, '–', end=' ')
 print('FIM.')
 
-# 1 = 0 + 1
+# 1 = 1 + 0
 # 2 = 1 + 1  
 # 3 = 2 + 1
-# 5 = 2 + 3
+# 5 = 3 + 2 
 # 8 = 5 + 3 
 # 13 = 8 + 5 
