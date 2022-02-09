@@ -12,6 +12,7 @@ print('=' * 30)
 termos = int(input('Quantos termos você quer mostrar? '))
 # print(resultado, end=' ')
 
+#OPÇÃO 1 (A RESOLVER)
 while contagem != termos:
     contagem = contagem + 1
     if contagem == 1:
@@ -23,3 +24,14 @@ while contagem != termos:
     valor1 = resultado
     print(resultado, '➞ ', end=' ')
 print('FIM.')
+
+#OPÇÃO 2 
+'''print(resultado, '➞ ', end=' ')
+print(resultado + 1, '➞ ', end=' ')
+while contagem != termos:
+    contagem = contagem + 1
+    resultado = valor1 + valor2
+    valor2 = valor1
+    valor1 = resultado
+    print(resultado, '➞ ', end=' ')
+print('FIM.')'''
