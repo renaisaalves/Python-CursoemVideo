@@ -10,7 +10,7 @@ termos = int(input('Quantos termos você quer mostrar? '))
 
 while contagem != termos:
     contagem = contagem + 1
- 
+    resultado = valor1 + valor2
     print(resultado, '–', end=' ')
 print('FIM.')
 
