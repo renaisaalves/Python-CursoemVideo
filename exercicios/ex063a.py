@@ -8,13 +8,14 @@ print('=' * 30)
 print('Sequência de Fibonacci')
 print('=' * 30)
 termos = int(input('Quantos termos você quer mostrar? '))
+# print(resultado, end=' ')
 
 while contagem != termos:
     contagem = contagem + 1
     if contagem == 1:
-        print(resultado)
+        print(resultado, '–', end=' ')
     if contagem == 2:
-        print(resultado)
+        print(resultado, '–', end=' ')
     resultado = valor1 + valor2
     valor2 = valor1
     valor1 = resultado
