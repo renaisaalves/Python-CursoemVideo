@@ -2,6 +2,7 @@
 
 soma = 0
 n2 = 0
+n = 0
 while n != 999: 
     n = int(input('Digite um número: '))
     soma = soma + 1
