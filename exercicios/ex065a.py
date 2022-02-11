@@ -13,6 +13,12 @@ while contador != 2:
         m1 = n
     if contador == 2:
         m2 = n
+    while resposta == 'SIM':
+        resposta = str(input('Você quer digitar mais algum número? [SIM/NÃO]: ')).strip().upper()
+        n = int(input('Digite mais um número: '))
+        if resposta != 'SIM': 
+            
+        
 #Para que a média aconteça, é necessário, no mínimo, de dois números para serem somados e divididos. 
 #A minha ideia inicial é que o usuário digite dois números e o programa já deixe pronto todas as informações que ele precisa (média e qual foi o menor e maior número informado.)
 #Se o usuário quiser continuar informando mais valores (acima de 2), vou adicionar uma estrutura de repetição que faça a mesma pergunta a cada valor digitado, pois é imprevisível saber quantos números o usuário quer. 
