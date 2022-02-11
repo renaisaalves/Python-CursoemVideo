@@ -13,10 +13,8 @@ while contador != 2:
         m1 = n
     if contador == 2:
         m2 = n
-    while resposta == 'SIM':
         resposta = str(input('Você quer digitar mais algum número? [SIM/NÃO]: ')).strip().upper()
         n = int(input('Digite mais um número: '))
-        if resposta != 'SIM': 
             
         
 #Para que a média aconteça, é necessário, no mínimo, de dois números para serem somados e divididos. 
