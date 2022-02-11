@@ -4,21 +4,18 @@ print('=~' * 8)
 print('CALCULE A MÉDIA')
 print('=~' * 8)
 
-contador = 0
+contador = 0 
 
-numero = int(input('Digite um número: '))
-armazém = numero
-contador = 1
-while not 'SIM':
-    numero = int(input('Digite um número: '))
-    transferidor = numero
-    acumulador = transferidor + armazém
-    armazém = acumulador
+while contador != 2: 
     contador = contador + 1
+    n = int(input('Digite um número: '))
+    if contador == 1:
+        m1 = n
     if contador == 2:
-        resposta = str(input('Você quer continuar a digitar os valores? [SIM/NÃO]: ')).upper().strip()
-    media = armazém / contador
-    print('A média entre todos os valores informados foi {:.2f}.' .format(media))
-    print('Dentre os números informados, o menor foi {} e o maior foi {}.' .format())
-print('FIM DO PROGRAMA.')
-    
+        m2 = n
+#Para que a média aconteça, é necessário, no mínimo, de dois números para serem somados e divididos. 
+#A minha ideia inicial é que o usuário digite dois números e o programa já deixe pronto todas as informações que ele precisa (média e qual foi o menor e maior número informado.)
+#Se o usuário quiser continuar informando mais valores (acima de 2), vou adicionar uma estrutura de repetição que faça a mesma pergunta a cada valor digitado, pois é imprevisível saber quantos números o usuário quer. 
+#A soma possui a seguinte estrutura: soma = n1 + n2 
+#A média possui a seguinte estrutura: media = soma / contador (O contador vai fazer a contagem dos elementos informados)
+#A comparação de < e > possui a seguinte estrutura: a primeira repetição vai armazenar o primeiro valor e a segunda repetição vai comparar o novo valor com o valor anterior. A partir disso, tudo estará pronto para ser exercido no próximo while. 
