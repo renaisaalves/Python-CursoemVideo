@@ -9,6 +9,6 @@ while n != 999:
     n1 = n 
     n3 = n1 + n2
     n2 = n3
-print('No total, {} foram digitados.' .format(soma))
+print('No total, {} foram digitados.' .format(soma - 1))
 print('A soma entre os números foi {}.' .format(n3 - n))
 
