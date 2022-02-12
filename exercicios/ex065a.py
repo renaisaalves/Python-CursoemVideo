@@ -13,24 +13,41 @@ while contador != 2:
         m1 = n
     if contador == 2:
         m2 = n
+        if m1 > m2:
+            maior = m1 
+            menor = m2
+        else:
+            m2 > m1
+            maior = m2
+            menor = m1
+            soma = maior + menor
+            media = soma / 2
         resposta = str(input('Você quer digitar mais algum número? [SIM/NÃO]: ')).strip()
         if resposta in 'SIMsimsS':
             while resposta in 'SIMsimS':
                 n = int(input('Digite mais um número: '))
-        else: 
-            if m1 > m2:
-                maior = m1 
-                menor = m2
-            else:
-                maior = m2
-                menor = m1
-            soma = m1 + m2 
-            media = soma / 2
+                contador = contador + 1
+                if n > maior: 
+                    maior = n 
+                else: 
+                    n < menor
+                    menor = n
+                    soma = maior + menor 
+                    media = soma / 2
+                resposta = str(input('Você quer digitar mais algum número? [SIM/NÃO]: ')).strip()
+                
             print('=' * 40)
-            print('A MÉDIA entre os dois valores informados foi {:.2f}' .format(media))
+            print('A MÉDIA entre os {} valores informados foi {:.2f}' .format(contador, media))
             print('=' * 40)
             print('O MAIOR valor é {} e o MENOR valor é {}' .format(maior, menor))
             print('=' * 40)
+        else: 
+            print('=' * 40)
+            print('A MÉDIA entre os {} valores informados foi {:.2f}' .format(contador, media))
+            print('=' * 40)
+            print('O MAIOR valor é {} e o MENOR valor é {}' .format(maior, menor))
+            print('=' * 40)
+print('FIM DO PROGRAMA.')
             
 #Para que a média aconteça, é necessário, no mínimo, de dois números para serem somados e divididos. 
 #A minha ideia inicial é que o usuário digite dois números e o programa já deixe pronto todas as informações que ele precisa (média e qual foi o menor e maior número informado.)
