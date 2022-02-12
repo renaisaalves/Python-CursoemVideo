@@ -5,7 +5,7 @@ print('CALCULE A MÉDIA')
 print('=~' * 8)
 
 contador = 0 
-
+resposta = 'NULO'
 while contador != 2: 
     contador = contador + 1
     n = int(input('Digite um número: '))
@@ -22,25 +22,18 @@ while contador != 2:
             menor = m1
             soma = maior + menor
             media = soma / 2
-        resposta = str(input('Você quer digitar mais algum número? [SIM/NÃO]: ')).strip()
-        if resposta in 'SIMsimsS':
-            while resposta in 'SIMsimS':
-                n = int(input('Digite mais um número: '))
-                contador = contador + 1
-                if n > maior: 
-                    maior = n 
-                else: 
-                    n < menor
-                    menor = n
-                    soma = maior + menor 
-                    media = soma / 2
+        resposta = str(input('Você quer digitar mais algum número? [SIM/NÃO]: ')).strip()    
+        while resposta in 'SIMsimS':
+            n = int(input('Digite mais um número: '))
+            contador = contador + 1
+            if n > maior: 
+                maior = n 
+            else: 
+                n < menor
+                menor = n
+                soma = maior + menor 
+                media = soma / contador
                 resposta = str(input('Você quer digitar mais algum número? [SIM/NÃO]: ')).strip()
-                
-            print('=' * 40)
-            print('A MÉDIA entre os {} valores informados foi {:.2f}' .format(contador, media))
-            print('=' * 40)
-            print('O MAIOR valor é {} e o MENOR valor é {}' .format(maior, menor))
-            print('=' * 40)
         else: 
             print('=' * 40)
             print('A MÉDIA entre os {} valores informados foi {:.2f}' .format(contador, media))
