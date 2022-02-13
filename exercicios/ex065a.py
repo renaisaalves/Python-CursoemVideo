@@ -23,7 +23,7 @@ while contador != 2:
             soma = maior + menor
             media = soma / 2
         resposta = str(input('Você quer digitar mais algum número? [SIM/NÃO]: ')).strip()    
-        while resposta in 'SIMsimS':
+        while resposta in 'SIMsimSs':
             n = int(input('Digite mais um número: '))
             contador = contador + 1
             if n > maior: 
