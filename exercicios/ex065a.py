@@ -4,54 +4,39 @@ print('==' * 8)
 print('CALCULE A MÉDIA')
 print('==' * 8)
 
-''''
-contador = 0
-resposta = ' '
-
-valor = int(input('Digite um número: '))
-contador = contador + 1 
-m1 = valor
-valor = int(input('Digite outro número: '))
-contador = contador + 1 
-m2 = valor
-soma = m1 + m2 
-media = soma / contador 
-if m1 > m2:
-    maior = m1 
-    menor = m2 
-else: 
-    maior = m2 
-    menor = m1 
-print('TOTAL de números digitados: {}' .format(contador))
-print('SOMA dos números: {}' .format(soma))
-print('MÉDIA dos números: {:.2f}' .format(media))
-print('MAIOR número: {}' .format(maior))
-print('MENOR número: {}' .format(menor))'''
-
-'''resposta = str(input('Deseja inserir mais algum número? ')).strip().upper()
-if resposta == 'SIM':
-    quantidade = int(input('Quantos? '))
-    total = total + quantidade
-    for c in range(1, quantidade + 1):
-        valor = int(input('Digite o {}º número: ' .format(c)))'''
-
-total = 0 
-soma = 0 
-
-quantidade = int(input('Olá! Quantos números você deseja informar? '))
-while total != quantidade: 
-    total = total + 1 
-    valor = int(input('Digite o {}º número: ' .format(total)))
-    if total == 1:
-        maior = menor = valor 
-    if valor > maior:
-        maior = valor 
-    if valor < menor:
-        menor = valor 
-    soma = soma + valor 
-    media = soma / quantidade
-print('TOTAL de números digitados: {}' .format(total))
-print('SOMA dos números: {}' .format(soma))
-print('MÉDIA dos números: {:.2f}' .format(media))
-print('MAIOR número: {}' .format(maior))
-print('MENOR número: {}' .format(menor))
+contador = 0 
+resposta = 'NULO'
+while contador != 2: 
+    contador = contador + 1
+    n = int(input('Digite um número: '))
+    if contador == 1:
+        m1 = n
+    if contador == 2:
+        m2 = n
+        if m1 > m2:
+            maior = m1 
+            menor = m2
+        else:
+            m2 > m1
+            maior = m2
+            menor = m1
+            soma = maior + menor
+            media = soma / 2
+        resposta = str(input('Você quer digitar mais algum número? [SIM/NÃO]: ')).strip()    
+        while resposta in 'SIMsimSs':
+            n = int(input('Digite mais um número: '))
+            contador = contador + 1
+            if n > maior:
+                maior = n
+            if n < menor:
+                menor = n
+            soma = maior + menor 
+            media = soma / contador
+            resposta = str(input('Você quer digitar mais algum número? [SIM/NÃO]: ')).strip()
+        else: 
+            print('=' * 40)
+            print('A MÉDIA entre os {} valores informados foi {:.2f}' .format(contador, media))
+            print('=' * 40)
+            print('O MAIOR valor é {} e o MENOR valor é {}' .format(maior, menor))
+            print('=' * 40)
+print('FIM DO PROGRAMA.')
