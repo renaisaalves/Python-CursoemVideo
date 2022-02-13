@@ -10,6 +10,7 @@ print('==' * 8)
 contador = 0
 resposta = 'SIMsSsim'
 soma = media = 0
+
 while resposta in 'SIMsSsim': 
     contador = contador + 1 
     if contador == 1: 
