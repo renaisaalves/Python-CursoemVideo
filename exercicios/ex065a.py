@@ -19,7 +19,7 @@ while resposta in 'SIMsSsim':
     if numero > maior:
         maior = numero
     else: 
-        menor < numero
+        numero < menor
         menor = numero
     soma = soma + numero
     media = soma / contador
@@ -28,7 +28,7 @@ while resposta in 'SIMsSsim':
         print('=' * 40)
         print('TOTAL de números digitados: {}' .format(contador))
         print('SOMA dos números: {}' .format(soma))
-        print('MÉDIA dos números: {}' .format(media))
+        print('MÉDIA dos números: {:.2f}' .format(media))
         print('MAIOR valor: {}' .format(maior))
         print('MENOR valor: {}' .format(menor))
         print('=' * 40)
