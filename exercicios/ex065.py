@@ -8,8 +8,8 @@ print('CALCULE A MÉDIA')
 print('==' * 8)
 
 contador = 0
+soma = 0
 resposta = 'SIMsSsim'
-soma = media = 0
 
 while resposta in 'SIMsSsim':
     contador = contador + 1 
@@ -21,6 +21,8 @@ while resposta in 'SIMsSsim':
     else: 
         menor < numero
         menor = numero
+    soma = soma + numero
+    media = soma / contador
     resposta = str(input('Quer continuar? '))
     if resposta in 'NãoNÃOnNnaoNAO':
         print('=' * 40)
