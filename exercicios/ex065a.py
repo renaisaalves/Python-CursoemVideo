@@ -33,4 +33,3 @@ while resposta in 'SIMsSsim':
         print('MENOR valor: {}' .format(menor))
         print('=' * 40)
 print('Fim do programa')
-
