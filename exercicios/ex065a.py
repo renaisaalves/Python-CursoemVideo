@@ -4,6 +4,7 @@ print('==' * 8)
 print('CALCULE A MÉDIA')
 print('==' * 8)
 
+''''
 contador = 0
 resposta = ' '
 
@@ -25,12 +26,16 @@ print('TOTAL de números digitados: {}' .format(contador))
 print('SOMA dos números: {}' .format(soma))
 print('MÉDIA dos números: {:.2f}' .format(media))
 print('MAIOR número: {}' .format(maior))
-print('MENOR número: {}' .format(menor))
+print('MENOR número: {}' .format(menor))'''
 
 total = 0 
-contador = int(input('Olá! Quantos números você deseja informar? '))
-while total != contador: 
+quantidade = int(input('Olá! Quantos números você deseja informar? '))
+while total != quantidade: 
     total = total + 1 
     valor = int(input('Digite o {}º número: ' .format(total)))
-    #resposta = str(input('Deseja inserir mais algum número? '))
+resposta = str(input('Deseja inserir mais algum número? ')).strip()
+if resposta in 'SimSIMsS':
+    while resposta in 'SimSIMsS':
+        quantidade = int(input('Quantos? '))
+        total = total + quantidade
 print('TOTAL de números digitados: {}' .format(total))
