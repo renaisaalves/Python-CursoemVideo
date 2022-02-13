@@ -11,16 +11,15 @@ contador = 0
 resposta = 'SIMsSsim'
 soma = media = 0
 
-while resposta in 'SIMsSsim': 
+while resposta in 'SIMsSsim':
     contador = contador + 1 
+    numero = int(input('Digite um número: '))
     if contador == 1: 
-        numero = int(input('Digite um número: '))
-        maior = menor = numero 
-    numero = int(input('Digite outro número: '))
+        maior = menor = numero
     if numero > maior:
         maior = numero
     else: 
-        menor > numero
+        menor < numero
         menor = numero
     resposta = str(input('Quer continuar? '))
     if resposta in 'NãoNÃOnNnaoNAO':
