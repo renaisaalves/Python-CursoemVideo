@@ -33,9 +33,10 @@ quantidade = int(input('Olá! Quantos números você deseja informar? '))
 while total != quantidade: 
     total = total + 1 
     valor = int(input('Digite o {}º número: ' .format(total)))
-resposta = str(input('Deseja inserir mais algum número? ')).strip()
-if resposta in 'SimSIMsS':
-    while resposta in 'SimSIMsS':
-        quantidade = int(input('Quantos? '))
-        total = total + quantidade
+resposta = str(input('Deseja inserir mais algum número? ')).strip().upper()
+if resposta == 'SIM':
+    quantidade = int(input('Quantos? '))
+    total = total + quantidade
+    for c in range(1, quantidade + 1):
+        valor = int(input('Digite o {}º número: ' .format(c)))
 print('TOTAL de números digitados: {}' .format(total))
