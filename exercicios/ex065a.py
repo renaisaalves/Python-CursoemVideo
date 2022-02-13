@@ -33,10 +33,9 @@ while contador != 2:
             soma = maior + menor 
             media = soma / contador
             resposta = str(input('Você quer digitar mais algum número? [SIM/NÃO]: ')).strip()
-        else: 
-            print('=' * 40)
-            print('A MÉDIA entre os {} valores informados foi {:.2f}' .format(contador, media))
-            print('=' * 40)
-            print('O MAIOR valor é {} e o MENOR valor é {}' .format(maior, menor))
-            print('=' * 40)
+print('=' * 40)
+print('A MÉDIA entre os {} valores informados foi {:.2f}' .format(contador, media))
+print('=' * 40)
+print('O MAIOR valor é {} e o MENOR valor é {}' .format(maior, menor))
+print('=' * 40)
 print('FIM DO PROGRAMA.')
