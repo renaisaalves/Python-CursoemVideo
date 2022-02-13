@@ -28,15 +28,30 @@ print('MÉDIA dos números: {:.2f}' .format(media))
 print('MAIOR número: {}' .format(maior))
 print('MENOR número: {}' .format(menor))'''
 
-total = 0 
-quantidade = int(input('Olá! Quantos números você deseja informar? '))
-while total != quantidade: 
-    total = total + 1 
-    valor = int(input('Digite o {}º número: ' .format(total)))
-resposta = str(input('Deseja inserir mais algum número? ')).strip().upper()
+'''resposta = str(input('Deseja inserir mais algum número? ')).strip().upper()
 if resposta == 'SIM':
     quantidade = int(input('Quantos? '))
     total = total + quantidade
     for c in range(1, quantidade + 1):
-        valor = int(input('Digite o {}º número: ' .format(c)))
+        valor = int(input('Digite o {}º número: ' .format(c)))'''
+
+total = 0 
+soma = 0 
+
+quantidade = int(input('Olá! Quantos números você deseja informar? '))
+while total != quantidade: 
+    total = total + 1 
+    valor = int(input('Digite o {}º número: ' .format(total)))
+    if total == 1:
+        maior = menor = valor 
+    if valor > maior:
+        maior = valor 
+    if valor < menor:
+        menor = valor 
+    soma = soma + valor 
+    media = soma / quantidade
 print('TOTAL de números digitados: {}' .format(total))
+print('SOMA dos números: {}' .format(soma))
+print('MÉDIA dos números: {:.2f}' .format(media))
+print('MAIOR número: {}' .format(maior))
+print('MENOR número: {}' .format(menor))
