@@ -15,8 +15,7 @@ while resposta in 'SIMsSsim':
         maior = menor = numero
     if numero > maior:
         maior = numero
-    else: 
-        numero < menor
+    if numero < menor:
         menor = numero
     soma = soma + numero
     media = soma / contador
