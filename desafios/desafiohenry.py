@@ -36,6 +36,19 @@ print('*' * 40)'''
 
 #4 - Escreva um número que lê um número inteiro correspondente a um certo número de segundos e que escreve o número de dias, horas, minutos e segundos correspondentes a esse número. Por exemplo: Escreva o número de segundos 345678 dias: 4 horas: 0 mins: 1 segs: 18
 
+dias = 86400
+horas = 3600
+minutos = 60
+segundos = 1
+numero = int(input('Escreva o número de segundos: '))
+dias = dias / numero 
+horas = horas / numero
+minutos = minutos / numero
+segundos = segundos / numero
+print('Dias:', dias)
+print('Horas:', horas)
+print('Minutos:', minutos)
+print('Segundos:', segundos)
 #5 - Escreva um programa em Python que lê três números e que diz qual o maior dos números lidos
 
 #6 - Escreva um programa em Python que pede ao utilizador que lhe forneça um número correspondente a um ano e que indica se o ano é bissexto. Um ano é bissexto se for divisível por 4 e não for divisível por 100, a não ser que seja também divisível por 400. Por exemplo, 1984 é bissexto, 1100 não é, e 2000 é bissexto. O seu programa deve gerar uma interação como a seguinte: Escreva um ano para eu dizer se é bissexto Ano -> 1984 O ano 1984 é bissexto
