@@ -3,4 +3,4 @@
 # vai haver uma soma (meu número com o número do computador), portanto, vamos importar o módulo randint da biblioteca random. 
 # Minha condição de parada (break) será quando o jogador perder. 
 # número * 2 = par 
-# se numero % == 0: par | se sobrar 1, é ímpar.
+# se numero % 2  == 0: par | se sobrar 1, é ímpar.
