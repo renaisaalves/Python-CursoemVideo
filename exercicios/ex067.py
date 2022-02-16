@@ -6,9 +6,11 @@ print('=' * 20)
 
 while True:
     numero = int(input('Digite um número: '))
+    print('=' * 20)
     if numero < 0:
-        break
+        break 
     for contagem in range(0, 11):
         resultado = numero * contagem
         print(f'{numero} x {contagem} = {resultado}')
+    print('=' * 20)
 print('Fim do programa.')
