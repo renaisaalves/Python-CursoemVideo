@@ -24,6 +24,7 @@ while True:
         vitoria = vitoria + 1
         print(f'Você escolheu {escolhajogador} e o computador escolheu {escolhapc}.')
         print(f'A soma entre {jogador} + {computador} = {soma}, resultando em {resultado}!')
+        print(f'Você acumulou sua {vitoria}ª vitória!')
     else: 
         print('VOCÊ PERDEU!')
         break
