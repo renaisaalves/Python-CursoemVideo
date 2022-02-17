@@ -2,6 +2,8 @@
 
 from random import randint 
 
+#FEITO POR MIM 
+
 print('=' * 20)
 print('JOGO DO PAR E ÍMPAR!')
 print('=' * 20)
@@ -40,4 +42,6 @@ print(f'Você escolheu {numjogador} e o computador escolheu {numcomputador}.')
 print(f'A soma entre {jogador} + {computador} = {soma}, {soma} é um número {resultado}!')
 print(f'No total, você teve {vitoria} vitória(s).')
     
-        
+#FEITO PELO GUANABARA
+
+
