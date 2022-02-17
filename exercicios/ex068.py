@@ -2,6 +2,9 @@
 
 from random import randint 
 
+print('=' * 20)
+print('JOGO DO PAR E ÍMPAR!')
+print('=' * 20)
 PAR = 'PAR'
 IMPAR = 'IMPAR'
 vitoria = 0
@@ -20,13 +23,21 @@ while True:
     else:
         resultado = IMPAR
     if resultado == numjogador:
-        print('VOCÊ VENCEU!')
+        print('*~' * 20)
+        print(f'DEU {resultado}! VOCÊ VENCEU!')
+        print('*~' * 20)
         vitoria = vitoria + 1
+        print(f'Você escolheu {numjogador} e o computador escolheu {numcomputador}.')
+        print(f'A soma entre {jogador} + {computador} = {soma}, {soma} é um número {resultado}!')
+        print(f'Essa foi a sua {vitoria}ª vitória!')
+        print('*~' * 20)
     else: 
-        print('VOCÊ PERDEU!')
+        print('-=' * 20)
+        print(f'DEU {resultado}! O COMPUTADOR VENCEU!')
+        print('-=' * 20)
         break
-print(f'Você escolheu {escolhajogador} e o computador escolheu {escolhapc}.')
-print(f'A soma entre {jogador} + {computador} = {soma}, resultando em {resultado}!')
-print(f'Você teve {vitoria} vitórias.')
+print(f'Você escolheu {numjogador} e o computador escolheu {numcomputador}.')
+print(f'A soma entre {jogador} + {computador} = {soma}, {soma} é um número {resultado}!')
+print(f'No total, você teve {vitoria} vitória(s).')
     
         
