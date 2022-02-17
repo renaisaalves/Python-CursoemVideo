@@ -7,9 +7,9 @@ IMPAR = 'IMPAR'
 vitoria = 0
 
 while True:
-    jogador = int(input('Escolha um número [0/5]: '))
+    jogador = int(input('Escolha um número [0/10]: '))
     escolhajogador = str(input('PAR ou IMPAR? ')).upper()
-    computador = randint(0, 5)
+    computador = randint(0, 10)
     if escolhajogador == PAR: 
         escolhapc = IMPAR
     else:
