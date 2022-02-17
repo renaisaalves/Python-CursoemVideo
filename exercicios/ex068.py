@@ -8,23 +8,20 @@ vitoria = 0
 
 while True:
     jogador = int(input('Escolha um número [0/10]: '))
-    escolhajogador = str(input('PAR ou IMPAR? ')).upper()
+    numjogador = str(input('PAR ou IMPAR? ')).upper()
     computador = randint(0, 10)
-    if escolhajogador == PAR: 
-        escolhapc = IMPAR
+    if numjogador == PAR: 
+        numcomputador = IMPAR
     else:
-        escolhapc = PAR 
+        numcomputador = PAR 
     soma = jogador + computador 
     if soma % 2 == 0:
         resultado = PAR 
     else:
         resultado = IMPAR
-    if resultado == escolhajogador:
+    if resultado == numjogador:
         print('VOCÊ VENCEU!')
         vitoria = vitoria + 1
-        print(f'Você escolheu {escolhajogador} e o computador escolheu {escolhapc}.')
-        print(f'A soma entre {jogador} + {computador} = {soma}, resultando em {resultado}!')
-        print(f'Você acumulou sua {vitoria}ª vitória!')
     else: 
         print('VOCÊ PERDEU!')
         break
