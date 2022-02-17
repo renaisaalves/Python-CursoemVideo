@@ -2,29 +2,32 @@
 
 from random import randint 
 
-PAR = 'PAR' or 'P'
-IMPAR = 'IMPAR' or 'I'
+PAR = 'PAR'
+IMPAR = 'IMPAR'
 vitoria = 0
-while True: 
+
+while True:
     jogador = int(input('Escolha um número [0/5]: '))
-    escolha = str(input('PAR ou IMPAR? ')).upper()
+    escolhajogador = str(input('PAR ou IMPAR? ')).upper()
     computador = randint(0, 5)
-    if escolha == PAR:
+    if escolhajogador == PAR: 
         escolhapc = IMPAR
     else:
-        escolhapc = PAR
+        escolhapc = PAR 
     soma = jogador + computador 
     if soma % 2 == 0:
         resultado = PAR 
-    else: 
-        resultado = IMPAR 
-    if escolha == resultado:
-        print('Você ganhou!')
-        vitoria = vitoria + 1 
     else:
-        print('Você perdeu!')
+        resultado = IMPAR
+    if resultado == escolhajogador:
+        print('VOCÊ VENCEU!')
+        vitoria = vitoria + 1
+        print(f'Você escolheu {escolhajogador} e o computador escolheu {escolhapc}.')
+        print(f'A soma entre {jogador} + {computador} = {soma}, resultando em {resultado}!')
+    else: 
+        print('VOCÊ PERDEU!')
         break
-print(f'Você escolheu {escolha} e o computador escolheu {escolhapc}.')
+print(f'Você escolheu {escolhajogador} e o computador escolheu {escolhapc}.')
 print(f'A soma entre {jogador} + {computador} = {soma}, resultando em {resultado}!')
 print(f'Você teve {vitoria} vitórias.')
     
