@@ -9,21 +9,22 @@ while True:
     jogador = int(input('Escolha um número [0/5]: '))
     escolha = str(input('PAR ou IMPAR? ')).upper()
     computador = randint(0, 5)
-    if jogador == PAR:
+    if escolha == PAR:
         computador == IMPAR
     else:
-        jogador == IMPAR
         computador == PAR
     soma = jogador + computador 
     if soma % 2 == 0:
         soma == PAR 
     else: 
         soma == IMPAR 
-    if soma and jogador == PAR:
+    if soma and escolha == PAR:
         print('Você ganhou!')
         vitoria = vitoria + 1 
     else:
         print('Você perdeu!')
         break
+print(f'A soma entre {jogador} + {computador} = {soma}, resultando em {escolha}!')
+print(f'Você teve {vitoria} vitórias.')
     
         
