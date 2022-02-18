@@ -13,6 +13,8 @@ vitoria = 0
 
 while True:
     jogador = int(input('Escolha um número [0/10]: '))
+    while jogador < 0 or jogador > 10:
+        jogador = int(input('Número inválido. Escolha outro número [0/10]: '))
     numjogador = str(input('PAR ou IMPAR? ')).upper().strip()
     computador = randint(0, 10)
     if numjogador == PAR: 
