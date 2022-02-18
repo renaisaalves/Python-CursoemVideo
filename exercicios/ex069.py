@@ -28,6 +28,8 @@ while True:
         resposta = str(input('Informação inválida. Digite [Sim/Não]: '))
     if resposta in 'NãonaonNAONÃOnão':
         break
+print('=' * 30)
 print(f'{pessoa} pessoas tem mais de 18 anos.')
 print(f'{homem} homens foram cadastrados.')
 print(f'{mulher} mulheres tem menos de 20 anos.')
+print('=' * 30)
