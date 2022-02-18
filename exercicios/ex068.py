@@ -7,6 +7,7 @@ from random import randint
 print('=' * 20)
 print('JOGO DO PAR E ÍMPAR!')
 print('=' * 20)
+
 PAR = 'PAR'
 IMPAR = 'IMPAR'
 vitoria = 0
@@ -45,6 +46,7 @@ print(f'A soma entre {jogador} + {computador} = {soma}, {soma} é um número {re
 print(f'No total, você teve {vitoria} vitória(s).')
     
 #FEITO PELO GUANABARA
+
 v = 0
 while True:
     jogador = int(input('Digite um valor: '))
