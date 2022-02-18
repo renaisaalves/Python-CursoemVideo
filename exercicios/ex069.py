@@ -10,6 +10,9 @@ homem = 0
 mulher = 0
 
 while True:
+    print('=' * 15)
+    print('CADASTRO BÁSICO')
+    print('=' * 15)
     idade = int(input('Informe uma idade: '))
     while idade < 0 or idade > 200: 
         idade = int(input('Inválido. Informe uma idade real: '))
