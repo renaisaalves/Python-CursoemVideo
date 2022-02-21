@@ -34,7 +34,7 @@ print('=' * 45)
 
 #FEITO POR GUANABARA
 
-total = totmil = menor = cont = 0
+total = totmil = menor = cont = barato = 0
 while True:
     produto = str(input('Nome do produto: '))
     preço = float(input('Preço (R$): '))
@@ -42,11 +42,9 @@ while True:
     total += preço
     if preço > 1000:
         totmil += 1
-    if cont == 1:
+    if cont == 1 or preço < menor:
         menor = preço
-    else:
-        if preço < menor:
-            menor = preço
+        barato = produto
     resp = ' '
     while resp not in 'SN':
         resp = str(input('Quer continuar? ')).strip().upper()[0]
@@ -55,4 +53,4 @@ while True:
 print('{:^40}'.format('FIM DO PROGRAMA.'))
 print(f'O total foi R${total:.2f}.')
 print(f'Temos {totmil} produtos custando mais de R$ 1000.')
-print(f'O produto mais barato custa R$ {menor:.2f}')
+print(f'O produto mais barato foi {barato} que custa R$ {menor:.2f}')
