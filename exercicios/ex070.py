@@ -14,11 +14,8 @@ while True:
     preço = float(input('Preço (R$): '))
     if preço > 1000: 
         contagem = contagem + 1 
-    if total == 0: 
+    if total == 0 or preçobarato > preço: 
         produtobarato = produto 
-        preçobarato = preço
-    if preçobarato > preço:
-        produtobarato = produto
         preçobarato = preço
     total = total + preço
     resposta = str(input('Quer continuar? ')).strip()
