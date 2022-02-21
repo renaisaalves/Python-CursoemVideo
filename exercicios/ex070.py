@@ -3,6 +3,8 @@
 #B) quantos produtos custam mais de R$1000.
 #C) qual é o nome do produto mais barato.
 
+#FEITO POR MIM 
+
 contagem = total = 0 
 print('=' * 45)
 print('LOJÃO RA: CALCULE O GASTO DOS PRODUTOS AQUI!')
@@ -29,3 +31,6 @@ print(f'O total gasto na compra foi: R${total:.2f}.')
 print(f'Ao todo, {contagem} produtos custam mais de R$ 1000.')
 print(f'O produto mais barato foi: {produtobarato} (R$ {preçobarato:.2f}).')
 print('=' * 45)
+
+#FEITO POR GUANABARA
+
