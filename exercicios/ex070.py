@@ -10,8 +10,8 @@ print('=' * 45)
 print('LOJÃO RA: CALCULE O GASTO DOS PRODUTOS AQUI!')
 print('=' * 45)
 while True:
-    produto = str(input('Informe o nome do produto: ')).strip().upper()
-    preço = float(input('Informe o preço do produto (R$): '))
+    produto = str(input('Nome do produto: ')).strip().upper()
+    preço = float(input('Preço (R$): '))
     if preço > 1000: 
         contagem = contagem + 1 
     if total == 0: 
