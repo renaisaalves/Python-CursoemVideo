@@ -3,4 +3,13 @@
 #B) quantos produtos custam mais de R$1000.
 #C) qual é o nome do produto mais barato.
 
+print('~' * 30)
+print('LOJA RA')
+print('~' * 30)
+print(' ')
 while True:
+    resposta = str(input('Quer continuar? ')).strip()
+    if resposta in 'SimsimSIMsS':
+        print('Testando')
+    else:
+        break
