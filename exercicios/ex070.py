@@ -12,6 +12,12 @@ while True:
     preço = float(input('Informe o preço do produto (R$): '))
     if preço > 1000: 
         contagem = contagem + 1 
+    if total == 0: 
+        produtobarato = produto 
+        preçobarato = preço
+    if preçobarato > preço:
+        produtobarato = produto
+        preçobarato = preço
     total = total + preço
     resposta = str(input('Quer continuar? ')).strip()
     if resposta in 'SimsimSIMsS':
@@ -21,4 +27,5 @@ while True:
 print('=' * 45)
 print(f'O total gasto na compra foi: R${total:.2f}.')
 print(f'Ao todo, {contagem} produtos custam mais de R$ 1000.')
+print(f'O produto mais barato foi: {produtobarato} (R$ {preçobarato:.2f}).')
 print('=' * 45)
