@@ -18,16 +18,6 @@ if valor >= 50:
                 cont10 = cont10 + 1
             if valor < 10:
                 cont1 = valor 
-if valor <= 20:
-    while valor >= 20:
-        valor = valor - 20
-        cont20 = cont20 + 1
-    if valor < 20:
-        while valor >= 10:
-            valor = valor - 10
-            cont10 = cont10 + 1
-        if valor < 10:
-            cont1 = valor
 print('-' * 15)
 print(f'Saque de R$ {valor}:')
 print('-' * 15)
