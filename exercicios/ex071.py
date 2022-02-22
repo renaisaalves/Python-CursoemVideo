@@ -19,7 +19,9 @@ if valor >= 50:
             if valor < 10:
                 cont1 = valor 
 elif valor >= 20:
+    print('Estou tentando 20')
 elif valor >= 10:
+    print('Estou tentando 10')
 else:
     cont1 = valor
 print('-' * 15)
