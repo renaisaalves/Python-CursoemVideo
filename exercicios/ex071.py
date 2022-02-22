@@ -11,11 +11,12 @@ while True:
     print('BANCO ORIGINAL RA')
     print('=' * 20)
     valor = int(input('Quanto você deseja sacar? R$: '))
+    if valor < dez:
+        while saque != valor:
+            saque = um + um
+            contagem += 1
     if valor == 0:
         break
 print(f'Saque de R${valor}:')
-print(f'{} cédulas de R${}.')
-print(f'{} cédulas de R${}.')
-print(f'{} cédulas de R${}.')
-print(f'{} cédulas de R${}.')
+print(f'{contagem} cédulas de R${saque}.')
 print('Fim da operação.')
