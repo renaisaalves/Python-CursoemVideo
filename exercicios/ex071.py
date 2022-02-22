@@ -35,12 +35,10 @@ else:
         cont10 = cont10 + 1
     if valor < 10:
         cont1 = valor
-print('-' * 15)
-print(f'Saque de R$ {saque}:')
-print('-' * 15)
-print(f'{cont50} cédulas de R$50.')
-print(f'{cont20} cédulas de R$20.')
-print(f'{cont10} cédulas de R$10.')
-print(f'{cont1} cédulas de R$1.')
-print('-' * 15)
+print('=' * 20)
+print(f'{cont50} cédulas de R$50')
+print(f'{cont20} cédulas de R$20')
+print(f'{cont10} cédulas de R$10')
+print(f'{cont1} cédulas de R$1')
+print('=' * 20)
 print('Fim da operação.')
