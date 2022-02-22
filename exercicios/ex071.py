@@ -6,17 +6,13 @@ vinte = 20
 cinquenta = 50
 contagem = saque = 0
 
-while True:
-    print('=' * 20)
-    print('BANCO ORIGINAL RA')
-    print('=' * 20)
-    valor = int(input('Quanto você deseja sacar? R$: '))
-    if valor < dez:
-        while saque != valor:
-            saque = um + um
-            contagem += 1
-    if valor == 0:
-        break
+print('=' * 20)
+print('BANCO ORIGINAL RA')
+print('=' * 20)
+valor = int(input('Quanto você deseja sacar? R$: '))
 print(f'Saque de R${valor}:')
-print(f'{contagem} cédulas de R${saque}.')
+print(f'{contagem} cédulas de R${um}')
+print(f'{contagem} cédulas de R${dez}')
+print(f'{contagem} cédulas de R${vinte}')
+print(f'{contagem} cédulas de R${cinquenta}')
 print('Fim da operação.')
