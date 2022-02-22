@@ -18,6 +18,10 @@ if valor >= 50:
                 cont10 = cont10 + 1
             if valor < 10:
                 cont1 = valor 
+elif valor >= 20:
+elif valor >= 10:
+else:
+    cont1 = valor
 print('-' * 15)
 print(f'Saque de R$ {valor}:')
 print('-' * 15)
