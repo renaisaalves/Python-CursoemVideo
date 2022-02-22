@@ -28,10 +28,13 @@ elif valor >= 20:
         cont10 = cont10 + 1
     if valor < 10:
         cont1 = valor
-elif valor >= 10:
-    print('Estou tentando 10')
 else:
-    cont1 = valor
+    valor >= 10
+    while valor >= 10:
+        valor = valor - 10
+        cont10 = cont10 + 1
+    if valor < 10:
+        cont1 = valor
 print('-' * 15)
 print(f'Saque de R$ {saque}:')
 print('-' * 15)
