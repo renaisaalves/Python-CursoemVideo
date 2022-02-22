@@ -5,27 +5,35 @@ print('=' * 20)
 print('BANCO ORIGINAL RA')
 print('=' * 20)
 valor = int(input('Quanto você deseja sacar? R$: '))
+saque = valor
 if valor >= 50:
     while valor >= 50:
         valor = valor - 50
         cont50 = cont50 + 1
-        if valor < 50:
-            while valor >= 20:
-                valor = valor - 20
-                cont20 = cont20 + 1
-            while valor >= 10:
-                valor = valor - 10
-                cont10 = cont10 + 1
-            if valor < 10:
-                cont1 = valor 
+    if valor < 50:
+        while valor >= 20:
+            valor = valor - 20
+            cont20 = cont20 + 1
+        while valor >= 10:
+            valor = valor - 10
+            cont10 = cont10 + 1
+        if valor < 10:
+            cont1 = valor 
 elif valor >= 20:
-    print('Estou tentando 20')
+    while valor >= 20:
+        valor = valor - 20
+        cont20 = cont20 + 1
+    while valor >= 10:
+        valor = valor - 10
+        cont10 = cont10 + 1
+    if valor < 10:
+        cont1 = valor
 elif valor >= 10:
     print('Estou tentando 10')
 else:
     cont1 = valor
 print('-' * 15)
-print(f'Saque de R$ {valor}:')
+print(f'Saque de R$ {saque}:')
 print('-' * 15)
 print(f'{cont50} cédulas de R$50.')
 print(f'{cont20} cédulas de R$20.')
