@@ -1,4 +1,6 @@
 #AULA16 = TUPLAS ()
-
 lanche = ('Hamburguer', 'Suco', 'Pizza', 'Pudim')
+print(lanche)
+print(lanche[0:3])
 print(lanche[3])
+print(lanche[-2])
