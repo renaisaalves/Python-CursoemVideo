@@ -7,7 +7,6 @@ print('=' * 20)
 print('BANCO ORIGINAL RA')
 print('=' * 20)
 valor = int(input('Quanto você deseja sacar? R$: '))
-saque = valor
 if valor >= 50:
     while valor >= 50:
         valor = valor - 50
@@ -45,4 +44,26 @@ print(f'{cont1} cédulas de R$1')
 print('=' * 20)
 print('Fim da operação.')
 
-#SOLUÇÃO 2
+#GUSTAVO GUANABARA
+
+print('=' * 30)
+print('{:^30}' .format('BANCO CEV'))
+print('=' * 30)
+valor = int(input('Que valor você quer sacar? R$'))
+total = valor
+céd = 50
+totcéd = 0
+while True:
+    if total >= céd:
+        total -= céd
+        totcéd += 1
+    else:
+        print(f'Total de {totcéd} cédulas de R${céd}')
+        if céd == 50:
+            céd = 20
+        elif céd == 20:
+            céd = 10
+        elif céd == 10:
+            céd = 1
+        if total == 0:
+            break
