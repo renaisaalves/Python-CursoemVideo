@@ -1,1 +1,4 @@
-#AULA16 = 
+#AULA16 = TUPLAS ()
+
+lanche = 'Hamburguer, Suco, Pizza, Pudim'
+print(lanche)
