@@ -10,5 +10,5 @@ for comida in lanche:
     print(f'Eu vou comer {comida}.')
 
 #Também dá pra fazer dessa forma:
-#for cont in range(0, len(lanche)):
-#    print(lanche[cont])
+#for cont in range(0, len(lanch):
+#    print(lanche[cont] ou f'{lanche[cont]} {cont}')
