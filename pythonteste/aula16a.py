@@ -8,3 +8,7 @@ print(len(lanche)) #mostra quantas posições existem na variável
 
 for comida in lanche:
     print(f'Eu vou comer {comida}.')
+
+#Também dá pra fazer dessa forma:
+#for cont in range(0, len(lanche)):
+#    print(lanche[cont])
