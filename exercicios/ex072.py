@@ -2,6 +2,6 @@
 
 tupla = ('Zero', 'Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis', 'Sete', 'Oito', 'Nove', 'Dez', 'Onze', 'Doze', 'Treze', 'Quatorze', 'Quinze', 'Dezesseis', 'Dezessete', 'Dezoito', 'Dezenove', 'Vinte')
 
-numero = int(input('Digite um número: '))[0:21]
+numero = int(input('Digite um número: '))
 
 #Eu tenho que assimilar o número digitado com a posição do item na memória. 
