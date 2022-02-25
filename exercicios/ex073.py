@@ -11,7 +11,7 @@ times = ('Palmeiras', 'Flamengo', 'Internacional', 'Grêmio', 'São Paulo',
         'Bahia', 'Fluminense', 'Corinthians', 'Chapecoense', 'Ceará', 
         'Vasco', 'Sport', 'América MG', 'Vitória', 'Paraná')
 
-print(f'OS SEIS PRIMEIROS COLOCADOS:\n{times[0:6]}')
+print(f'OS CINCO PRIMEIROS COLOCADOS:\n{times[0:5]}')
 print('-'  * 40)
 print(f'OS QUATRO ÚLTIMOS COLOCADOS:\n{times[16:21]}')
 print('-'  * 40)
