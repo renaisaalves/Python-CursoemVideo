@@ -4,5 +4,5 @@ tupla = ('Zero', 'Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis', 'Sete', 'Oito
 
 numero = int(input('Digite um número: '))
 
-print(tupla.index(numero))
+print(tupla[numero])
 #Eu tenho que assimilar o número digitado com a posição do item na memória. 
