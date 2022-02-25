@@ -4,9 +4,12 @@ print('='  * 40)
 print('CAMPEONATO BRASILEIRO DE FUTEBOL (2022)')
 print('='  * 40)
 
-rank = ('', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '')
+rank = ('Palmeiras', 'Flamengo', 'Internacional', 'Grêmio', 'São Paulo', 
+        'Atlético MG', 'Atlético PR', 'Cruzeiro', 'Botafogo', 'Santos', 
+        'Bahia', 'Fluminense', 'Corinthians', 'Chapecoense', 'Ceará', 
+        'Vasco', 'Sport', 'América MG', 'Vitória', 'Paraná')
 
 print(rank[0:6])
 print(rank[16:21])
 print(sorted(rank))
-print(rank.index())
+print(rank.index('Chapecoense'))
