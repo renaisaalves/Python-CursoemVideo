@@ -7,6 +7,6 @@ while True:
     if numero < 0 or numero > 20:
         numero = int(input('Número inválido. Digite outro [0/20]: '))
     else: 
-        print(tupla[numero])
+        print('Você digitou o número', tupla[numero])
         break
     
