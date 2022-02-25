@@ -9,7 +9,10 @@ rank = ('Palmeiras', 'Flamengo', 'Internacional', 'Grêmio', 'São Paulo',
         'Bahia', 'Fluminense', 'Corinthians', 'Chapecoense', 'Ceará', 
         'Vasco', 'Sport', 'América MG', 'Vitória', 'Paraná')
 
-print(rank[0:6])
-print(rank[16:21])
-print(sorted(rank))
-print(rank.index('Chapecoense'))
+print(f'OS SEIS PRIMEIROS COLOCADOS:\n{rank[0:6]}')
+print('-'  * 40)
+print(f'OS QUATRO ÚLTIMOS COLOCADOS:\n{rank[16:21]}')
+print('-'  * 40)
+print('LISTAGEM EM ORDEM ALFABÉTICA:\n',sorted(rank))
+print('-'  * 40)
+print('POSIÇÃO DO TIME CHAPECOENSE:\n',rank.index('Chapecoense'))
