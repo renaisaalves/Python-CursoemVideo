@@ -3,6 +3,6 @@
 tupla = ('Zero', 'Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis', 'Sete', 'Oito', 'Nove', 'Dez', 'Onze', 'Doze', 'Treze', 'Quatorze', 'Quinze', 'Dezesseis', 'Dezessete', 'Dezoito', 'Dezenove', 'Vinte')
 
 numero = int(input('Digite um número: '))
-for numero in tupla:
-    print(f'Fazendo um teste básico {numero}')
+
+print(tupla.index(numero))
 #Eu tenho que assimilar o número digitado com a posição do item na memória. 

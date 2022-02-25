@@ -1,6 +1,6 @@
 #AULA16 = TUPLAS ()
 lanche = ('Hamburguer', 'Suco', 'Pizza', 'Pudim')
-print(lanche) #exibe todas as posições da tupla
+print(lanche) #exibe todas os elementos da tupla
 print(lanche[0:3]) #começa na posição 0 [Hambúruger] e vai até a posição 2 [Pizza]
 print(lanche[3]) #exibe a posição 3 [Pizza]
 print(lanche[-2]) #conta da direita para a esquerda
