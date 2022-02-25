@@ -3,6 +3,10 @@
 tupla = ('Zero', 'Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis', 'Sete', 'Oito', 'Nove', 'Dez', 'Onze', 'Doze', 'Treze', 'Quatorze', 'Quinze', 'Dezesseis', 'Dezessete', 'Dezoito', 'Dezenove', 'Vinte')
 
 numero = int(input('Digite um número: '))
-
-print(tupla[numero])
-#Eu tenho que assimilar o número digitado com a posição do item na memória. 
+while True:
+    if numero < 0 or numero > 20:
+        numero = int(input('Número inválido. Digite outro [0/20]: '))
+    else: 
+        print(tupla[numero])
+        break
+    
