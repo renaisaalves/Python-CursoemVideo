@@ -13,8 +13,8 @@ times = ('Palmeiras', 'Flamengo', 'Internacional', 'Grêmio', 'São Paulo',
 
 print(f'OS CINCO PRIMEIROS COLOCADOS:\n{times[0:5]}')
 print('-'  * 40)
-print(f'OS QUATRO ÚLTIMOS COLOCADOS:\n{times[16:21]}')
+print(f'OS QUATRO ÚLTIMOS COLOCADOS:\n{times[16:21]}') #ou [-4]
 print('-'  * 40)
-print('LISTAGEM EM ORDEM ALFABÉTICA:\n',sorted(times))
+print(f'LISTAGEM EM ORDEM ALFABÉTICA:\n{sorted(times)}')
 print('-'  * 40)
-print('POSIÇÃO DO TIME CHAPECOENSE:\n',times.index('Chapecoense'))
+print(f'POSIÇÃO DO TIME CHAPECOENSE:\n {times.index("Chapecoense")}')
