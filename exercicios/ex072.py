@@ -8,11 +8,11 @@ while True:
     numero = int(input('Digite um número: '))
     while numero < 0 or numero > 20:
         numero = int(input('Número inválido. Digite outro [0/20]: '))
-    print('Você digitou o número',tupla[numero])
+    print('Você digitou o número',tupla[numero])    
     resposta = str(input('Quer continuar? [Sim/Não]: ')).strip().upper()[0]
     if resposta == 'N':
         break
-    
+
 #RESOLUÇÃO GUANABARA
 
 while True:
