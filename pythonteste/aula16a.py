@@ -7,8 +7,8 @@ print(lanche[-2]) #conta da direita para a esquerda
 print(len(lanche)) #mostra quantas posições existem na variável
 print(sorted(lanche)) #em ordem alfabética
 
-for comida in lanche:
-    print(f'Eu vou comer {comida}.')
+for c in lanche:
+    print(f'Eu vou comer {c}.')
 
 for pos, comida in enumerate(lanche): #enumerate vai me dar a possibilidade de numerar as posições e seus nomes
     print(f'Eu vou comer {comida} na posição {pos}.')
