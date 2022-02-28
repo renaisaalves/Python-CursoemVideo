@@ -3,5 +3,6 @@
 #NÃO CONSEGUI FAZER DE PRIMEIRA. 
 #Tive que ver o vídeo e depois reproduzir por mim mesma.
 
+num = (int(input('Digite um número: ')), )
 
 
