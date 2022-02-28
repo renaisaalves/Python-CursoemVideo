@@ -11,7 +11,7 @@ for p in palavras:
     print(f'\nNa palavra {a}{p}{l} temos: ', end='')
     for letra in p:
         if letra.lower() in 'aeiou':
-            print(f'{v}{letra}{l}', end='')
+            print(f'{v}{letra}{l}', end=' ')
             
 #PASSO A PASSO PARA ENTENDER A RESOLUÇÃO
 
