@@ -4,7 +4,14 @@ from random import randint
 
 #NÃO CONSEGUI FAZER, PORQUE NÃO SEI COLOCAR DENTRO DE UMA TUPLA
 
-num = (58, 77, 18, 9, 16)
-print(sorted(num))
+num = (randint(1, 10), randint(1, 10), randint(1, 10), randint(1, 10), randint(1, 10))
+print(f'Eu sorteei os números:', sorted(num))
 print(f'Menor número: {num[0]}')
 print(f'Maior número: {num[4]}')
+
+#OUTRA FORMA DE MOSTRAR O MENOR E MAIOR NÚMERO DA TUPLA:
+
+for n in num:
+    print(f'{n}', end=' ')
+print(f'\nO menor valor sorteado foi {min(num)}')    
+print(f'O maior valor sorteado foi {max(num)}')
