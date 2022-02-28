@@ -6,8 +6,8 @@ from random import randint
 
 num = (randint(1, 10), randint(1, 10), randint(1, 10), randint(1, 10), randint(1, 10))
 print(f'Eu sorteei os números:', sorted(num))
-print(f'Menor número: {num[0]}')
-print(f'Maior número: {num[4]}')
+print(f'Menor número: {sorted(num)[0]}')
+print(f'Maior número: {sorted(num)[4]}')
 
 #OUTRA FORMA DE MOSTRAR O MENOR E MAIOR NÚMERO DA TUPLA:
 
