@@ -30,3 +30,22 @@ for c in valores:
 for v, c in enumerate(valores):
     print(f'Na posição {v}, encontreo o valor {c}!')
 print('Cheguei ao final da lista.')
+
+#LER VALORES PELO TECLADO: 
+
+for count in range(0, 5):
+    valores.append(int(input('Digite um valor: ')))
+    
+#PECULIARIDADE DO PYTHON:
+
+a = [2, 3, 4, 7]
+b = a 
+
+print(a)
+print(b)
+
+#Se eu alterar um valor, ambas as listas mudarão, pois b = a:
+
+b[2] = 8
+print(f'A lista A: {a}')
+print(f'A lista B: {b}')
