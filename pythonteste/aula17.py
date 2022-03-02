@@ -44,8 +44,17 @@ b = a
 print(a)
 print(b)
 
-#Se eu alterar um valor, ambas as listas mudarão, pois b = a:
+#Se eu alterar um valor, ambas as listas mudarão, pois b = a, ou seja, elas estão ligadas uma na outra:
 
 b[2] = 8
 print(f'A lista A: {a}')
 print(f'A lista B: {b}')
+
+#Mas eu também posso fazer uma cópia de listas. Veja o exemplo a seguir:
+
+b = a[:] #b vai pegar todos os valores de [a] e jogar em [b], criando assim, uma cópia.
+#Uma coisa interessante é que quando eu faço uma cópia [:] e mudo um valor, a outra lista continuará a mesma. 
+
+
+
+
