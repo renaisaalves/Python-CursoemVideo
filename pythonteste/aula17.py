@@ -17,6 +17,16 @@ if 4 in num:
     num.remove(4)
 else:
     print('Não achei o número 4.')
+    
+valores = [] #ou valores = list()
 
+valores.append(5)
+valores.append(4)
+valores.append(9)
 
+for c in valores:
+    print(f'{c}...', end='')
 
+for v, c in enumerate(valores):
+    print(f'Na posição {v}, encontreo o valor {c}!')
+print('Cheguei ao final da lista.')
