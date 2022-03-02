@@ -54,6 +54,9 @@ print(f'A lista B: {b}')
 
 b = a[:] #b vai pegar todos os valores de [a] e jogar em [b], criando assim, uma cópia.
 #Uma coisa interessante é que quando eu faço uma cópia [:] e mudo um valor, a outra lista continuará a mesma. 
+b[3] = 5
+print(a)
+print(b)
 
 
 
