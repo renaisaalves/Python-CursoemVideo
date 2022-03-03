@@ -4,12 +4,14 @@
 
 valores = []
 
-for c in range(1, 6):
+for c in range(0, 5):
     valores.append(int(input(f'Digite o {c}º valor: ')))
 print(f'Valores digitados: {valores}')
 valores.sort()
 print(f'Menor valor: {valores[0]}')
 print(f'Maior valor: {valores[4]}')
+if valores[0] in valores:
+    print(f'{valores[0]} foi encontrado nas posições {len([0])} ')
 
 #1º passo: especifiquei o tipo da minha variável;
 #2º passo: fiz um laço de repetição simples, do qual coleta 5 números do usuário;
