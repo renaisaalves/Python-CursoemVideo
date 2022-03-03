@@ -2,15 +2,16 @@
 
 valores = []
 contador = 0
+i = '\033[1;33m'
+l = '\033[m'
 while True:
     if contador == 0:
         valores.append(int(input('Digite um valor: ')))
         contador = contador + 1
-    print('=' * 30)
     resposta = str(input('Quer continuar? [Sim/Não]: ')).strip().upper()[0]
-    print('=' * 30)
     if resposta == 'S': 
         valores.append(int(input('Digite outro valor: ')))
-    else:
+    if resposta == 'N':
         break
-print(f'Valores informados: {valores}')
+print('=' * 30)
+print(f'Valores informados: {i}{valores}{l}')
