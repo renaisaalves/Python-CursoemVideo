@@ -18,4 +18,3 @@ while True:
         break
 print('=' * 30)
 print(f'Valores informados: {i}{valores}{l}')
-print(f'{contador}')
