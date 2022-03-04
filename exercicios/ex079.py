@@ -4,6 +4,7 @@ valores = []
 contador = 0
 i = '\033[1;33m'
 l = '\033[m'
+
 while True:
     if contador == 0:
         valores.append(int(input('Digite um valor: ')))
