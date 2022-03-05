@@ -14,6 +14,7 @@ while True:
     if resposta == 'S': 
         valores.append(int(input('Digite outro valor: ')))
     if resposta == 'N':
+        valores.sort()
         break
 print('=' * 30)
 print(f'Valores informados: {i}{valores}{l}')
