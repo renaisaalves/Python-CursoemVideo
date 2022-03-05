@@ -13,10 +13,10 @@ while True:
     resposta = str(input('Quer continuar? [Sim/Não]: ')).strip().upper()[0]
     if resposta == 'S': 
         valores.append(int(input('Digite outro valor: ')))
-        if 4 in valores:
-            valores.remove(4)
     if resposta == 'N':
         valores.sort()
+        if 4 in valores:
+            valores.remove(4)
         break
 print('=' * 30)
 print(f'Valores informados: {i}{valores}{l}')
