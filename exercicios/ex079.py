@@ -21,4 +21,5 @@ while True:
 print('=' * 30)
 print(f'Valores informados: {i}{valores}{l}')
 print('=' * 30)
-#tem que receber um valor individual que está dentro da lista e analisar se esse número existe
+
+#tem que receber um valor individual e analisar se esse número existe na lista
