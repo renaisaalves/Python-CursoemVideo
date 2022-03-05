@@ -18,7 +18,6 @@ while True:
     if resposta == 'N':
         valores.sort()
         break
-
 print('=' * 30)
 print(f'Valores informados: {i}{valores}{l}')
 print('=' * 30)
