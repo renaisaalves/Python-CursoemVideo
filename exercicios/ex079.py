@@ -13,15 +13,13 @@ while True:
     contador += 1
     resposta = str(input('Quer continuar? [Sim/Não]: ')).strip().upper()[0]
     if resposta == 'S': 
-        valores.append(int(input('Digite outro valor: ')))
-        num = valores[contador >= 1]
+        valores.append(int(input('Digite outro valor: ')))  
     if resposta == 'N':
         valores.sort()
-        if num in valores:
-            valores.remove(num)
         break
 print('=' * 30)
 print(f'Valores informados: {i}{valores}{l}')
+print(f'{num}')
 print('=' * 30)
 
 #tem que receber um valor individual e analisar se esse número existe na lista
