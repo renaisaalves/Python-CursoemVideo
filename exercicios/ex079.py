@@ -6,10 +6,11 @@ i = '\033[1;33m'
 l = '\033[m'
 
 print('=' * 30)
+
 while True:
     if contador == 0:
         valores.append(int(input('Digite um valor: ')))
-        contador = contador + 1
+        contador += 1
     resposta = str(input('Quer continuar? [Sim/Não]: ')).strip().upper()[0]
     if resposta == 'S': 
         valores.append(int(input('Digite outro valor: ')))
