@@ -10,14 +10,15 @@ print('=' * 30)
 while True:
     if contador == 0:
         valores.append(int(input('Digite um valor: ')))
-        contador += 1
+    contador += 1
     resposta = str(input('Quer continuar? [Sim/Não]: ')).strip().upper()[0]
     if resposta == 'S': 
         valores.append(int(input('Digite outro valor: ')))
+        num = valores[contador >= 1]
     if resposta == 'N':
         valores.sort()
-        if 4 in valores:
-            valores.remove(4)
+        if num in valores:
+            valores.remove(num)
         break
 print('=' * 30)
 print(f'Valores informados: {i}{valores}{l}')
