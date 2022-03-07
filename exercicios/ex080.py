@@ -4,5 +4,4 @@ lista = []
 
 for c in range(0, 6):
     val = int(input(f'Digite o {c}º valor: '))
-
 print(f'{lista}')
