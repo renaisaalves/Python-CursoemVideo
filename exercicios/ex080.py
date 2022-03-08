@@ -4,4 +4,8 @@ lista = []
 
 for c in range(0, 6):
     val = int(input(f'Digite o {c}º valor: '))
+    if c == 0:
+        val1 = val
+    if val1 > val:
+        
 print(f'{lista}')
