@@ -3,5 +3,5 @@
 lista = []
 
 for c in range(0, 6):
-    lista = int(input(f'Digite o {c}º valor: '))
+    lista.append(int(input(f'Digite o {c}º valor: ')))
 print(f'{lista}')
