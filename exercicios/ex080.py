@@ -5,5 +5,7 @@ lista = []
 for c in range(0, 6):
     lista.append(int(input(f'Digite o {c}º valor: ')))
 print(f'{lista}')
-print(f'{min(lista)}')
-print(f'{max(lista)}')
+
+#Vamos supor que eu armazene um valor [4] em uma variável comum. Sabendo que a instrução está dentro de um laço, se eu não armazenar esse valor em uma lista ou em outra variável, na próximo laço eu vou perder esse valor. 
+#A questão é: será que é possível armazenar todos os valores dentro de uma lista, para depois aplicar as técnicas específicas de listas, ou fazer pelo modo tradicional, armazenando um determinado valor em uma variável e aplicando os testes lógicos? 
+#O primeiro passo já foi feito: o laço foi criado, já com os valor determinado pelo exercício [5], e os números já foram cadastrados dentro de uma lista. No entanto, os números aparecem na ordem que o usuário digita, pois não há nenhum outro comando que faça com que os números sofram alterações.
