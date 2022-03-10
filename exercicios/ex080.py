@@ -5,3 +5,5 @@ lista = []
 for c in range(0, 6):
     lista.append(int(input(f'Digite o {c}º valor: ')))
 print(f'{lista}')
+print(f'{min(lista)}')
+print(f'{max(lista)}')
