@@ -13,5 +13,11 @@ print(f'Salário por hora: EURO$ {salario_hora}')
 print(f'Horas trabalhadas ao dia: {horas_dia}')
 print(f'Horas extraordinárias acumuladas na semana: {horas_extras}')
 
-for c in range(1, 8):
-    print()
+for dia in range(1, 8):
+    print('Dia {dia}º')
+    salario_hora.append(float(input('Salário (hora): ')))
+    horas_dia = int(input('Horas trabalhas (dia): '))
+    salario_dia = salario_hora * horas_dia
+    if horas_dia > 8:
+        horas_extras = horas_dia - 8
+    
