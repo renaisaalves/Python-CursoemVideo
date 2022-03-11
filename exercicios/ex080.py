@@ -3,7 +3,11 @@
 lista = []
 
 for c in range(0, 6):
-    lista.append(int(input(f'Digite o {c}º valor: ')))
+    val = int(input(f'Digite o {c}º valor: '))
+    if val < len(lista):
+        lista.insert(0, val)
+    if val > len(lista):
+        lista.append(val)
 print(f'{lista}')
 
 #Vamos supor que eu armazene um valor [4] em uma variável comum. Sabendo que a instrução está dentro de um laço, se eu não armazenar esse valor em uma lista ou em outra variável, na próximo laço eu vou perder esse valor. 
