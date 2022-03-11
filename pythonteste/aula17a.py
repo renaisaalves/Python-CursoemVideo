@@ -12,6 +12,10 @@ num.pop(2) #Elimina o valor que ocupa a posição [2]
 num.remove(3) #Quando há dois valores iguais, remove vai deletar o primeiro que ocorrer [no caso, o primeiro 3]
 print(num)
 print(f'Essa lista tem {len(num)} elementos.') #exibe quantos elementos existem na lista.
+
+#PROFESSOR NÃO ENSINOU
+
+num = sum([]) #SOMAR elementos que de numa lista
 if 4 in num:
     num.remove(4)
 else:
