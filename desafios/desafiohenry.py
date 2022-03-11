@@ -19,6 +19,7 @@ print('=' * 30)
 print(f'Salário semanal: {salario_semanal}')
 print(f'Total de horas trabalhadas na semana: {horario_semanal}')
 print(f'Total de horas-extras: {horas_extras}')
+
 #salário_hora (fixo) = definido pelo usuário
 #horário_semanal (definido pelo exercício) = 40h 
 
