@@ -13,3 +13,9 @@ for c in range(1, 8):
         
 print('=' * 30)
 print(f'Salário semanal: {salario_semanal}')
+
+#1º Vou considerar o salário_hora como fixo (não altera o seu valor).
+#2º Vou considerar que não há uma jornada de horário-fixo (como a tradicional CLT brasileira). Desse modo, o usuário pode decidir a sua própria jornada de trabalho. Isso significa, então, que sempre precisaremos perguntar ao usuário quantas horas ele trabalhou no dia. Para facilitar o algoritmo, vou usar o laço de repetição for (uma semana corresponde à 7 dias, logo, temos um tempo [range] definido), que vai automaticamente coletar os horários trabalhados do usuário por dia. 
+#3º Durante a coleta de dados (horas trabalhadas no dia), vou precisar "armazenar" esses horários em algum lugar. Inicialmente, eu pensei em guardar os valores dentro de uma lista, mas como não domino a função, achei melhor continuar fazendo no modo tradicional, ao menos até garantir que o código esteja 100% funcional. 
+
+
