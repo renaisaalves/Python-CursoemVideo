@@ -16,7 +16,7 @@ print('=' * 30)
 print(f'Salário semanal: {salario_semanal}')
 
 #salário_hora (fixo) = definido pelo usuário
-#jornada_de_trabalho (definido pelo exercício) = 40h 
+#horário_semanal (definido pelo exercício) = 40h 
 
 
 
