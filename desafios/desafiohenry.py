@@ -4,20 +4,18 @@ print('=' * 30)
 print(f'{"CÁLCULO SALARIAL":^30}')
 print('=' * 30)
 
-salario_hora = float(input('Salário (hora): '))
-horas_dia = int(input('Horas trabalhas (dia): '))
-salario_dia = salario_hora * horas_dia
-if horas_dia > 8:
-    horas_extras = horas_dia - 8
-print(f'Salário por hora: EURO$ {salario_hora}')
-print(f'Horas trabalhadas ao dia: {horas_dia}')
-print(f'Horas extraordinárias acumuladas na semana: {horas_extras}')
+salario_hora = horas_dia = horas_extras = []
 
 for dia in range(1, 8):
-    print('Dia {dia}º')
+    print(f'Dia {dia}º')
     salario_hora.append(float(input('Salário (hora): ')))
-    horas_dia = int(input('Horas trabalhas (dia): '))
+    horas_dia.append(int(input('Horas trabalhas (dia): ')))
     salario_dia = salario_hora * horas_dia
     if horas_dia > 8:
         horas_extras = horas_dia - 8
-    
+    salario_semanal = sum(salario_dia)
+    total_hora_semanal = sum(horas_dia)
+    horas_extras = sum(horas_extras)
+print(f'Salário por semana: EURO$ {salario_semanal}')
+print(f'Total de horas trabalhadas na semana: {total_hora_semanal}')
+print(f'Horas extraordinárias acumuladas na semana: {horas_extras}')
