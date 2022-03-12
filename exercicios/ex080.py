@@ -10,4 +10,4 @@ print(f'{lista}')
 
 #A questão é: será que é possível armazenar todos os valores dentro de uma lista, para depois aplicar as técnicas específicas de listas, ou fazer pelo modo tradicional, armazenando um determinado valor em uma variável e aplicando os testes lógicos? 
 
-#O primeiro passo já foi feito: o laço foi criado, já com o valor determinado pelo exercício [5], e os números já foram cadastrados dentro de uma lista. No entanto, os números aparecem na ordem que o usuário digita, pois não há nenhum outro comando que faça com que os números sofram alterações.
+#O primeiro passo já foi feito: o laço foi criado, já com o valor determinado pelo exercício [5], e os números já foram cadastrados dentro de uma lista. No entanto, os números aparecem na ordem que o usuário digita, pois não há nenhum outro comando que faça com que os números sofram alterações...
