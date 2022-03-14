@@ -4,8 +4,8 @@ lista = []
 
 for c in range(0, 3):
     val = int(input(f'Digite o {c}º valor: '))
-    lista(val).sort()
-print(f'{lista}')
+    lista(val)
+print(f'{lista.sort()}')
 
 #Vamos supor que eu armazene um valor [4] em uma variável comum. Sabendo que a instrução está dentro de um laço, se eu não armazenar esse valor em uma lista ou em outra variável, na próximo laço eu vou perder esse valor. 
 
