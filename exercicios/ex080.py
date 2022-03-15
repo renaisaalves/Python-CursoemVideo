@@ -2,7 +2,7 @@
 
 lista = []
 
-for c in range(0, 3):
+for c in range(0, 5):
     lista.append(int(input(f'Digite o {c}º valor: ')))
     lista.sort()
 print(f'{lista}')
