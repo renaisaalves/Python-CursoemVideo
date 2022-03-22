@@ -4,7 +4,9 @@ lista = []
 
 #NÃO CONSEGUI FAZER
 
-for c in range(0, 5):
+for c in range(0, 2):
     lista.append(int(input(f'Digite o {c}º valor: ')))
-    lista.sort()
+    if c > 0:
+        if lista[0] > lista[1]:
+            lista.insert(0, [1])
 print(f'{lista}')
