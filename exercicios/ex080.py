@@ -4,9 +4,16 @@ lista = []
 
 #NÃO CONSEGUI FAZER
 
-for c in range(0, 2):
-    lista.append(int(input(f'Digite o {c}º valor: ')))
-    if c > 0:
-        if lista[0] > lista[1]:
-            lista.insert(0, [1])
+for c in range(0, 5):
+    n = int(input(f'Digite o {c}º valor: '))
+    if c == 0 or n > lista[-1]:
+        lista.append(n)
+    else:
+        pos = 0
+        while pos < len(lista):
+            if n <= lista[pos]:
+                lista.insert(pos, n)
+                break
+            pos += 1
+print('=' * 20)
 print(f'{lista}')
