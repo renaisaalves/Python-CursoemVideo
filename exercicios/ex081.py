@@ -6,4 +6,6 @@ repeat = int(input('Quantas vezes você quer repetir? '))
 for c in range(1, repeat +1):
     number = int(input(f'Número {c}: '))
     lista.append(number)
-print(lista)
+print(f'Sua lista: {lista}')
+print(f'Foram digitados {c} números.')
+print(f'Em ordem decrescente:', lista.sort(reverse=True))
