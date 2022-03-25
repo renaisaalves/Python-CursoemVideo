@@ -1,6 +1,8 @@
 #ex 081: Crie um programa que vai ler vários números e colocar em uma lista. Depois disso mostre: A) Quantos números foram digitados. B) A lista de valores, ordenada de forma decrescente. C) Se o valor 5 foi digitado e está ou não na lista.
 
 lista = []
+lista_true = ('O valor 5 foi digitado e está na lista.')
+lista_false = ('O valor 5 não foi digitado e não está na lista.')
 
 repeat = int(input('Quantas vezes você quer repetir? '))
 for c in range(1, repeat +1):
