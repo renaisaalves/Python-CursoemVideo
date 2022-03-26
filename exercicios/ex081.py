@@ -10,7 +10,7 @@ print('=' * 40)
 print(f'Sua lista: {lista}')
 print(f'Foram digitados {c} números.')
 print(f'Em ordem crescente: {lista.sort()}')
-print(f'Em ordem decrescente:', lista.sort(reverse=True))
+print(f'Em ordem decrescente: {lista.sort(reverse=True)}', )
 if 5 in lista:
     print(f'O valor 5 foi digitado e está na lista.')
 else:
