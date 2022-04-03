@@ -2,6 +2,7 @@
 
 lista = []
 cont = 0
+
 repeat = int(input('Quantas vezes você quer repetir? '))
 while not repeat:
     cont += 1
