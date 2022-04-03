@@ -1,7 +1,7 @@
 #ex 081: Crie um programa que vai ler vários números e colocar em uma lista. Depois disso mostre: A) Quantos números foram digitados. B) A lista de valores, ordenada de forma decrescente. C) Se o valor 5 foi digitado e está ou não na lista.
 
 lista = []
-cont = 0
+cont = int(0)
 
 repeat = int(input('Quantas vezes você quer repetir? '))
 while cont != repeat:
@@ -9,12 +9,15 @@ while cont != repeat:
     number = int(input(f'Número {cont}: '))
     lista.append(number)
     if cont == repeat:
-        resposta = str(input('Deseja continuar? Sim/Não')).strip().upper()
+        resposta = str(input('Deseja continuar? Sim/Não ')).strip().upper()
+        if resposta in 'SSIM':
+            total = cont 
+            cont = 0
         if resposta in 'NNÃONAO':
             break
 print('=' * 40)
 print(f'Sua lista: {lista}')
-print(f'Foram digitados {c} números.')
+print(f'Foram digitados {cont} números.')
 print(f'Em ordem crescente: {lista.sort()}')
 print(f'Em ordem decrescente: {lista.sort(reverse=True)}', )
 if 5 in lista:
