@@ -6,6 +6,10 @@ repeat = int(input('Quantas vezes você quer repetir? '))
 for c in range(1, repeat +1):
     number = int(input(f'Número {c}: '))
     lista.append(number)
+    if c == repeat:
+        resposta = str(input('Deseja continuar? Sim/Não')).strip().upper()
+        if resposta in 'SIMSSS':
+            
 print('=' * 40)
 print(f'Sua lista: {lista}')
 print(f'Foram digitados {c} números.')
