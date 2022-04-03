@@ -4,7 +4,7 @@ lista = []
 cont = 0
 
 repeat = int(input('Quantas vezes você quer repetir? '))
-while not repeat:
+while cont != repeat:
     cont += 1
     number = int(input(f'Número {cont}: '))
     lista.append(number)
