@@ -9,12 +9,12 @@ while resposta in 'SIMS':
     resposta = str(input('Quer continuar? [Sim/Não]: ')).strip().upper()
     if resposta not in 'SIMS':
         cont = len(lista)
-        print('=' * 40)
+        print('=' * 50)
         print(f'Foram digitados {cont} números.')
         if 5 in lista:
             frequencia = lista.count(5)
             print(f'O valor 5 foi digitado {frequencia} vez(es) e está na lista.')
         else:
             print(f'O valor 5 não foi digitado e não está na lista.')
-        print('=' * 40)
+        print('=' * 50)
         break
