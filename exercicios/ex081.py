@@ -12,4 +12,9 @@ while resposta in 'SIMS':
     num = int(input('Digite um número: '))
     lista.append(num)
     resposta = str(input('Quer continuar? [Sim/Não]: ')).strip().upper()
-    
+    if resposta not in 'SIMS':
+        break
+print('=' * 30)
+print(f'Sua lista completa: {lista}')
+print(f'Lista em ordem alfabética: {lista.sort()}')
+print(f'Lista em ordem decrescente: {lista.sort(reverse=True)}')
