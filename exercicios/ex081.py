@@ -7,9 +7,11 @@
 
 lista = []
 cont = 0
+resposta = 'SIMS'
 
 while resposta in 'SIMS':
-    num = int(input('Digite um número: '))
+    cont += 1
+    num = int(input(f'({cont}º) Digite um número: '))
     lista.append(num)
     resposta = str(input('Quer continuar? [Sim/Não]: ')).strip().upper()
     if resposta not in 'SIMS':
