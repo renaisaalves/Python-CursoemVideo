@@ -5,7 +5,11 @@
 #   - o usuário insere um número e logo em seguida o programa pergunta se ele quer continuar inserindo; 
 #   - o programa pedir para o usuário informar quantos números ele vai querer inserir. E, após o usuário inserir esses números, o programa perguntar se o usuário quer inserir mais números; 
 
+lista = []
 cont = 0
 
-while resposta not in 'SIMS':
+while resposta in 'SIMS':
+    num = int(input('Digite um número: '))
+    lista.append(num)
+    resposta = str(input('Quer continuar? [Sim/Não]: ')).strip().upper()
     
