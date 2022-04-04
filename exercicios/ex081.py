@@ -3,4 +3,4 @@
 #ALGORITMO
 #1º pedir para o usuário informar vários números:
 #   - o usuário insere um número e logo em seguida o programa pergunta se ele quer continuar inserindo; 
-# 
+#
