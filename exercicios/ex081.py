@@ -18,3 +18,5 @@ while resposta in 'SIMS':
             print(f'O valor 5 não foi digitado e não está na lista.')
         print('=' * 50)
         break
+print(f'Lista original: {lista}')
+print(f'Lista em ordem crescente:', lista.sort())
