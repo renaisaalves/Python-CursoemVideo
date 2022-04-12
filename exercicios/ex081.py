@@ -13,7 +13,7 @@ while resposta in 'SIMS':
         print(f'Foram digitados {cont} números.')
         if 5 in lista:
             frequencia = lista.count(5)
-            print(f'O valor 5 foi digitado {frequencia} vez(es) e está na lista.')
+            print(f'O valor 5 foi digitado {frequencia} vezes e está na lista.')
         else:
             print(f'O valor 5 não foi digitado e não está na lista.')
         print('=' * 50)
