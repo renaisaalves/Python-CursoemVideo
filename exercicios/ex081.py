@@ -19,4 +19,5 @@ while resposta in 'SIMS':
         print('=' * 50)
         break
 print(f'Lista original: {lista}')
-print(f'Lista em ordem crescente:', lista.sort())
+print(f'Lista em ordem crescente:')
+print(f'{type(lista)}')
