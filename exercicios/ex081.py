@@ -9,6 +9,7 @@ while resposta in 'SIMS':
     resposta = str(input('Quer continuar? [Sim/Não]: ')).strip().upper()
     if resposta not in 'SIMS':
         cont = len(lista)
+        lista.sort(reverse=True)
         print('=' * 50)
         print(f'Foram digitados {cont} números.')
         if 5 in lista:
@@ -18,5 +19,4 @@ while resposta in 'SIMS':
             print(f'O valor 5 não foi digitado e não está na lista.')
         print('=' * 50)
         break
-print(f'Lista original: {lista}')
-print(f'Lista em ordem crescente: {lista.sort()}')
+print(f'Lista em ordem decrescente: {lista}')
