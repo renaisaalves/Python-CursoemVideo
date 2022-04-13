@@ -4,19 +4,19 @@ lista = []
 resposta = 'SIMS'
 
 while resposta in 'SIMS':
-    num = int(input('Digite um número: '))
-    lista.append(num)
+    lista.append(int(input('Digite um número: ')))
     resposta = str(input('Quer continuar? [Sim/Não]: ')).strip().upper()
     if resposta not in 'SIMS':
         cont = len(lista)
         lista.sort(reverse=True)
-        print(f'Foram digitados {cont} números.')
+        num = int(input('Qual número você quer encontrar? '))
         break
-print('=' * 50)    
-if 5 in lista:
-    frequencia = lista.count(5)
-    print(f'O valor 5 foi digitado {frequencia} vezes e está na lista.')
-else:
-    print(f'O valor 5 não foi digitado e não está na lista.')
+print('=' * 50)
 print(f'Lista em ordem decrescente: {lista}')
+print(f'Foram digitados {cont} números.')   
+if num in lista:
+    frequencia = lista.count(num)
+    print(f'O valor {num} foi digitado {frequencia} vezes e está na lista.')
+else:
+    print(f'O valor {num} não foi digitado e não está na lista.')
 print('=' * 50)
