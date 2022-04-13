@@ -9,7 +9,6 @@
 teste = []
 
 for c in range(0, 6):
-    n = int(input('Digite um número: '))
-    teste.append(n)
+    teste.append(int(input('Digite um número: ')))
 print(f'Lista original: {teste}')
 print(f'Lista invertida: {teste.sort()}')
