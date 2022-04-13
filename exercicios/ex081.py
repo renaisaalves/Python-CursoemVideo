@@ -10,13 +10,13 @@ while resposta in 'SIMS':
     if resposta not in 'SIMS':
         cont = len(lista)
         lista.sort(reverse=True)
-        print('=' * 50)
         print(f'Foram digitados {cont} números.')
-        if 5 in lista:
-            frequencia = lista.count(5)
-            print(f'O valor 5 foi digitado {frequencia} vezes e está na lista.')
-        else:
-            print(f'O valor 5 não foi digitado e não está na lista.')
-        print('=' * 50)
         break
+print('=' * 50)    
+if 5 in lista:
+    frequencia = lista.count(5)
+    print(f'O valor 5 foi digitado {frequencia} vezes e está na lista.')
+else:
+    print(f'O valor 5 não foi digitado e não está na lista.')
 print(f'Lista em ordem decrescente: {lista}')
+print('=' * 50)
