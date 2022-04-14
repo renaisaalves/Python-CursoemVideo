@@ -15,6 +15,8 @@ while resposta in 'SIMSSS':
             else:
                 impares.append(v)
         break
-print(f'{generico}')
-print(f'{pares}')
-print(f'{impares}')
+print('=' * 30)
+print(f'Todos os números digitados: {generico}')
+print(f'Somente números pares: {pares}')
+print(f'Somente números ímpares: {impares}')
+print('=' * 30)
