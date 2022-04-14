@@ -7,6 +7,7 @@ while resposta in 'SIMSSS':
     generico.append(int(input('Digite um número: ')))
     resposta = str(input('Quer continuar? [S/N]: ')).strip().upper()
     if resposta not in 'SIMSSS':
-        print(f'{generico}')
+        if generico[0:] % 2 == 0: 
+            pares = generico
         break
-        
+print(f'{generico}')
