@@ -9,7 +9,9 @@ while resposta in 'SIMSSS':
     if resposta not in 'SIMSSS':
         for c, v in enumerate(generico):
             if v % 2 == 0:
-                
+                pares.append(v)
+            else:
+                impares.append(v)
         break
 print(f'{generico}')
 print(f'{pares}')
