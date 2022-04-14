@@ -11,3 +11,4 @@ while resposta in 'SIMSSS':
             pares = generico
         break
 print(f'{generico}')
+print(f'{pares}')
