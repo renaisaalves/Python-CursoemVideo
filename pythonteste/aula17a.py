@@ -31,7 +31,7 @@ for c in valores:
     print(f'{c}...', end='')
 
 for c, v in enumerate(valores):
-    print(f'Na posição {c}, encontreo o valor {v}!')
+    print(f'Na posição {c}, encontrei o valor {v}!')
 print('Cheguei ao final da lista.')
 
 #LER VALORES PELO TECLADO: 

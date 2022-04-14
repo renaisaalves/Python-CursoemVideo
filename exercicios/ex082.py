@@ -8,8 +8,7 @@ while resposta in 'SIMSSS':
     resposta = str(input('Quer continuar? [S/N]: ')).strip().upper()
     if resposta not in 'SIMSSS':
         for c, v in enumerate(generico):
-            if v % 2 == 0:
-                pares.append(v)
+            print(f'Na posição {c}, encontrei o valor {v}!')
         break
 print(f'{generico}')
 print(f'{pares}')
