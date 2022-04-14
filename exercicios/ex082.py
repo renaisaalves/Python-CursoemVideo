@@ -8,7 +8,7 @@ while resposta in 'SIMSSS':
     resposta = str(input('Quer continuar? [S/N]: ')).strip().upper()
     if resposta not in 'SIMSSS':
         if generico[0:] % 2 == 0: 
-            pares = generico
+            
         break
 print(f'{generico}')
 print(f'{pares}')
