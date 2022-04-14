@@ -7,6 +7,6 @@ while resposta in 'SIMSSS':
     generico.append(int(input('Digite um número: ')))
     resposta = str(input('Quer continuar? [S/N]: ')).strip().upper()
     if resposta not in 'SIMSSS':
-        print('Deu certo.')
+        print(f'{generico}')
         break
         
