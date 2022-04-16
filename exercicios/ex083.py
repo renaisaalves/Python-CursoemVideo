@@ -3,3 +3,5 @@
 frase = str(input('Digite uma frase que use parênteses.\nFrase: '))
 if frase not in '()':
     print('Sua frase não possui parênteses.\nReescreva novamente: ')
+else:
+    print('Ok!')
