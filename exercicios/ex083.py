@@ -3,4 +3,7 @@
 frase = list()
 
 frase.append(str(input('Digite uma frase: ')))
-print(frase)
+if '(' in frase:
+    print('Existe o valor (')
+else:
+    print('Não existe esse valor.')
