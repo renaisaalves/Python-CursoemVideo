@@ -9,3 +9,4 @@ lista2 = list()
 lista3 = []
 
 lista1.append(str(input('Nome: ')))
+lista1.append(int(input('Idade: ')))
