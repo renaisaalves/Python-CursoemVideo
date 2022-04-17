@@ -16,3 +16,6 @@ print(lista2)
 
 lista2 = ['Carlos', 19], ['Ana', 32], ['João', 50]
 print(lista2)
+print(lista2[0][0])
+print(lista2[1][2])
+print(lista2[0][2])
