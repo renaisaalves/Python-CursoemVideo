@@ -51,3 +51,4 @@ for p in grupo:
     else:
         print(f'{p[0]} é menor de idade.')
         totalmenor += 1
+print('Temos {totalmaior} maiores e {totalmenor} menores de idade.')
