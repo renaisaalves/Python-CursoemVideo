@@ -13,3 +13,4 @@ print(lista1[0]) #vai me retornar o dado que ocupa a posição 0 na memória, ne
 lista2 = list()
 lista2.append(lista1[:]) #eu sempre tenho que colocar [:] para as listas não ficarem idênticas!
 print(lista2)
+
