@@ -5,8 +5,8 @@
 #LISTA CRIADA A PARTIR DOS DADOS INSERIDOS PELO USUÁRIO
 
 lista1 = list()
-lista1.append('Pedro')
-lista1.append(25)
+lista1.append('Maria')
+lista1.append(20)
 print(lista1) #vai me retornar a lista inteira
 print(lista1[0]) #vai me retornar o dado que ocupa a posição 0 na memória, nesse caso, 'Pedro'
 
