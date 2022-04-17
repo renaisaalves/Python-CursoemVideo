@@ -43,8 +43,11 @@ for c in range(0, 3):
     dado.clear() #clear limpa os dados
 print(galera)
 
+totalmaior = totalmenor = 1
 for p in grupo:
     if p[1] >= 21:
         print(f'{p[0]} é maior de idade.')
+        totalmaior += 1
     else:
         print(f'{p[0]} é menor de idade.')
+        totalmenor += 1
