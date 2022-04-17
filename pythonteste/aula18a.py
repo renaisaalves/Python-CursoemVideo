@@ -8,5 +8,10 @@ lista1 = list()
 lista2 = list()
 lista3 = []
 
-lista1.append(str(input('Nome: ')))
-lista1.append(int(input('Idade: ')))
+for c in range(0, 2):
+    name = str(input('Nome: '))
+    age = int(input('Idade: '))
+    if c == 1:
+        lista1.append(name)
+        lista1.append(age)
+print(lista1)
