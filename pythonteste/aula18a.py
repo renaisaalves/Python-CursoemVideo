@@ -14,3 +14,7 @@ lista2 = list()
 lista2.append(lista1[:]) #eu sempre tenho que colocar [:] para as listas não ficarem idênticas!
 print(lista2)
 
+#Vou criar mais duas listas para adicionar na lista 2!
+
+lista3 = ['João', 15]
+lista4 = ['Ana', 50]
