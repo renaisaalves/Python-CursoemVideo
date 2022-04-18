@@ -11,18 +11,11 @@ while True:
     cadastro.append(int(input('Peso: ')))
     listagem.append(cadastro[:]) #a listagem fez uma cópia da lista anterior. Isso é fundamental.
     cadastro.clear()
-    total += 1
     resposta = str(input('Quer continuar? [Sim/Não]: ')).upper()
     if resposta not in 'SIMS':
         break
     
-for i in listagem:
-    if i[1] > i-1[1]:
-        print(f'{i[0]} é o mais pesado, com {i[1]} quilos.')
-    else:
-        print(f'{i[0]} é o mais leve, com {i[1]} quilos.')
-        
 print('=' * 30)
-print(f'{total} pessoas foram cadastradas:')
+print(f'{len(listagem)} pessoas foram cadastradas:')
 print(listagem)
 print('=' * 30)
