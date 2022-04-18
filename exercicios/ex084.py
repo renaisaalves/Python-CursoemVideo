@@ -15,7 +15,11 @@ while True:
         break
 
 for i in listagem:
-
+    if i[1] >= i[1]:
+        print(f'{i[0]} é o mais pesado.')
+    else:
+        print(f'{i[0]} é o mais leve.')
+        
 print('=' * 30)
 print(f'{total} pessoas foram cadastradas:')
 print(listagem)
