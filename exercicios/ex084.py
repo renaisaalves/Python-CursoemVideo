@@ -7,7 +7,7 @@ total = 0
 while True:
     cadastro.append(str(input('Nome: ')).capitalize())
     cadastro.append(int(input('Peso: ')))
-    listagem.append(cadastro[:])
+    listagem.append(cadastro[:]) #a listagem fez uma cópia da lista anterior. Isso é fundamental.
     cadastro.clear()
     total += 1
     resposta = str(input('Quer continuar? [Sim/Não]: ')).upper()
