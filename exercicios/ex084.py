@@ -1,5 +1,7 @@
 #ex084: Faça um programa que leia nome e peso de várias pessoas, guardando tudo em uma lista. No final, mostre:A) Quantas pessoas foram cadastradas. B) Uma listagem com as pessoas mais pesadas. C) Uma listagem com as pessoas mais leves.
 
+# NÃO CONSEGUI FAZER 
+
 cadastro = []
 listagem = list()
 total = 0
@@ -19,12 +21,8 @@ for i in listagem:
         print(f'{i[0]} é o mais pesado, com {i[1]} quilos.')
     else:
         print(f'{i[0]} é o mais leve, com {i[1]} quilos.')
+        
 print('=' * 30)
 print(f'{total} pessoas foram cadastradas:')
 print(listagem)
 print('=' * 30)
-
-#ALGORITMO
-
-#Eu preciso fazer com que cada peso i[1] seja comparado com o outro valor. 
-
