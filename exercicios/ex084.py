@@ -2,9 +2,12 @@
 
 cadastro = []
 
-for i in range(0, 8):
-    nome = str(input('Nome: '))
+while True:
+    nome = str(input('Nome: ')).strip().capitalize()
     peso = int(input('Peso: '))
     cadastro.append(nome)
     cadastro.append(peso)
+    resposta = str(input('Quer continuar? [Sim/Não]: ')).upper()
+    if resposta not in 'SIMS':
+        break
 print(cadastro)
