@@ -13,13 +13,12 @@ while True:
     resposta = str(input('Quer continuar? [Sim/Não]: ')).upper()
     if resposta not in 'SIMS':
         break
-
+    
 for i in listagem:
-    if i[1] :
-        print(f'{i[0]} é o mais pesado.')
+    if i[1] > i-1[1]:
+        print(f'{i[0]} é o mais pesado, com {i[1]} quilos.')
     else:
-        print(f'{i[0]} é o mais leve.')
-        
+        print(f'{i[0]} é o mais leve, com {i[1]} quilos.')
 print('=' * 30)
 print(f'{total} pessoas foram cadastradas:')
 print(listagem)
