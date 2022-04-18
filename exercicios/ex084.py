@@ -15,7 +15,7 @@ while True:
         break
 
 for i in listagem:
-    if i[1] >= i[1]:
+    if i[1] > 1 + i[1]:
         print(f'{i[0]} é o mais pesado.')
     else:
         print(f'{i[0]} é o mais leve.')
