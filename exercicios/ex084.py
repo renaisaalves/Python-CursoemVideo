@@ -15,11 +15,10 @@ while True:
         break
 
 for i in listagem:
-    print(f'i {i} listagem {listagem}')
-    
+
 print('=' * 30)
+print(f'{total} pessoas foram cadastradas:')
 print(listagem)
-print(f'{total} pessoas foram cadastradas.')
 print('=' * 30)
 
 #ALGORITMO
