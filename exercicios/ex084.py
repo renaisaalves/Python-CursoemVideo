@@ -4,7 +4,6 @@
 
 cadastro = []
 listagem = list()
-total = 0
 
 while True:
     cadastro.append(str(input('Nome: ')).capitalize())
