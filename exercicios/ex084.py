@@ -13,6 +13,10 @@ while True:
     resposta = str(input('Quer continuar? [Sim/Não]: ')).upper()
     if resposta not in 'SIMS':
         break
+
+for i in listagem:
+    print(f'i {i} listagem {listagem}')
+    
 print('=' * 30)
 print(listagem)
 print(f'{total} pessoas foram cadastradas.')
