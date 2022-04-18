@@ -2,10 +2,11 @@
 
 cadastro = list([''], [''], [''], [''])
 
-while True:
+for i in cadastro:
     nome = str(input('Nome: '))
     peso = int(input('Peso: '))
     cadastro.append(nome)
     cadastro.append(peso)
     break
 print(cadastro)
+print(cadastro[0][0])
