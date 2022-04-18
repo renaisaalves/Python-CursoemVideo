@@ -13,8 +13,10 @@ while True:
     resposta = str(input('Quer continuar? [Sim/Não]: ')).upper()
     if resposta not in 'SIMS':
         break
+print('=' * 30)
 print(listagem)
 print(f'{total} pessoas foram cadastradas.')
+print('=' * 30)
 
 #ALGORITMO
 
