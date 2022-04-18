@@ -27,7 +27,5 @@ print('=' * 30)
 
 #ALGORITMO
 
-#Criamos duas listas (cadastro e listagem)
-#A primeira lista (cadastro) vai armazenar duas informações: nome e peso.
-#Quando eu coloco a primeira lista (cadastro) dentro de uma outra lista (listagem), estou adicionando ['Nome', peso], dessa forma: [['Nome', peso]]
-#Porém, eu LIMPO a lista cadastro. Dessa forma, ela vai armazenar novos valores.
+#Eu preciso fazer com que cada peso i[1] seja comparado com o outro valor. 
+
