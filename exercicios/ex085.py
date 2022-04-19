@@ -2,5 +2,6 @@
 
 valor = list()
 
-for i in range(0, 7):
-    valor.append(int(input('Digite o {}º valor: ')))
+for i in range(1, 8):
+    valor.append(int(input(f'Digite o {i}º valor: ')))
+print(valor)
