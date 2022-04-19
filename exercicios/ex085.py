@@ -4,7 +4,4 @@ valor = list()
 
 for i in range(1, 8):
     valor.append(int(input(f'Digite o {i}º valor: ')))
-    for c in valor:
-        if valor[c] % 2 == 0:
-            print('Deu certo.')
 print(valor)
