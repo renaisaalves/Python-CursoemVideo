@@ -5,8 +5,5 @@ par = list()
 
 for i in range(1, 8):
     valor.append(int(input(f'Digite o {i}º valor: ')))
-    for c in range(valor):
-        if valor[i] % 2 == 0:
-            par.append(valor[i])
+
 print(valor)
-print(par)
