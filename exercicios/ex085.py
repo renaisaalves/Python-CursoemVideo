@@ -1,7 +1,7 @@
 #085: Crie um programa onde o usuário possa digitar sete valores numéricos e cadastre-os em uma lista única que mantenha separados os valores pares e ímpares. No final, mostre os valores pares e ímpares em ordem crescente.
 
 valor = list()
-a = '\033[1;31m' #a de amarelo
+a = '\033[1;33m' #a de amarelo
 v = '\033[1;32m' #v de  verde
 e = '\033[m' #fechando as cores
 
