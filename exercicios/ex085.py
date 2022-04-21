@@ -8,6 +8,6 @@ print(valor)
 
 for c in valor:
     if c % 2 == 1:
-        valor.pop(c)
+        del valor[c]
         valor.append(c)
 print(valor)
