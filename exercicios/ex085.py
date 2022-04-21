@@ -6,6 +6,13 @@ par = list()
 
 for i in range(1, 8):
     valor.append(int(input(f'Digite o {i}º valor: ')))
+valor.sort()
+
+for c in valor:
+    if c % 2 == 0:
+        par.append(c)
+        valor.remove(c)
+
 (print('=' * 30))
 print(f'Lista gerada: {valor}')
 (print('=' * 30))
