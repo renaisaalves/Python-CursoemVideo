@@ -9,10 +9,9 @@ for i in range(1, 8):
 print(valor)
 
 for c in valor:
-    if c % 2 == 1:
-        valor.append(c)
-        impar.append(valor)
+    if c % 2 == 0:
+        impar.append(c)
     else:
-        par.append(valor)
+        par.append(c)
 print(impar)
 print(par)
