@@ -6,8 +6,8 @@ par = list()
 
 for i in range(1, 8):
     valor.append(int(input(f'Digite o {i}º valor: ')))
-    for i in valor:
-        if i % 2 == 1:
+    for c in valor:
+        if c % 2 == 1:
             valor.append(i)
             impar.append(valor)
         else:
