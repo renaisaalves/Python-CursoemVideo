@@ -12,7 +12,7 @@ for t, c in enumerate(valor):
         valor.remove(c)
         valor.append(c)
 print('=' * 30)
-print(f'Em amarelo representa todos os números {a} pares{e}.')
+print(f'Em amarelo representa todos os números {a} pares {e}.')
 print(f'Em verde, todos os números {v}ímpares{e}.')
 print('=' * 30)
 print(valor)
