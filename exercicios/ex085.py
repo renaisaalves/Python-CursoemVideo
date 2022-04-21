@@ -2,20 +2,10 @@
 
 valor = list()
 impar = list()
-e = '\033[m' #fechando as cores
+par = list()
 
 for i in range(1, 8):
     valor.append(int(input(f'Digite o {i}º valor: ')))
-print(valor)
-
-for c in valor:
-    if c % 2 == 1:
-        valor.remove(c)
-        valor.sort()
-        impar.append(c)
-        impar.sort()
-        valor.append(impar)
-print('=' * 30)
-print(f'Números ímpares: {impar}')
-print(f'Lista completa: {valor}')
-print('=' * 30)
+(print('=' * 30))
+print(f'Lista gerada: {valor}')
+(print('=' * 30))
