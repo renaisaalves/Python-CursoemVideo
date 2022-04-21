@@ -13,5 +13,5 @@ for c in valor:
         impar.append(c)
     else:
         par.append(c)
-print(impar)
-print(par)
+print(f'Números pares: {par}')
+print(f'Números ímpares: {impar}')
