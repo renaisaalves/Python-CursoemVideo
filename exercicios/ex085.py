@@ -7,12 +7,12 @@ e = '\033[m' #fechando as cores
 
 for i in range(1, 8):
     valor.append(int(input(f'Digite o {i}º valor: ')))
-for t, c in enumerate(valor):
+for c in valor:
     if c % 2 == 1:
         valor.remove(c)
         valor.append(c)
 print('=' * 30)
-print(f'Em amarelo representa todos os números {a} pares {e}.')
+print(f'Em amarelo representa todos os números {a}pares {e}.')
 print(f'Em verde, todos os números {v}ímpares{e}.')
 print('=' * 30)
 print(valor)
