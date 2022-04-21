@@ -7,11 +7,3 @@ par = list()
 for i in range(1, 8):
     valor.append(int(input(f'Digite o {i}º valor: ')))
 print(valor)
-
-for c in valor:
-    if c % 2 == 0:
-        par.append(c)
-    else:
-        impar.append(c)
-print(f'Números pares: {par.sort()}')
-print(f'Números ímpares: {impar.sort()}')
