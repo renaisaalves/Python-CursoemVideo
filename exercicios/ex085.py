@@ -7,14 +7,16 @@ impar = list()
 for i in range(1, 8):
     valor.append(int(input(f'Digite o {i}º valor: ')))
 valor.sort()
-
-for c in valor:
-    if c % 2 == 1:
-        impar.append(c)
-        valor.remove(c)
-        for h in impar:
-            valor.append(h)
+for n in valor:
+    if n % 2 == 1:
+        impar.append(n)
+    else:
+        par.append(n)
+valor.clear()
+valor.append(par)
+valor.append(impar)
 print(('=' * 30))
+print(f'Números pares: {par}')
 print(f'Números ímpares: {impar}')
 print(f'Lista gerada: {valor}')
 (print('=' * 30))
