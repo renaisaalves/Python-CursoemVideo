@@ -10,8 +10,8 @@ print(valor)
 
 for c in valor:
     if c % 2 == 0:
-        impar.append(c)
-    else:
         par.append(c)
+    else:
+        impar.append(c)
 print(f'Números pares: {par}')
 print(f'Números ímpares: {impar}')
