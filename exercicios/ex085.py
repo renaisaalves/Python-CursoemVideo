@@ -11,5 +11,5 @@ for c in valor:
     if c % 2 == 1:
         valor.remove(c)
         valor.append(c)
-print(f'Em amarelo representa todos os números pares.\n Em verde, todos os números ímpares.')
+print(f'Em amarelo representa todos os números {a}pares{e}.\n Em verde, todos os números {v}ímpares{e}.')
 print(valor)
