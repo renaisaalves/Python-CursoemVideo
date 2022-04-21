@@ -11,8 +11,11 @@ print(valor)
 for c in valor:
     if c % 2 == 1:
         valor.remove(c)
+        valor.sort()
         impar.append(c)
+        impar.sort()
+        valor.append(impar)
 print('=' * 30)
-print(f'Números ímpares: {impar}.')
+print(f'Números ímpares: {impar}')
 print(f'Lista completa: {valor}')
 print('=' * 30)
