@@ -8,8 +8,6 @@ e = '\033[m' #fechando as cores
 for i in range(1, 8):
     valor.append(int(input(f'Digite o {i}º valor: ')))
 for t, c in enumerate(valor):
-    if c % 2 == 1 and t == 0:
-        valor.append('||')
     if c % 2 == 1:
         valor.remove(c)
         valor.append(c)
