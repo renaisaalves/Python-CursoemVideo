@@ -26,3 +26,6 @@ print(f'Números pares: {par}')
 print(f'Números ímpares: {impar}')
 print(f'Lista gerada: {valor}')
 (print('=' * 50))
+
+#Dica: quando você quer criar várias listas dentro de uma, você já pode declarar na seguinte forma: 
+# [[], []]
