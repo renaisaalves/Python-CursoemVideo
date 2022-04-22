@@ -29,3 +29,4 @@ print(f'Lista gerada: {valor}')
 
 #Dica: quando você quer criar várias listas dentro de uma, você já pode declarar na seguinte forma: 
 # [[], []]
+#Supondo que você queira colocar algum valor na lista da esquerda, basta vc escrever o nome da lista maior (que está englobando as duas listas) informando o índice da lista esquerda e depois adicionar esse valor, ex: exemplo[1].append(valor)
