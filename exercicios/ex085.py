@@ -7,6 +7,9 @@ valor = list()
 par = list()
 impar = list()
 
+print('=' * 50)
+print(f'{"FILTRANDO NÚMEROS NA LISTA":^50}')
+print('=' * 50)
 for i in range(1, 8):
     valor.append(int(input(f'Digite o {i}º valor: ')))
 valor.sort()
