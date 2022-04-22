@@ -6,7 +6,7 @@ m2 = []
 
 for i in range(0, 3):
     m0.append(int(input('Digite um número: ')))
-    
+
 print(m0)
 print(m1)
 print(m2)
