@@ -9,6 +9,3 @@ for l in range(0, 3):
     for c in range(0, 3):
         print(f'[{matriz[l][c]:^5}]', end='')
         print()
-for c in matriz:
-    if matriz[c] % 2 == 0:
-        print(f'Números pares: {c}')
