@@ -23,7 +23,6 @@ for p in matriz:
         if i % 2 == 0:
             soma.append(i)
             par = sum(soma)
-print(par)
 
 print(f'\nA soma de todos os valores {b}pares{f} foi: {a}{par}{f} ({soma})')
 print(f'A soma dos valores da {b}terceira coluna{f} foi: {a}paz{f}')
