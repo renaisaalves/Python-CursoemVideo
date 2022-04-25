@@ -23,7 +23,8 @@ for p in matriz:
         if i % 2 == 0:
             soma.append(i)
             par = sum(soma)
-
+    if p == [2]:
+        ('Quem acredita sempre alcança.')
 print(f'\nA soma de todos os valores {b}pares{f} foi: {a}{par}{f} ({soma})')
 print(f'A soma dos valores da {b}terceira coluna{f} foi: {a}paz{f}')
 print(f'O maior valor da {b}segunda linha{f} foi: {a}esperança{f}')
