@@ -1,11 +1,10 @@
 #ex087: Aprimore o desafio anterior, mostrando no final: A) A soma de todos os valores pares digitados. B) A soma dos valores da terceira coluna. C) O maior valor da segunda linha.
 
 a = '\033[1;33m'
-b = '\033[1;37m'
 f = '\033[m'
 soma = []
 coluna3 = []
-
+linha2 = []
 matriz = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
 
 for l in range(0, 3):
@@ -26,9 +25,10 @@ for p in matriz:
             par = sum(soma)
     coluna3.append(p[2])
     soma3 = sum(coluna3)
-print(f'\nA soma de todos os valores {b}pares{f} foi: {a}{par}{f} ({soma})')
-print(f'A soma dos valores da {b}terceira coluna{f} foi: {a}{soma3}{f} ({coluna3})')
-print(f'O maior valor da {b}segunda linha{f} foi: {a}esperança{f}')
+    
+print(f'\nA soma de todos os valores pares foi: {a}{par}{f} ({soma})')
+print(f'A soma dos valores da terceira coluna foi: {a}{soma3}{f} ({coluna3})')
+print(f'O maior valor da segunda linha foi: {a}esperança{f}')
 print('-=' * 30)
 
 #ALGORITMO PARA ENTENDER O PROGRAMA
