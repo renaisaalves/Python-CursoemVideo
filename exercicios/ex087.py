@@ -1,5 +1,8 @@
 #ex087: Aprimore o desafio anterior, mostrando no final: A) A soma de todos os valores pares digitados. B) A soma dos valores da terceira coluna. C) O maior valor da segunda linha.
 
+a = '\033[1;33m'
+f = '\033[m'
+
 matriz = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
 
 for l in range(0, 3):
@@ -12,5 +15,6 @@ for l in range(0, 3):
     for c in range(0, 3):
         print(f'[{matriz[l][c]:^5}]', end='')
     print() 
+print(f'\nA soma de todos os valores pares informados foi: {a}{f}')
 print('-=' * 30)
 
