@@ -24,11 +24,13 @@ for p in matriz:
         if i % 2 == 0:
             soma.append(i)
             par = sum(soma)
-        p[2] 
+    coluna3.append(p[2])
+    soma3 = sum(coluna3)
 print(f'\nA soma de todos os valores {b}pares{f} foi: {a}{par}{f} ({soma})')
-print(f'A soma dos valores da {b}terceira coluna{f} foi: {a}{coluna3}{f}')
+print(f'A soma dos valores da {b}terceira coluna{f} foi: {a}{soma3}{f} ({coluna3})')
 print(f'O maior valor da {b}segunda linha{f} foi: {a}esperança{f}')
 print('-=' * 30)
+
 #ALGORITMO PARA ENTENDER O PROGRAMA
 
 #No primeiro for, as letras l/p estão relacionadas com as listas-secundárias que estão dentro da lista-primária;
