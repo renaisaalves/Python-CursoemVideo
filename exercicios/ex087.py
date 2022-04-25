@@ -8,9 +8,8 @@ matriz = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
 for l in range(0, 3):
     for c in range(0, 3):
         matriz[l][c] = int(input(f'Digite um valor para [{l}, {c}]: '))
-        if matriz[c] % 2 == 0:
-            soma = matriz[c]
-            soma = sum([])
+        if matriz[l][c] % 2 == 0:
+            matriz[l][c] = sum([])
 print('-=' * 30)
 
 print('MATRIZ criada a partir dos valores digitados:\n')
@@ -18,7 +17,7 @@ for l in range(0, 3):
     for c in range(0, 3):
         print(f'[{matriz[l][c]:^5}]', end='')
     print() 
-print(f'\nA soma de todos os valores {a}pares{f} foi: {a}{soma}{f}')
+print(f'\nA soma de todos os valores {a}pares{f} foi: {a}{f}')
 print(f'A soma dos valores da {a}terceira coluna{f} foi: {a}paz{f}')
 print(f'O maior valor da {a}segunda linha{f} foi: {a}esperança{f}')
 print('-=' * 30)
