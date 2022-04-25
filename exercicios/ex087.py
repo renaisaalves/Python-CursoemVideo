@@ -4,7 +4,7 @@ a = '\033[1;33m'
 b = '\033[1;37m'
 f = '\033[m'
 soma = []
-terceiracoluna = []
+coluna3 = []
 
 matriz = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
 
@@ -24,14 +24,11 @@ for p in matriz:
         if i % 2 == 0:
             soma.append(i)
             par = sum(soma)
-        if i == [2]:
-            terceiracoluna.append(i)
-            sum(terceiracoluna)
+        p[2] 
 print(f'\nA soma de todos os valores {b}pares{f} foi: {a}{par}{f} ({soma})')
-print(f'A soma dos valores da {b}terceira coluna{f} foi: {a}{terceiracoluna}{f}')
+print(f'A soma dos valores da {b}terceira coluna{f} foi: {a}{coluna3}{f}')
 print(f'O maior valor da {b}segunda linha{f} foi: {a}esperança{f}')
 print('-=' * 30)
-
 #ALGORITMO PARA ENTENDER O PROGRAMA
 
 #No primeiro for, as letras l/p estão relacionadas com as listas-secundárias que estão dentro da lista-primária;
