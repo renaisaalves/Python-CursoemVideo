@@ -2,6 +2,7 @@
 
 a = '\033[1;33m'
 f = '\033[m'
+soma = []
 
 matriz = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
 
@@ -18,11 +19,9 @@ for l in range(0, 3):
     
 for p in matriz:
     for i in p:
-        pass
-print(matriz)
-print(p)
-print(i, end='')
-
+        if i % 2 == 0:
+            soma.append(i)
+print(soma)
 print(f'\nA soma de todos os valores {a}pares{f} foi: {a}{f}')
 print(f'A soma dos valores da {a}terceira coluna{f} foi: {a}paz{f}')
 print(f'O maior valor da {a}segunda linha{f} foi: {a}esperança{f}')
