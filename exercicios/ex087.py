@@ -28,7 +28,7 @@ linha2 = max(matriz[1])
 
 print(f'\nA soma de todos os valores pares foi: {a}{par}{f} ({soma})')
 print(f'A soma dos valores da terceira coluna foi: {a}{soma3}{f} ({coluna3})')
-print(f'O maior valor da segunda linha foi: {a}{linha2}{f}')
+print(f'O maior valor da segunda linha foi: {a}{linha2}{f} ({matriz[1]})')
 print('-=' * 30)
 
 #ALGORITMO PARA ENTENDER O PROGRAMA
