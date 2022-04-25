@@ -28,3 +28,9 @@ print(f'A soma dos valores da {a}terceira coluna{f} foi: {a}paz{f}')
 print(f'O maior valor da {a}segunda linha{f} foi: {a}esperança{f}')
 print('-=' * 30)
 
+#ALGORITMO PARA ENTENDER O PROGRAMA
+
+#No primeiro for, as letras l/p estão relacionadas com as listas-secundárias que estão dentro da lista-primária;
+#O segundo for c/i estão relacionados com os elementos da listas secundárias 
+
+
