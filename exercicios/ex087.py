@@ -2,6 +2,7 @@
 
 a = '\033[1;33m'
 r = '\033[1;36m'
+v = '\033[1;32m'
 f = '\033[m'
 
 matriz = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
@@ -18,5 +19,6 @@ for l in range(0, 3):
     print() 
 print(f'\nA soma de todos os valores {a}pares{f} foi: {a}amor{f}')
 print(f'A soma dos valores da terceira coluna foi: {r}paz{f}')
+print(f'O maior valor da segunda linha foi: {v}esperança{f}')
 print('-=' * 30)
 
