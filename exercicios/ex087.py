@@ -4,6 +4,7 @@ a = '\033[1;33m'
 b = '\033[1;37m'
 f = '\033[m'
 soma = []
+terceiracoluna = []
 
 matriz = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
 
@@ -23,10 +24,11 @@ for p in matriz:
         if i % 2 == 0:
             soma.append(i)
             par = sum(soma)
-    if p == [2]:
-        ('Quem acredita sempre alcança.')
+        if i == [2]:
+            terceiracoluna.append(i)
+            sum(terceiracoluna)
 print(f'\nA soma de todos os valores {b}pares{f} foi: {a}{par}{f} ({soma})')
-print(f'A soma dos valores da {b}terceira coluna{f} foi: {a}paz{f}')
+print(f'A soma dos valores da {b}terceira coluna{f} foi: {a}{terceiracoluna}{f}')
 print(f'O maior valor da {b}segunda linha{f} foi: {a}esperança{f}')
 print('-=' * 30)
 
