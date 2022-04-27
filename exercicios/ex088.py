@@ -12,7 +12,7 @@ print('~' * 50)
 for c in range(1, num + 1):
     if c > 0:
         jogos.clear()
-    for i in range(0, 7):
+    for i in range(0, 6):
         sorteio = randint(1, 60)
         jogos.append(sorteio)
         jogos.sort()
