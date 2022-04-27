@@ -19,3 +19,4 @@ for c in range(1, num + 1):
         sleep(0.1)
     print(f'{c}º jogo: {jogos}')
 print('~' * 50)
+print(f'{"BOA SORTE!":^50}')
