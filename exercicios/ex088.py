@@ -16,6 +16,6 @@ for c in range(1, num + 1):
         sorteio = randint(1, 60)
         jogos.append(sorteio)
         jogos.sort()
-        sleep(0.2)
+        sleep(0.1)
     print(f'{c}º jogo: {jogos}')
 print('~' * 50)
