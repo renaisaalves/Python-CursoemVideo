@@ -22,12 +22,12 @@ while True:
             a.append(media)
         break
 print(cadastro)
-print('=' * 40)
+print('-' * 40)
 print(f'{"Nº"}{"NOME":^32}{"MÉDIA"}')
 print('-' * 40)
 for p, i in enumerate(cadastro):
     print(p, i[0], i[3])
-print('=' * 40)
+print('-' * 40)
 
 #a = aluno
 #p = posição
