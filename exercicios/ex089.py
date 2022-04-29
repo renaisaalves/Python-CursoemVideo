@@ -23,10 +23,10 @@ while True:
         break
 print(cadastro)
 print('=' * 40)
-print(f'{"Nº"}{"NOME":^20}{"MÉDIA"}')
+print(f'{"Nº"}{"NOME":^32}{"MÉDIA"}')
 print('=' * 40)
 for p, i in enumerate(cadastro):
-    print(p, f'{i[0]:^20}', i[3])
+    print(p, f'{i[0]:^32}', i[3])
 print('-' * 40)
 
 #a = aluno
