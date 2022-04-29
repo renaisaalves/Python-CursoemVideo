@@ -25,5 +25,6 @@ print(cadastro)
 print('=' * 40)
 print(f'{"Nº"}{"NOME":^32}{"MÉDIA"}')
 print('-' * 40)
-print(f'')
+for c, i in enumerate(cadastro):
+    print(c, i[0], i[3])
 print('=' * 40)
