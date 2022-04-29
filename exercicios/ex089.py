@@ -23,6 +23,7 @@ while True:
         break
 print(cadastro)
 print('=' * 40)
-print(f'{"MÉDIAS":^40}')
-print('=' * 40)
 print(f'{"Nº"}{"NOME":^32}{"MÉDIA"}')
+print('-' * 40)
+print(f'')
+print('=' * 40)
