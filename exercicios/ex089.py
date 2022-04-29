@@ -15,7 +15,7 @@ while True:
     aluno.append(nota2)
     cadastro.append(aluno[:])
     aluno.clear()
-    resposta = str(input('Quer continuar? '))
+    resposta = str(input('Quer continuar? ')).upper()
     if resposta not in 'SIMS':
         break
 print(cadastro)
