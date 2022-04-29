@@ -17,6 +17,5 @@ while True:
     aluno.clear()
     resposta = str(input('Quer continuar? '))
     if resposta not in 'SIMS':
-        pass
-    break
+        break
 print(cadastro)
