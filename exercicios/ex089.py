@@ -17,5 +17,8 @@ while True:
     aluno.clear()
     resposta = str(input('Quer continuar? ')).upper()
     if resposta not in 'SIMS':
+        for c in cadastro:
+            media = (c[1] + c[2]) / 2
+            print(media)
         break
 print(cadastro)
