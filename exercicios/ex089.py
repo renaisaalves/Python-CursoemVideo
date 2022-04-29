@@ -26,7 +26,7 @@ print('=' * 40)
 print(f'{"Nº"}{"NOME":^32}{"MÉDIA"}')
 print('=' * 40)
 for p, i in enumerate(cadastro):
-    print(f'{p}, {i[0]:^32}, {i[3]}')
+    print(p, f'{i[0]:^32}', i[3])
 print('-' * 40)
 
 #a = aluno
