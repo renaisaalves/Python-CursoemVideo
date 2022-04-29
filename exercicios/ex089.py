@@ -7,6 +7,7 @@ print('='* 40)
 print(f'{"BOLETIM ESCOLAR":^40}')
 print('='* 40)
 while True:
+    print('-' * 20)
     nome = str(input('Nome: ')).capitalize()
     nota1 = float(input('Nota 1: '))
     nota2 = float(input('Nota 2: '))
@@ -17,10 +18,13 @@ while True:
     cadastro.append(aluno[:])
     aluno.clear()
     resposta = str(input('Quer continuar? ')).upper()
-    print('-' * 20)
     if resposta not in 'SIMS':
         for aluno in cadastro:
             media = (aluno[1] + aluno[2]) / 2
             aluno.append(media)
         break
 print(cadastro)
+print('=' * 40)
+print('MÉDIAS')
+print('=' * 40)
+print(f'{"Nº":^10}{"NOME":^10}{"MÉDIA":^10}')
