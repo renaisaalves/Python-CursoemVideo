@@ -2,9 +2,9 @@
 
 aluno = []
 cadastro = list()
-print('='* 40)
+print('-'* 40)
 print(f'{"BOLETIM ESCOLAR":^40}')
-print('='* 40)
+print('-'* 40)
 while True:
     
     nome = str(input('Nome: ')).capitalize()
@@ -26,18 +26,16 @@ print(f'{"Nº"}{"NOME":^32}{"MÉDIA"}')
 print('=' * 40)
 for p, i in enumerate(cadastro):
     print(p, f'{i[0]:^32}', i[3])
-print('-' * 40)
+print('=' * 40)
 while True:
     num = int(input('Mostrar notas de qual aluno? (Digite 999 para sair)\nNº: '))
     if num == 999:
-        print('-' * 40)
         print(f'{"VOLTE SEMPRE!":^40}')
-        print('-' * 40)
         break
     if cadastro[num]:
-        print('=' * 40)
+        print('-' * 40)
         print(f'As notas de {cadastro[num][0]} são: {cadastro[num][1]} e {cadastro[num][2]}.')
-        print('=' * 40)
+        print('-' * 40)
 
 #a = aluno
 #p = posição
