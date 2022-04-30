@@ -33,7 +33,7 @@ print('-' * 40)
 while True:
     num = int(input('Mostrar notas de qual aluno? (Selecione o número correspondente)\nNº: '))
     if cadastro[num]:
-        print(f'As notas individuais de {cadastro[num][0]} são: {cadastro[num][1]} e {cadastro[num][2]}.')
+        print(f'As notas de {cadastro[num][0]} são: {cadastro[num][1]} e {cadastro[num][2]}.')
     if num == 999:
         break
 
