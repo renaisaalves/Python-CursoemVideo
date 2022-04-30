@@ -36,6 +36,7 @@ while True:
         print(f'As notas individuais de {cadastro[num][0]} são: {cadastro[num][1]} e {cadastro[num][2]}.')
     if num == 999:
         break
+
 #a = aluno
 #p = posição
 #i = valor
