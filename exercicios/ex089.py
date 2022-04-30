@@ -32,6 +32,8 @@ print(f'{"CONSULTA INDIVIDUAL":^40}\nVocê pode acessar as notas individualmente
 print('-' * 40)
 while True:
     num = int(input('Mostrar notas de qual aluno? (Selecione o número correspondente)\nNº: '))
+    if num != type(int):
+        print(f'Ops! Digite um número ao invés do nome. ')
     if cadastro[num]:
         print(f'As notas de {cadastro[num][0]} são: {cadastro[num][1]} e {cadastro[num][2]}.')
     if num == 999:
