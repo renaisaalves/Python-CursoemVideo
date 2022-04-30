@@ -31,7 +31,7 @@ print('-' * 40)
 print(f'{"CONSULTA INDIVIDUAL":^40}\nVocê pode acessar as notas individualmente. Para sair, digite 999.')
 print('-' * 40)
 while True:
-    num = int(input('Mostrar notas de qual aluno? (Selecione o número correspondente)\nNº: '))
+    num = int(input('Mostrar notas de qual aluno?\nNº: '))
     if num != type(int):
         print(f'Ops! Digite um número ao invés do nome. ')
     else:
