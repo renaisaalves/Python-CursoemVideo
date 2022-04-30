@@ -30,6 +30,7 @@ print('=' * 40)
 while True:
     num = int(input('Mostrar notas de qual aluno? (Digite 999 para sair)\nNº: '))
     if num == 999:
+        print()
         print(f'{"VOLTE SEMPRE!":^40}')
         break
     if cadastro[num]:
