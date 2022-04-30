@@ -28,7 +28,12 @@ print('=' * 40)
 for p, i in enumerate(cadastro):
     print(p, f'{i[0]:^32}', i[3])
 print('-' * 40)
-
+while True:
+    num = int(input('Mostrar notas de qual aluno? (Selecione o número correspondente)\nNº: '))
+    if cadastro[num]:
+        print(f'As notas individuais de {cadastro[num]} são: {cadastro[num][1]} e {cadastro[num][2]}.')
+    if num == 999:
+        break
 #a = aluno
 #p = posição
 #i = valor
