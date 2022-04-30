@@ -2,11 +2,12 @@
 
 aluno = []
 cadastro = list()
-
-print('-'* 40)
+cont = 0
+print('='* 40)
 print(f'{"BOLETIM ESCOLAR":^40}')
-print('-'* 40)
+print('='* 40)
 while True:
+    
     nome = str(input('Nome: ')).capitalize()
     nota1 = float(input('Nota 1: '))
     nota2 = float(input('Nota 2: '))
@@ -16,6 +17,9 @@ while True:
     cadastro.append(aluno[:])
     aluno.clear()
     resposta = str(input('Quer continuar? ')).upper()
+    cont += 1
+    if cont >= 1:
+        print('-' * 40)
     if resposta not in 'SIMS':
         for a in cadastro:
             media = (a[1] + a[2]) / 2
@@ -27,17 +31,19 @@ print('=' * 40)
 for p, i in enumerate(cadastro):
     print(p, f'{i[0]:^32}', i[3])
 print('-' * 40)
-print(f'{"CONSULTA INDIVIDUAL":^40}\nVocê pode acessar as notas individualmente.\nPara sair, digite 999.')
+print(f'{"CONSULTA INDIVIDUAL":^40}\nPressione 999 para sair.')
 print('-' * 40)
 while True:
     num = int(input('Mostrar notas de qual aluno?\nNº: '))
     if num == 999:
+        print('-' * 40)
         print(f'{"VOLTE SEMPRE!":^40}')
+        print('-' * 40)
         break
     if cadastro[num]:
-        print('=' * 40)
+        print('=~' * 40)
         print(f'As notas de {cadastro[num][0]} são: {cadastro[num][1]} e {cadastro[num][2]}.')
-        print('=' * 40)
+        print('=~' * 40)
 
 #a = aluno
 #p = posição
