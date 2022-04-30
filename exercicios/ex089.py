@@ -32,10 +32,10 @@ print(f'{"CONSULTA INDIVIDUAL":^40}\nVocê pode acessar as notas individualmente
 print('-' * 40)
 while True:
     num = int(input('Mostrar notas de qual aluno?\nNº: '))
-    if cadastro[num]:
-        print(f'As notas de {cadastro[num][0]} são: {cadastro[num][1]} e {cadastro[num][2]}.')
     if num == 999:
         break
+    if cadastro[num]:
+        print(f'As notas de {cadastro[num][0]} são: {cadastro[num][1]} e {cadastro[num][2]}.')
 
 #a = aluno
 #p = posição
