@@ -27,10 +27,8 @@ print('=' * 40)
 for p, i in enumerate(cadastro):
     print(p, f'{i[0]:^32}', i[3])
 print('-' * 40)
-print(f'{"CONSULTA INDIVIDUAL":^40}\nPressione 999 para sair.')
-print('-' * 40)
 while True:
-    num = int(input('Mostrar notas de qual aluno?\nNº: '))
+    num = int(input('Mostrar notas de qual aluno? (Digite 999 para sair)\nNº: '))
     if num == 999:
         print('-' * 40)
         print(f'{"VOLTE SEMPRE!":^40}')
