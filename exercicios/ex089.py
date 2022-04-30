@@ -40,3 +40,6 @@ while True:
 #a = aluno
 #p = posição
 #i = valor
+
+#DICA PARA FAZER LISTA
+#list.append([nome, [nota1, nota2], media])
