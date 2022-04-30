@@ -2,7 +2,6 @@
 
 aluno = []
 cadastro = list()
-cont = 0
 print('='* 40)
 print(f'{"BOLETIM ESCOLAR":^40}')
 print('='* 40)
@@ -17,9 +16,6 @@ while True:
     cadastro.append(aluno[:])
     aluno.clear()
     resposta = str(input('Quer continuar? ')).upper()
-    cont += 1
-    if cont >= 1:
-        print('-' * 40)
     if resposta not in 'SIMS':
         for a in cadastro:
             media = (a[1] + a[2]) / 2
@@ -41,9 +37,9 @@ while True:
         print('-' * 40)
         break
     if cadastro[num]:
-        print('=~' * 40)
+        print('=' * 40)
         print(f'As notas de {cadastro[num][0]} são: {cadastro[num][1]} e {cadastro[num][2]}.')
-        print('=~' * 40)
+        print('=' * 40)
 
 #a = aluno
 #p = posição
