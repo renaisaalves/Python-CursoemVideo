@@ -21,7 +21,6 @@ while True:
             media = (a[1] + a[2]) / 2
             a.append(media)
         break
-print(cadastro)
 print('=' * 40)
 print(f'{"Nº"}{"NOME":^32}{"MÉDIA"}')
 print('=' * 40)
