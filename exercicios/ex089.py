@@ -34,8 +34,9 @@ while True:
     num = int(input('Mostrar notas de qual aluno? (Selecione o número correspondente)\nNº: '))
     if num != type(int):
         print(f'Ops! Digite um número ao invés do nome. ')
-    if cadastro[num]:
-        print(f'As notas de {cadastro[num][0]} são: {cadastro[num][1]} e {cadastro[num][2]}.')
+    else:
+        if cadastro[num]:
+            print(f'As notas de {cadastro[num][0]} são: {cadastro[num][1]} e {cadastro[num][2]}.')
     if num == 999:
         break
 
