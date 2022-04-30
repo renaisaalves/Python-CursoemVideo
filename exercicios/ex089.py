@@ -6,7 +6,6 @@ print('-'* 40)
 print(f'{"BOLETIM ESCOLAR":^40}')
 print('-'* 40)
 while True:
-    
     nome = str(input('Nome: ')).capitalize()
     nota1 = float(input('Nota 1: '))
     nota2 = float(input('Nota 2: '))
