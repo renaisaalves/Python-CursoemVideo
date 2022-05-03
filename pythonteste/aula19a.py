@@ -15,7 +15,10 @@ variavel['sexo']='M'
 # Eu também posso deletar um item do meu dicionário, por exemplo:
 del variavel['idade']
 
-#ESTRUTURA DE REPETIÇÃO
+#Vamos imaginar que eu tenha um dicionário de um filme:
+filme = {'titulo': 'Star Wars', 'ano': 1977, 'diretor': 'George Lucas'}
+print(filme.values()) #vai imprimir os valores ('Star Wars', 1977, 'George Lucas')
+print(filme.keys()) #vai imprimir as chaves ('titulo', 'ano', 'diretor')
+print(filme.items()) #vai imprimir o dicionário todo. 
 
-#Vamos imaginar que eu
 
