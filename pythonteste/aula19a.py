@@ -45,3 +45,14 @@ print(f'A {pessoas["nome"]} tem {pessoas["idade"]} anos.')
 print(pessoas.values())
 print(pessoas.keys())
 print(pessoas.items())
+
+for k in pessoas.values():
+    print(k)
+    
+del pessoas['sexo']
+pessoas['nome':] = ['Katerine']
+pessoas['peso':] = [60]
+for k, v in pessoas.items():
+    print(f'{k} = {v}')
+    
+
