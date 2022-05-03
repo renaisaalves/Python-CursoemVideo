@@ -21,4 +21,12 @@ print(filme.values()) #vai imprimir os valores ('Star Wars', 1977, 'George Lucas
 print(filme.keys()) #vai imprimir as chaves ('titulo', 'ano', 'diretor')
 print(filme.items()) #vai imprimir o dicionário todo. 
 
+#ESTRUTURA DE REPETIÇÃO
+
+#Com o meu dicionário criado, eu posso usar o laço para representar os meus dados.
+for k, v in filme.items():
+    print(f'O {k} é {v}')
+    
+#k = representa os índices. Então sempre o primeiro do for estará relacionado ao índice. Dessa forma, o nome do primeiro índice é 'titulo', o nome do segundo índice é 'ano' e o nome do terceiro índice é 'diretor' e assim sucessivamente. Isso serve para qualquer estrutura. Guarde que o índice nos dicionários são conhecidos como keys. 
+#v = representa os valores (values). O segundo do for (após a vírgula) estará relacionado aos valores. Nesse exemplo, o primeiro valor é 'Star Wars', o segundo valor é 1977 e o terceiro valor é 'George Lucas'.
 
