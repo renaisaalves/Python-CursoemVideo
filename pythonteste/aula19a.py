@@ -42,3 +42,6 @@ print(locadora[0]['ano']) #1977
 
 pessoas = {'nome': 'Renaisa', 'sexo': 'F', 'idade': 23}
 print(f'A {pessoas["nome"]} tem {pessoas["idade"]} anos.')
+print(pessoas.values())
+print(pessoas.keys())
+print(pessoas.items())
