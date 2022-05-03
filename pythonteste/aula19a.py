@@ -39,4 +39,5 @@ print(locadora)
 
 #Se eu quiser exibir um determinado item da minha lista, farei dessa forma:
 print(locadora[0]['ano']) #1977
-print(locadora[2]['titulo']) #Matriz
+
+locadora = [[{'titulo': 'Star Wars', 'ano': 1977, 'diretor': 'George Lucas'}], [{'titulo': 'Avangers', 'ano': 2012, 'diretor': 'Joss Whedan'}], [{'titulo': 'Matrix', 'ano': 1999, 'diretor': 'Wachawskt'}]]
