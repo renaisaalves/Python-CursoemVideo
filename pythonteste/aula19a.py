@@ -30,3 +30,13 @@ for k, v in filme.items():
 #k = representa os índices. Então sempre o primeiro do for estará relacionado ao índice. Dessa forma, o nome do primeiro índice é 'titulo', o nome do segundo índice é 'ano' e o nome do terceiro índice é 'diretor' e assim sucessivamente. Isso serve para qualquer estrutura. Guarde que o índice nos dicionários são conhecidos como keys. 
 #v = representa os valores (values). O segundo do for (após a vírgula) estará relacionado aos valores. Nesse exemplo, o primeiro valor é 'Star Wars', o segundo valor é 1977 e o terceiro valor é 'George Lucas'.
 
+#COLOCANDO DICIONÁRIOS DENTRO DE LISTAS
+
+#É possível colocar dicionários dentro de listas! Vamos ver como isso funciona na prática.
+locadora = []
+locadora.append(filme)
+print(locadora)
+
+#Se eu quiser exibir um determinado item da minha lista, farei dessa forma:
+print(locadora[0]['ano']) #1977
+print(locadora[2]['titulo']) #Matriz
