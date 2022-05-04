@@ -50,7 +50,7 @@ for k in pessoas.values():
     print(k)
     
 del pessoas['sexo']
-pessoas['nome':] = ['Katerine']
+#pessoas['nome':] = ['Katerine']
 pessoas['peso':] = [60]
 for k, v in pessoas.items():
     print(f'{k} = {v}')
