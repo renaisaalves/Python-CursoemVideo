@@ -4,4 +4,5 @@ from random import randint
 jogador = list()
 
 for c in range(0, 4):
-    jogador.append()
+    jogador.append(randint(0, 100))
+print(jogador)
