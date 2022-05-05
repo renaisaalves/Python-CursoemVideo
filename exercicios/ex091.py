@@ -1,10 +1,6 @@
 #091: Crie um programa onde 4 jogadores joguem um dado e tenham resultados aleatórios. Guarde esses resultados em um dicionário em Python. No final, coloque esse dicionário em ordem, sabendo que o vencedor tirou o maior número no dado.
 
 from random import randint
-jogador = list()
-dicionario = dict()
+resultado = dict()
 
-for c in range(0, 4):
-    jogador.append(randint(0, 100))
-print(jogador)
-dicionario = {'jogador': ''}
+jogador = randint(0, 100)
