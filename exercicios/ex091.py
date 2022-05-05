@@ -4,3 +4,5 @@ from random import randint
 resultado = dict()
 
 jogador = randint(0, 100)
+resultado = {'jogador1': jogador}
+print(resultado)
