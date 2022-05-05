@@ -9,4 +9,7 @@ if media > 5:
 else:
     situação = 'Reprovado'
 dicionario = {'aluno': nome, 'media': media, 'situação': situação}
-print(dicionario)
+print(f'Nome é igual a {dicionario["aluno"]}')
+print(f'Sua média é {dicionario["media"]}')
+print(f'Sua situação é {dicionario["situação"]}')
+      
