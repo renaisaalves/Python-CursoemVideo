@@ -2,7 +2,9 @@
 
 from random import randint
 jogador = list()
+dicionario = dict()
 
 for c in range(0, 4):
     jogador.append(randint(0, 100))
 print(jogador)
+dicionario = {'jogador': ''}
