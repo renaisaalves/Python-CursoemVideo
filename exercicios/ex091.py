@@ -3,6 +3,5 @@
 from random import randint
 
 jogador = dict()
-for c in range(0, 5):
-    jogador = randint(1, 6)
+jogador = randint(1, 6)
 print(jogador)
