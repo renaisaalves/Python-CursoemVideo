@@ -2,5 +2,5 @@
 
 from random import randint
 
-numeros = {'sorteados': randint(1,6)}
+numeros = {'sorteados': 1}
 print(numeros)
