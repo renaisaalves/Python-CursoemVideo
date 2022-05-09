@@ -2,6 +2,4 @@
 
 from random import randint
 
-jogador = dict()
-jogador = randint(1, 6)
-print(jogador)
+numeros = {'sorteados': randint(1,6)}
