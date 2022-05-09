@@ -3,3 +3,4 @@
 from random import randint
 
 numeros = {'sorteados': randint(1,6)}
+print(numeros)
