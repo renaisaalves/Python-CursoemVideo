@@ -2,5 +2,10 @@
 
 from random import randint
 
+sorteados = list()
+
+for c in range(0, 5):
+    num = randint(1, 6)
+    sorteados.append(num)
 numeros = {'sorteados': 1}
 print(numeros)
