@@ -3,6 +3,7 @@
 from random import randint
 
 sorteados = list()
+sorteio = list()
 
 for c in range(0, 4):
     num = randint(1, 6)
