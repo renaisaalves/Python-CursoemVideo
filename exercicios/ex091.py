@@ -4,7 +4,7 @@ from random import randint
 
 sorteados = list()
 
-for c in range(0, 5):
+for c in range(0, 4):
     num = randint(1, 6)
     sorteados.append(num)
 numeros = {'jogador1': sorteados[0], 'jogador2': sorteados[1], 'jogador3': sorteados[2], 'jogador4': sorteados[4]}
