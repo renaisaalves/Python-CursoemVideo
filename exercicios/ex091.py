@@ -9,11 +9,3 @@ for c in range(0, 4):
     sorteados.append(num)
 numeros = {'jogador 1': sorteados[0], 'jogador 2': sorteados[1], 'jogador 3': sorteados[2], 'jogador 4': sorteados[3]}
 print(numeros)
-
-sorteio = dict()
-
-sorteio['jogador 1'] = randint(1, 6)
-sorteio['jogador 2'] = randint(1, 6)
-sorteio['jogador 3'] = randint(1, 6)
-sorteio['jogador 4'] = randint(1, 6)
-print(sorteio)
