@@ -9,12 +9,5 @@ for c in range(0, 4):
     sorteados.append(num)
 numeros = {'jogador 1': sorteados[0], 'jogador 2': sorteados[1], 'jogador 3': sorteados[2], 'jogador 4': sorteados[3]}
 print(numeros)
-for j, m in numeros:
-    if j == 'jogador 1':
-        maior = menor = m
-    else:
-        if m > maior:
-            maior = m
-            ganhador = j
-print(f'O vencedor foi o jogador {j}. Ele tirou o número {maior}!')
+
             
