@@ -13,4 +13,5 @@ print(numeros)
 
 for j, n in numeros.items():
     if j == 'jogador 1':
-        print('Estou tentando')
+        maior = n
+        
