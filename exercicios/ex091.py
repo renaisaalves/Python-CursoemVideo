@@ -13,5 +13,3 @@ print(numeros)
 
 for j, n in numeros.items():
     print(f'O {j} acertou {n}')
-
-        
