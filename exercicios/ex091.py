@@ -8,7 +8,7 @@ sorteio = list()
 for c in range(0, 4):
     num = randint(1, 6)
     sorteados.append(num)
-numeros = {'jogador1': sorteados[0], 'jogador2': sorteados[1], 'jogador 3': sorteados[2], 'jogador 4': sorteados[3]}
+numeros = {'jogador1': sorteados[0], 'jogador2': sorteados[1], 'jogador3': sorteados[2], 'jogador4': sorteados[3]}
 print(numeros)
 
 for j, n in numeros.items():
