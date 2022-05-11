@@ -15,3 +15,6 @@ numeros = {'jogador1': sorteados[0], 'jogador2': sorteados[1], 'jogador3': sorte
 for j, n in numeros.items():
     sleep(0.5)
     print(f'O {j} tirou {n}')
+print('=' * 30)
+print(f'{"RANK DO SORTEIO":^30}')
+print('=' * 30)
