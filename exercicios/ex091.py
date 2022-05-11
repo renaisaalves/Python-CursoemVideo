@@ -12,6 +12,6 @@ numeros = {'jogador1': sorteados[0], 'jogador2': sorteados[1], 'jogador3': sorte
 print(numeros)
 
 for j, n in numeros.items():
-    if j == 'jogador 1':
-        maior = n
+    print(f'O {j} acertou {n}')
+
         
