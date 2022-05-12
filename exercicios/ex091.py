@@ -18,3 +18,4 @@ for j, n in numeros.items():
 print('=' * 30)
 print(f'{"RANK DO SORTEIO":^30}')
 print('=' * 30)
+
