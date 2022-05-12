@@ -9,7 +9,8 @@ print('=' * 30)
 print(f'{"SORTEIO DE DADO":^30}')
 print('=' * 30)
 for c in range(0, 4):
-    sorteados.append(randint(1, 6))
+    num = randint(1, 6)
+    sorteados.append(num)
 numeros = {'jogador1': sorteados[0], 'jogador2': sorteados[1], 'jogador3': sorteados[2], 'jogador4': sorteados[3]}
 for j, n in numeros.items():
     sleep(0.5)
