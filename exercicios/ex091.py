@@ -14,6 +14,9 @@ for j, n in numeros.items():
 print('=' * 30)
 print(f'{"RANK DO SORTEIO":^30}')
 print('=' * 30)
-ranking = dict()
+ranking = list()
 ranking = sorted(numeros.items(), key=itemgetter(1), reverse=True)
 print(ranking)
+for i, v in enumerate(ranking):
+    print(f'{i} lugar: {v[0]} com {v[1]}')
+    sleep(0.5)
