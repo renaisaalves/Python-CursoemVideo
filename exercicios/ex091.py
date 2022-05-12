@@ -3,15 +3,10 @@
 from random import randint
 from time import sleep
 
-sorteados = list()
-
 print('=' * 30)
 print(f'{"SORTEIO DE DADO":^30}')
 print('=' * 30)
-for c in range(0, 4):
-    num = randint(1, 6)
-    sorteados.append(num)
-numeros = {'jogador1': sorteados[0], 'jogador2': sorteados[1], 'jogador3': sorteados[2], 'jogador4': sorteados[3]}
+numeros = {'jogador1': randint(1, 6), 'jogador2': randint(1, 6), 'jogador3': randint(1, 6), 'jogador4': randint(1, 6)}
 for j, n in numeros.items():
     sleep(0.5)
     print(f'O {j} tirou {n}')
