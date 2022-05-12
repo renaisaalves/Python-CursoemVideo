@@ -2,6 +2,7 @@
 
 from random import randint
 from time import sleep
+from operator import itemgetter
 
 print('=' * 30)
 print(f'{"SORTEIO DE DADO":^30}')
@@ -13,3 +14,6 @@ for j, n in numeros.items():
 print('=' * 30)
 print(f'{"RANK DO SORTEIO":^30}')
 print('=' * 30)
+ranking = dict()
+ranking = sorted(numeros.items(), key=itemgetter(1))
+print(ranking)
