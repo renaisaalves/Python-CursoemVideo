@@ -3,3 +3,5 @@
 nome = str(input('Nome: '))
 anonasc = int(input('Ano de nascimento: '))
 cartrab = int(input('Carteira de Trabalho: '))
+if anonasc - 2022:
+    
