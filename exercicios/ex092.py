@@ -7,4 +7,4 @@ idade = anonasc - 2002
 cadastro = {'nome': nome, 'idade': idade, 'CTPS': cartrab}
 if cartrab != 0:
     anocontract = int(input('Ano de contratação: '))
-    
+print(cadastro)
