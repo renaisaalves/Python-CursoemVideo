@@ -3,3 +3,4 @@
 nome = str(input('Nome: '))
 anonasc = int(input('Ano de nascimento: '))
 cartrab = int(input('Carteira de Trabalho: '))
+cadastro = {'nome': nome, 'idade': idade, 'CTPS': cartrab}
