@@ -3,4 +3,8 @@
 nome = str(input('Nome: '))
 anonasc = int(input('Ano de nascimento: '))
 cartrab = int(input('Carteira de Trabalho: '))
-cadastro = {'nome': nome, 'idade': idade, 'CTPS': cartrab}
+idade = anonasc - 2002
+if cartrab == 0:
+    cadastro = {'nome': nome, 'idade': idade, 'CTPS': cartrab}
+else:
+    cadastro
