@@ -3,9 +3,10 @@
 nome = str(input('Nome: '))
 anonasc = int(input('Ano de nascimento: '))
 cartrab = int(input('Carteira de Trabalho: '))
-idade = anonasc - 2002
+idade = anonasc - 2022
 cadastro = {'nome': nome, 'idade': idade, 'CTPS': cartrab}
 if cartrab != 0:
     anocontract = int(input('Ano de contratação: '))
     salario = float(input('Salário: '))
+    
 print(cadastro)
