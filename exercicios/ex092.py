@@ -9,4 +9,5 @@ if cartrab != 0:
     anocontract = int(input('Ano de contratação: '))
     salario = float(input('Salário (R$): '))
     aposentadoria = idade + 15
+    cadastro + {'aposentadoria': aposentadoria, 'ano de contratação': anocontract, 'salário': salario}
 print(cadastro)
