@@ -8,5 +8,5 @@ cadastro = {'nome': nome, 'idade': idade, 'CTPS': cartrab}
 if cartrab != 0:
     anocontract = int(input('Ano de contratação: '))
     salario = float(input('Salário (R$): '))
-    
+    aposentadoria = idade + 15
 print(cadastro)
