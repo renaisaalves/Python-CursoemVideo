@@ -12,4 +12,4 @@ if cartrab != 0:
     aposentadoria = idade + 15
     cadastro1.copy(cadastro)
     cadastro1 = {'aposentadoria': aposentadoria, 'ano de contratação': anocontract, 'salário': salario}
-print(cadastro)
+print(cadastro1)
