@@ -11,4 +11,6 @@ if cartrab != 0:
     salario = float(input('Salário (R$): '))
     aposentadoria = idade + 15
     #{'aposentadoria': aposentadoria, 'ano de contratação': anocontract, 'salário': salario}
+print('=' * 30)
+print(f'')
 print(cadastro)
