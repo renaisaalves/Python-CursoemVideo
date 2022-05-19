@@ -5,11 +5,10 @@ nome = str(input('Nome: '))
 anonasc = int(input('Ano de nascimento: '))
 cartrab = int(input('Carteira de Trabalho: '))
 idade = date.today().year - anonasc
-cadastro = {'nome': nome, 'idade': idade, 'CTPS': cartrab}
 if cartrab != 0:
     anocontract = int(input('Ano de contratação: '))
     salario = float(input('Salário (R$): '))
     aposentadoria = idade + 15
-    #{'aposentadoria': aposentadoria, 'ano de contratação': anocontract, 'salário': salario}
+cadastro = {'nome': nome, 'idade': idade, 'CTPS': cartrab, 'aposentadoria': aposentadoria, 'ano de contratação': anocontract, 'salário': salario}
 print('=' * 30)
 print(cadastro)
