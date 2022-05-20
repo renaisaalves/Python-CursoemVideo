@@ -11,5 +11,5 @@ if cartrab != 0:
     aposentadoria = idade + 15
 cadastro = {'nome': nome, 'idade': idade, 'CTPS': cartrab, 'aposentadoria': aposentadoria, 'ano de contratação': anocontract, 'salário': salario}
 print('=' * 30)
-for c, i in cadastro:
+for c, i in cadastro.items():
     print(f'{c} tem o valor {i}')
