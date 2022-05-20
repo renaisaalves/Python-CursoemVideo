@@ -5,9 +5,10 @@ cadastro = dict()
 cadastro['nome'] = str(input('Nome: '))
 cadastro['idade'] = int(input('Ano de nascimento: '))
 cadastro['cartrab'] = int(input('Carteira de Trabalho: '))
-idade = date.today().year - cadastro['idade']
+cadastro['idade'] = date.today().year - cadastro['idade']
 if cadastro['cartrab'] != 0:
     cadastro['contratacao'] = int(input('Ano de contratação: '))
+    cadastro['aposentadoria'] = cadastro['idade'] + 35
 print('=' * 30)
 for c, i in cadastro.items():
     print(f'{c} tem o valor {i}')
