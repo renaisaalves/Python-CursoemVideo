@@ -3,3 +3,6 @@
 dados = dict()
 
 dados['jogador'] = str(input('Nome: ')).capitalize()
+dados['partidas'] = int(input('Nº de partidas: '))
+for c in dados.items():
+    print('deu certo')
