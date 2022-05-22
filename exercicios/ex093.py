@@ -10,5 +10,7 @@ for c in range(partidas):
     gol = int(input(f'Quantos gols você fez na {c} partida? '))
     gols.append(gol)
     total = total + gol
+print('*' * 30)
 dados = {'jogador': nome, 'gols': gols, 'total': total}
-
+print('*' * 30)
+print('*' * 30)
