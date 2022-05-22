@@ -11,9 +11,9 @@ for c in range(partidas):
     gols.append(gol)
     total = total + gol
 dados = {'jogador': nome, 'gols': gols, 'total': total}
-print('*' * 30)
+print('=' * 30)
 print(dados)
-print('*' * 30)
+print('=' * 30)
 for c, v in dados.items():
     print(f'O campo {c} tem o valor {v}')
-print('*' * 30)
+print('=' * 30)
