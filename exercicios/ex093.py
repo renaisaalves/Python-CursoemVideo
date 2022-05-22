@@ -17,4 +17,7 @@ print('=' * 30)
 for c, v in dados.items():
     print(f'O campo {c} tem o valor {v}')
 print('=' * 30)
-print(f'O jogador {dados["jogador"]} jogou {dados["total"]}')
+print(f'O jogador {dados["jogador"]} jogou {partidas} partidas.')
+for c, g in range(partidas):
+    print(f'Na partida {c}, fez {g}')
+print(f'Foi um total de {total} gols.')
