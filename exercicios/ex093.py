@@ -13,4 +13,6 @@ for c in range(partidas):
 print('*' * 30)
 dados = {'jogador': nome, 'gols': gols, 'total': total}
 print('*' * 30)
+for c, v in dados.items():
+    print(f'O campo {c} tem o valor {v}')
 print('*' * 30)
