@@ -9,4 +9,3 @@ for c in range(partidas):
     gols = int(input(f'Quantos gols você fez na {c} partida? '))
     total = total + gols
 dados = {'jogador': jogador, 'partidas': partidas, 'total de gols': total}
-print(dados)
