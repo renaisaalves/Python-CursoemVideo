@@ -1,5 +1,8 @@
 #ex094: Crie um programa que leia nome, sexo e idade de várias pessoas, guardando os dados de cada pessoa em um dicionário e todos os dicionários em uma lista. No final, mostre: A) Quantas pessoas foram cadastradas B) A média de idade C) Uma lista com as mulheres D) Uma lista de pessoas com idade acima da média.
 
+from doctest import NORMALIZE_WHITESPACE
+
+
 cadastro = dict()
 cadastros = list()
 while True:
@@ -7,6 +10,8 @@ while True:
     cadastro['sexo'] = str(input('Sexo: ')).upper()
     while cadastro['sexo'] not in 'FM':
         cadastro['sexo'] = str(input('Gênero inválido. Digite corretamente [M/F]: ')).upper()
+    if cadastro['sexo'] in 'F':
+        pass
     cadastro['idade'] = int(input('Idade: '))
     while cadastro['idade'] < 0:
         cadastro['idade'] = int(input('Idade incompatível. Digite novamente: '))
@@ -21,5 +26,8 @@ soma = list()
 for c in cadastros:
     soma.append(c['idade'])
     media = sum(soma) / len(cadastros)
+print('=' * 30)
 print(f'Nº de pessoas cadastradas: {len(cadastros)} pessoas.')
-print(f'Média de idade: {media} ')
+print(f'Média de idade: {media:.2f} anos.')
+print(f'Mulheres que foram cadastradas: {mulher}')
+print('=' * 30)
