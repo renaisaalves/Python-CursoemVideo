@@ -17,8 +17,9 @@ while True:
     if resp in 'NNÃONAOÑ':
         break
 print(cadastros)
-print(f'Nº de pessoas cadastradas:  pessoas.')
-print(f'Média de idade:')
+soma = list()
 for c in cadastros:
-    soma = sum(c['idade'])
-print(soma)
+    soma.append(c['idade'])
+    media = sum(soma) / len(cadastros)
+print(f'Nº de pessoas cadastradas: {len(cadastros)} pessoas.')
+print(f'Média de idade: {media} ')
