@@ -7,5 +7,8 @@ while True:
     cadastro['sexo'] = str(input('Sexo: ')).upper()
     if cadastro['sexo'] not in 'FM':
         print('Gênero inválido. Digite corretamente [M/F]: ')
+    cadastro['idade'] = int(input('Idade: '))
+    if cadastro['idade'] < 0:
+        print('Idade incompatível. Digite novamente: ')
     break
         
