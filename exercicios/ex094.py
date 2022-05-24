@@ -24,7 +24,7 @@ for c in cadastros:
     if c['sexo'] in 'F':
         mulher.append(c['nome'])
 print('=' * 30)
-print(f'A) Ao todo tempos {len(cadastros)} pessoas.')
+print(f'A) Ao todo temos {len(cadastros)} pessoas.')
 print(f'B) A média de idade é de {media:.2f} anos.')
 print(f'C) As mulheres cadastradas foram {mulher}')
 print(f'D) Lista de pessoas com idade acima da média:')
