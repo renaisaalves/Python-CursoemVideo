@@ -32,4 +32,8 @@ print(f'A) Ao todo tempos {len(cadastros)} pessoas.')
 print(f'B) A média de idade é de {media:.2f} anos.')
 print(f'C) As mulheres cadastradas foram {mulher}')
 print(f'D) Lista de pessoas com idade acima da média:')
+for c in cadastros:
+    if c['idade'] > media:
+        for c, v in c.items():
+            print(f'{c} = {v}', end='')
 print('=' * 30)
