@@ -18,3 +18,7 @@ while True:
         break
 print(cadastros)
 print(f'Nº de pessoas cadastradas: {sum(cadastros)} pessoas.')
+print(f'Média de idade:')
+for c in cadastros:
+    soma = sum(c['idade'])
+print(soma)
