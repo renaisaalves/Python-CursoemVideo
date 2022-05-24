@@ -15,5 +15,6 @@ while True:
         print('Inválido. Digite SIM ou NÃO para confirmar [S/N]: ')
     if resp in 'NNÃONAOÑ':
         cadastros.append(cadastro)
+        cadastro.clear()
         break
 print(cadastros)
