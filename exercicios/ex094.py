@@ -21,9 +21,12 @@ while True:
         break
 print(cadastros)
 soma = list()
+mulher = list()
 for c in cadastros:
     soma.append(c['idade'])
     media = sum(soma) / len(cadastros)
+    if c['sexo'] in 'F':
+        mulher.append(c['nome'])
 print('=' * 30)
 print(f'Nº de pessoas cadastradas: {len(cadastros)} pessoas.')
 print(f'Média de idade: {media:.2f} anos.')
