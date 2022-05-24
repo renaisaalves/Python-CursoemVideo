@@ -8,7 +8,7 @@ while True:
     while cadastro['sexo'] not in 'FM':
         cadastro['sexo'] = str(input('Gênero inválido. Digite corretamente [M/F]: ')).upper()
     cadastro['idade'] = int(input('Idade: '))
-    if cadastro['idade'] < 0:
+    while cadastro['idade'] < 0:
         cadastro['idade'] = int(input('Idade incompatível. Digite novamente: '))
     resp = str(input('Quer cadastrar mais alguém? [S/N]: ')).upper()
     if resp not in 'SIMSNNÃONAOÑ':
