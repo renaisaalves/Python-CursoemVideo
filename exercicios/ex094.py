@@ -17,7 +17,7 @@ while True:
     if resp in 'NNÃONAOÑ':
         break
 print(cadastros)
-print(f'Nº de pessoas cadastradas: {sum(cadastros)} pessoas.')
+print(f'Nº de pessoas cadastradas:  pessoas.')
 print(f'Média de idade:')
 for c in cadastros:
     soma = sum(c['idade'])
