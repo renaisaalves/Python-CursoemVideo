@@ -5,8 +5,8 @@ cadastros = list()
 while True:
     cadastro['nome'] = str(input('Nome: ')).capitalize().strip()
     cadastro['sexo'] = str(input('Sexo: ')).upper()
-    if cadastro['sexo'] not in 'FM':
-        cadastro['sexo'] = str(input('Gênero inválido. Digite corretamente [M/F]: '))
+    while cadastro['sexo'] not in 'FM':
+        cadastro['sexo'] = str(input('Gênero inválido. Digite corretamente [M/F]: ')).upper()
     cadastro['idade'] = int(input('Idade: '))
     if cadastro['idade'] < 0:
         cadastro['idade'] = int(input('Idade incompatível. Digite novamente: '))
