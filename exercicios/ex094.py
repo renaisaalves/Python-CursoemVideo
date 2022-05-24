@@ -11,4 +11,5 @@ while True:
     if cadastro['idade'] < 0:
         print('Idade incompatível. Digite novamente: ')
     break
+print(cadastro)
         
