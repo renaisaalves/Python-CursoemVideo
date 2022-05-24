@@ -6,15 +6,14 @@ while True:
     cadastro['nome'] = str(input('Nome: ')).capitalize().strip()
     cadastro['sexo'] = str(input('Sexo: ')).upper()
     if cadastro['sexo'] not in 'FM':
-        print('Gênero inválido. Digite corretamente [M/F]: ')
+        cadastro['sexo'] = str(input('Gênero inválido. Digite corretamente [M/F]: '))
     cadastro['idade'] = int(input('Idade: '))
     if cadastro['idade'] < 0:
-        print('Idade incompatível. Digite novamente: ')
+        cadastro['idade'] = int(input('Idade incompatível. Digite novamente: '))
     resp = str(input('Quer cadastrar mais alguém? [S/N]: ')).upper()
     if resp not in 'SIMSNNÃONAOÑ':
-        print('Inválido. Digite SIM ou NÃO para confirmar [S/N]: ')
+        resp = str(input('Inválido. Digite SIM ou NÃO para confirmar [S/N]: '))
     if resp in 'NNÃONAOÑ':
         cadastros.append(cadastro)
-        cadastro.clear()
         break
 print(cadastros)
