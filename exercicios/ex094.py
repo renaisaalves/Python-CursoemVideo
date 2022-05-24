@@ -30,6 +30,5 @@ print(f'C) As mulheres cadastradas foram {mulher}')
 print(f'D) Lista de pessoas com idade acima da média:')
 for c in cadastros:
     if c['idade'] > media:
-        for c, v in c.items():
-            print(f'{c} = {v}', end='')
+        print(f'nome: {c["nome"]} sexo: {c["sexo"]} idade: {c["idade"]}')
 print('=' * 30)
