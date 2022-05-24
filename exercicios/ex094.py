@@ -5,7 +5,7 @@ cadastro = dict()
 while True:
     cadastro['nome'] = str(input('Nome: ')).capitalize().strip()
     cadastro['sexo'] = str(input('Sexo: ')).upper()
-    if cadastro['sexo'] != 'M' or 'F':
+    if cadastro['sexo'] not in 'FM':
         print('Gênero inválido. Digite corretamente [M/F]: ')
     break
         
