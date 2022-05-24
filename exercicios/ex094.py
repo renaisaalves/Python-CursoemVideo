@@ -17,3 +17,4 @@ while True:
     if resp in 'NNÃONAOÑ':
         break
 print(cadastros)
+print(f'Nº de pessoas cadastradas: {sum(cadastros)} pessoas.')
