@@ -21,7 +21,6 @@ while True:
         break
 soma = list()
 mulher = list()
-acima = list()
 for c in cadastros:
     soma.append(c['idade'])
     media = sum(soma) / len(cadastros)
