@@ -11,9 +11,9 @@ while True:
     while cadastro['idade'] < 0:
         cadastro['idade'] = int(input('Idade incompatível. Digite novamente: '))
     resp = str(input('Quer cadastrar mais alguém? [S/N]: ')).upper()
+    cadastros.append(cadastro.copy())
     while resp not in 'SIMSNNÃONAOÑ':
         resp = str(input('Inválido. Digite SIM ou NÃO para confirmar [S/N]: '))
     if resp in 'NNÃONAOÑ':
-        cadastros.append(cadastro.copy())
         break
 print(cadastros)
