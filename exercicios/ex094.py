@@ -14,6 +14,6 @@ while True:
     if resp not in 'SIMSNNÃONAOÑ':
         resp = str(input('Inválido. Digite SIM ou NÃO para confirmar [S/N]: '))
     if resp in 'NNÃONAOÑ':
-        cadastros.append(cadastro)
+        cadastros.append(cadastro.copy())
         break
 print(cadastros)
