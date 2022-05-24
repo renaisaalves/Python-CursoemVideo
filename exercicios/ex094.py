@@ -16,7 +16,7 @@ while True:
     resp = str(input('Quer cadastrar mais alguém? [S/N]: ')).upper()
     cadastros.append(cadastro.copy())
     while resp not in 'SIMSNNÃONAOÑ':
-        resp = str(input('Inválido. Digite SIM ou NÃO para confirmar [S/N]: '))
+        resp = str(input('Inválido. Digite SIM ou NÃO para confirmar [S/N]: ')).upper()
     if resp in 'NNÃONAOÑ':
         break
 soma = list()
@@ -27,11 +27,12 @@ for c in cadastros:
     media = sum(soma) / len(cadastros)
     if c['sexo'] in 'F':
         mulher.append(c['nome'])
-    while c['idade'] > media:
-        print(f'D) Lista de pessoas com idade acima da média: \nnome = {cadastros["nome"]} sexo = {cadastros["sexo"]} idade = {cadastros["idade"]}')
+    if c['idade'] > media:
+        for k, v in c.items():
+            print(f'{k} = {v} ', end='')
 print('=' * 30)
 print(f'A) Ao todo tempos {len(cadastros)} pessoas.')
 print(f'B) A média de idade é de {media:.2f} anos.')
 print(f'C) As mulheres cadastradas foram {mulher}')
-
+print(f'D) Lista de pessoas com idade acima da média:')
 print('=' * 30)
