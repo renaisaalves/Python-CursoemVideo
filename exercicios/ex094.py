@@ -27,9 +27,6 @@ for c in cadastros:
     media = sum(soma) / len(cadastros)
     if c['sexo'] in 'F':
         mulher.append(c['nome'])
-    if c['idade'] > media:
-        for k, v in c.items():
-            print(f'{k} = {v} ', end='')
 print('=' * 30)
 print(f'A) Ao todo tempos {len(cadastros)} pessoas.')
 print(f'B) A média de idade é de {media:.2f} anos.')
