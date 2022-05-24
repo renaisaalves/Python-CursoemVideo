@@ -19,7 +19,6 @@ while True:
         resp = str(input('Inválido. Digite SIM ou NÃO para confirmar [S/N]: '))
     if resp in 'NNÃONAOÑ':
         break
-print(cadastros)
 soma = list()
 mulher = list()
 acima = list()
