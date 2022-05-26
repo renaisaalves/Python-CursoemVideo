@@ -1,7 +1,10 @@
 #ex095: Aprimore o desafio 93 para que ele funcione com vários jogadores, incluindo um sistema de visualização de detalhes do aproveitamento de cada jogador.
 
+#INACABADO 
+
 dados = dict()
 gols = list()
+time = list()
 
 while True:
     dados.clear()
@@ -12,6 +15,7 @@ while True:
         gols.append(gol)
     total = sum(gols)
     dados = {'jogador': nome, 'gols': gols, 'total': total}
+    time.append(dados.copy())
     print('=' * 30)
     print(dados)
     print('=' * 30)
