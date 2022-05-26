@@ -10,3 +10,11 @@ for c in range(1, partidas + 1):
 dados['gols'] = gols
 dados['total'] = sum(gols)
 print(dados)
+for c, v in dados.items():
+    print(f'O campo {c} tem o valor {v}')
+print('=' * 30)
+print(f'O jogador {dados["jogador"]} jogou {partidas} partidas.')
+for c, g in enumerate(gols):
+    print(f'Na partida {c}, fez {g} gols.')
+print(f'Foi um total de {dados["total"]} gols.')
+print('=' * 30)
