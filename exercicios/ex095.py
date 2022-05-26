@@ -14,7 +14,7 @@ for c, v in dados.items():
     print(f'O campo {c} tem o valor {v}')
 print('=' * 30)
 print(f'O jogador {dados["jogador"]} jogou {partidas} partidas.')
-for c, g in enumerate(1, gols + 1):
-    print(f'Na partida {c}, fez {g} gols.')
+for c, g in enumerate(gols):
+    print(f'Na partida {c+1}, fez {g} gols.')
 print(f'Foi um total de {dados["total"]} gols.')
 print('=' * 30)
