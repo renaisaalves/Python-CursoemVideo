@@ -4,17 +4,21 @@ dados = dict()
 gols = list()
 cadastro = list()
 
-dados['jogador'] = str(input('Nome: ')).capitalize()
-partidas = int(input('Nº de partidas: '))
-for c in range(1, partidas + 1):
-    gols.append(int(input(f'Quantos gols você fez na {c} partida? ')))
-dados['gols'] = gols
-dados['total'] = sum(gols)
-print(dados)
-for c, v in dados.items():
-    print(f'O campo {c} tem o valor {v}')
-cadastro.append(dados.copy())
-dados.clear()
+while True:
+    dados['jogador'] = str(input('Nome: ')).capitalize()
+    partidas = int(input('Nº de partidas: '))
+    for c in range(1, partidas + 1):
+        gols.append(int(input(f'Quantos gols você fez na {c} partida? ')))
+    dados['gols'] = gols
+    dados['total'] = sum(gols)
+    print(dados)
+    for c, v in dados.items():
+        print(f'O campo {c} tem o valor {v}')
+    cadastro.append(dados.copy())
+    dados.clear()
+    resp = str(input('Quer adicionar mais um jogador? [S/N]: ')).upper()[0]
+    if resp not in 'S':
+        break
 print(cadastro)
 '''print(f'O jogador {dados["jogador"]} jogou {partidas} partidas.')
 for c, g in enumerate(gols):
