@@ -8,8 +8,10 @@ while True:
     dados['jogador'] = str(input('Nome: ')).capitalize()
     dados['partidas'] = int(input('Nº de partidas: '))
     for c in range(dados['partidas']):
-        dados['gols'] = int(input(f'Gol na {c+1}ª partida: '))
+        gols.append(int(input(f'Gol na {c+1}ª partida: ')))
+    dados['gols'] = gols
     dados['total'] = sum(total)
     resp = str(input('Quer adicionar mais um jogador? [S/N]: '))[0].upper()
     if resp not in 'S':
         break
+print(dados)
