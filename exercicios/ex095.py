@@ -2,16 +2,28 @@
 
 dados = dict()
 gols = list()
-total = list()
 
 while True:
-    dados['jogador'] = str(input('Nome: ')).capitalize()
-    dados['partidas'] = int(input('Nº de partidas: '))
-    for c in range(dados['partidas']):
-        gols.append(int(input(f'Gol na {c+1}ª partida: ')))
-    dados['gols'] = gols
-    dados['total'] = sum(total)
-    resp = str(input('Quer adicionar mais um jogador? [S/N]: '))[0].upper()
+    dados.clear()
+    nome = str(input('Nome: ')).capitalize()
+    partidas = int(input('Nº de partidas: '))
+    for c in range(partidas):
+        gol = int(input(f'Quantos gols você fez na {c} partida? '))
+        gols.append(gol)
+    total = sum(gols)
+    dados = {'jogador': nome, 'gols': gols, 'total': total}
+    print('=' * 30)
+    print(dados)
+    print('=' * 30)
+    for c, v in dados.items():
+        print(f'O campo {c} tem o valor {v}')
+    print('=' * 30)
+    print(f'O jogador {dados["jogador"]} jogou {partidas} partidas.')
+    for c, g in enumerate(gols):
+        print(f'Na partida {c}, fez {g} gols.')
+    print(f'Foi um total de {total} gols.')
+    resp = str(input('Quer continuar? [S/N]: ')).upper()[0]
     if resp not in 'S':
         break
-print(dados)
+print('=' * 30)
+print('FIM DO PROGRAMA')
