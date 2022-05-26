@@ -3,5 +3,8 @@
 dados = dict()
 gols = list()
 
-dados['jogador: '] = str(input('Nome: ')).capitalize()
+dados['jogador:'] = str(input('Nome: ')).capitalize()
+partidas = int(input('Nº de partidas: '))
+for c in range(partidas):
+    gols.append(int(input(f'Quantos gols você fez na {c} partida? ')))
 
