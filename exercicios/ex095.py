@@ -3,6 +3,7 @@
 dados = dict()
 while True:
     dados['jogador'] = str(input('Nome: ')).capitalize()
+    dados['partidas'] = int(input('Nº de partidas: '))
     resp = str(input('Quer adicionar mais um jogador? [S/N]: '))[0].upper()
     if resp not in 'S':
         break
