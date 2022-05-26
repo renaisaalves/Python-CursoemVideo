@@ -4,9 +4,9 @@ dados = dict()
 gols = list()
 
 dados['jogador'] = str(input('Nome: ')).capitalize()
-dados['partidas'] = int(input('Nº de partidas: '))
-for c in dados.items():
-    if c == ['partidas']:
+partidas = int(input('Nº de partidas: '))
+for c in range(1, partidas + 1):
         gols.append(int(input(f'Quantos gols você fez na {c} partida? ')))
-total = sum(gols)
+dados['gols'] = gols
+dados['total'] = sum(gols)
 print(dados)
