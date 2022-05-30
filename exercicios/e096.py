@@ -2,7 +2,7 @@
 
 def area(l, c):
     total = l * c
-    print(total)
+    print(f'A área total do terreno é de {total}m²')
     
 l = float(input('Largura: '))
 c = float(input('Comprimento: '))
