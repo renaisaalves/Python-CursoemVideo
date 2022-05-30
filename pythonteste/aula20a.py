@@ -24,7 +24,7 @@ soma(a=4, b=5)
 
 def contador(* num):
     for valor in num:
-        print(f'{valor}', end='')
+        print(f'{valor} ', end='')
     print('FIM')
 
 contador(2, 1, 7)
