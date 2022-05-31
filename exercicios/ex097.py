@@ -5,3 +5,4 @@ def escreva(msg):
     print(msg)
     print('=' * len(msg))
 escreva('Bom dia, querido Dev!')
+escreva('Hello, World!')
