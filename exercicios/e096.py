@@ -6,9 +6,9 @@ def linha(msg):
     print('-' * 30)
 linha('CALCULANDO TERRENO RETANGULAR')
 
-def area(l, c):
-    total = l * c
-    print(f'A área total do terreno {l}x{c} é de {total}m²')
+def area(larg, comp):
+    total = larg * comp
+    print(f'A área total do terreno {larg}x{comp} é de {total}m²')
     
 l = float(input('Largura: '))
 c = float(input('Comprimento: '))
