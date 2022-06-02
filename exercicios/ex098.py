@@ -1,7 +1,5 @@
 #ex098: Faça um programa que tenha uma função chamada contador(), que receba três parâmetros: início, fim e passo. Seu programa tem que realizar três contagens através da função criada:
 
-from random import randint
-
 def contador(i, f):
     print('=' * 30)
     print(f'Contagem de 1 até 10 [de 1 em 1]')
