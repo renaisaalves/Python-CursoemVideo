@@ -19,7 +19,10 @@ i = int(input('Início: '))
 f = int(input('Fim: '))
 p = int(input('Passo: '))
 def personalizado(i, f, p):
+    print('*' * 30)
     print('Contagem personalizada:')
     for b in range(i, f, p):
         print(f'{b} ', end='')
-personalizado()
+    print()
+    print('*' * 30)
+personalizado(i, f, p)
