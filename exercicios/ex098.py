@@ -2,8 +2,17 @@
 
 def contador(i, f, p):
     print(f'Contagem de {i} até {f} de {p} em {p}:')
-    for c in range(i, f+1, p):
-        print(f'{c} ', end='')
-    print('FIM!')
+    if i <= f:
+        cont = 1
+        while i <= f:
+            print(f'{cont} ', end='')
+            cont += p
+        print('FIM!')
+    else:
+        cont = 1
+        while cont >= f:
+            print(f'{cont} ', end='')
+            cont -= p
+        print('FIM!')
 contador(1, 10, 1)
 
