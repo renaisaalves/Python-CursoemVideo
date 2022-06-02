@@ -8,7 +8,7 @@ def contador(i, f):
     print()
     print('=' * 30)
     print(f'Contagem de 10 até 0 [de 2 em 2]')
-    for f in range(1, 10+1):
+    for f in range(10, 0, -1):
         if f % 2 == 0:
             print(f'{f} ', end='')
     print()
