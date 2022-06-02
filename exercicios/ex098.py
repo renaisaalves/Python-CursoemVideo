@@ -15,13 +15,14 @@ def contador(i, f, p):
             print(f'{u} ', end='')
     print()
     print('=' * 40)
+    print(f'Contagem personalizada:')
     for k in range(i, f, p):
-        print(f'Contagem personalizada:')
-        print(f'{k}', end='')
+        print(f'{k} ', end='')
         print()
-contador(0, 3)
+contador(3, 5, 7)        
 print('Agora é a sua vez de realizar a contagem!')
 i = int(input('Início: '))
 f = int(input('Fim: '))
 p = int(input('Passo: '))
+
 
