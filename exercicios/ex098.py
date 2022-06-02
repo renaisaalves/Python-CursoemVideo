@@ -13,5 +13,8 @@ def contador():
             print(f'{u} ', end='')
     print()
     print('=' * 30)
+    print('Agora é a sua vez!')
 contador()
-
+i = int(input('Início: '))
+f = int(input('Fim: '))
+p = int(input('Passo: '))
