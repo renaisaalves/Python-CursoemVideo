@@ -13,6 +13,7 @@ def contador(i, f):
             print(f'{f} ', end='')
     print()
     print('=' * 30)
+    print('Agora é a sua vez de realizar a contagem!')
 contador(0, 3)
     
     
