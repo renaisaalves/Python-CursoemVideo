@@ -10,5 +10,11 @@ def maior(m):
             if i < men:
                 men = i
     print(f'O maior valor é {mai} e o menor é {men}')
-values = [10, 7, 2, 14, 8]
+
+values = list()
+while True:
+    values.append(int(input('Número: ')))
+    resp = str(input('Deseja inserir outro número? [S/N]')).upper([0])
+    if resp in 'N':
+        break
 maior(values)
