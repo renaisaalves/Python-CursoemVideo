@@ -14,7 +14,7 @@ def maior(m):
 values = list()
 while True:
     values.append(int(input('Número: ')))
-    resp = str(input('Deseja inserir outro número? [S/N]')).upper([0])
+    resp = str(input('Deseja inserir outro número? [S/N]: ')).upper()[0]
     if resp in 'N':
         break
 maior(values)
