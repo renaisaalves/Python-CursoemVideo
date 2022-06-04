@@ -2,3 +2,11 @@
 
 def maior(values):
     pass
+
+inteiros = list()
+while True:
+    inteiros.append(int(input('Número: ')))
+    resp = str(input('Quer adicionar mais algum número? [S/N]: ')).upper()[0]
+    if resp in 'N':
+        break
+print(inteiros)
