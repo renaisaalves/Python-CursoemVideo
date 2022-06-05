@@ -8,5 +8,12 @@ def sorteia():
     print(f'Números sorteados: {sorteio}')
     
 def somaPar():
-    pass
+    pares = list()
+    for c in sorteia():
+        if c % 2 == 0:
+            pares.append(c)
+            soma = sum(pares)
+    print(f'Os números pares são: {pares}')
+    print(f'A soma entre os números pares foram: {soma}')
 sorteia()
+somaPar()
