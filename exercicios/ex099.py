@@ -2,6 +2,7 @@
 
 def maior(m):
     print('*' * 35)
+    tot = len(m)
     for c, i in enumerate(m):
         if c == 0:
             mai = men = i
@@ -10,7 +11,9 @@ def maior(m):
                 mai = i
             if i < men:
                 men = i
-    print(f'{m} = foram informados {len(m)} números.')
+        if i == 0:
+            tot = 0
+    print(f'{m} = foram informados {tot} números.')
     print(f'O maior valor informado foi {mai}')
     print('*' * 35)
 values = list()
