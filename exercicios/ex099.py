@@ -10,7 +10,7 @@ def maior(m):
                 mai = i
             if i < men:
                 men = i
-    print(f'O maior valor é {mai} e o menor é {men}')
+    print(f'O maior valor é {mai}')
     print('*' * 35)
 values = list()
 while True:
