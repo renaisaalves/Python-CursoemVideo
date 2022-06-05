@@ -6,4 +6,7 @@ def sorteia():
     for c in range(0, 5):
         sorteio.append(randint(0, 100))
     print(f'Números sorteados: {sorteio}')
+    
+def somaPar():
+    pass
 sorteia()
