@@ -2,7 +2,6 @@
 
 from random import randint
 from time import sleep
-from operator import itemgetter
 
 print('=' * 30)
 print(f'{"SORTEIO DE DADO":^30}')
