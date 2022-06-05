@@ -2,7 +2,7 @@
 
 from random import randint
 def sorteia():
-    sorteados = list()
+    sorteio = list()
     for c in range(0, 6):
-        sorteados.append(randint(0, 100))
-    
+        sorteio.append(randint(0, 100))
+    print(f'Números sorteados: {sorteio}')
