@@ -9,8 +9,10 @@ numeros = list()
 sorteia(numeros) 
    
 def somaPar(pares):
+    pares = list()
     for c in numeros:
         if c % 2 == 0:
+            pares.append(c)
             soma = sum(pares)
     print(f'Os números pares são: {pares}')
     print(f'A soma entre os números pares foram: {soma}')
