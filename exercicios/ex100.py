@@ -5,13 +5,15 @@ def sorteia(sorteio):
     for c in range(0, 5):
         sorteio.append(randint(0, 100))
     print(f'Números sorteados: {sorteio}')
-    
+numeros = list()
+sorteia(numeros) 
+   
 def somaPar(pares):
-    for c in sorteia():
+    for c in numeros:
         if c % 2 == 0:
             pares.append(c)
             soma = sum(pares)
     print(f'Os números pares são: {pares}')
     print(f'A soma entre os números pares foram: {soma}')
-sorteia()
-somaPar()
+
+somaPar(numeros)
