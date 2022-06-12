@@ -3,7 +3,7 @@
 from datetime import date
 
 def voto(ano):
-    idade = ano - date.today().year
+    idade = date.today().year - ano
     if idade <= 15:
         print(f'Voto NEGADO.')
     elif idade >= 16 and idade <= 17:
