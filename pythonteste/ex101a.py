@@ -2,6 +2,7 @@
 
 def voto(year):
     if year < 15:
-        print(f'Menor  de idade, portanto, voto NEGADO.')
-        
+        print(f'Voto NEGADO.')
+    elif year >= 16 and year <= 17:
+        print(f'Voto OPCIONAL.')
     pass
