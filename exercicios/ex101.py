@@ -2,8 +2,13 @@
 
 from datetime import date
 
+def mostraLinha():
+    print('=' * 30)
+mostraLinha()
+
 def voto(ano):
     idade = date.today().year - ano
+    mostraLinha()
     if idade <= 15:
         print(f'Idade: {idade} | Voto NEGADO.')
     elif idade >= 16 and idade <= 17:
@@ -13,6 +18,7 @@ def voto(ano):
     else:
         idade >= 18 and idade < 70
         print(f'Idade: {idade} | Voto OBRIGATÓRIO.')
+    mostraLinha()
 
 while True:
     nasc = int(input('Ano de nascimento: '))
