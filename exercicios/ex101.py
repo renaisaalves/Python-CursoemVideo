@@ -14,5 +14,10 @@ def voto(ano):
         idade >= 18 and idade < 70
         print(f'Idade: {idade} | Voto OBRIGATÓRIO.')
 
-nasc = int(input('Ano de nascimento: '))
-voto(nasc)
+while True:
+    nasc = int(input('Ano de nascimento: '))
+    voto(nasc)
+    resp = str(input('Mais uma vez? [S/N]: ')).upper()[0]
+    if resp not in 'S':
+        break
+    
