@@ -5,4 +5,9 @@ def voto(year):
         print(f'Voto NEGADO.')
     elif year >= 16 and year <= 17:
         print(f'Voto OPCIONAL.')
+    elif year >= 70:
+        print(f'Voto OPCIONAL.')
+    else:
+        year >= 18 and year < 70
+        print(f'Voto OBRIGATÓRIO.')
     pass
