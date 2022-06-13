@@ -8,9 +8,9 @@ def voto(ano):
     from datetime import date #economiza memória
     idade = date.today().year - ano
     mostraLinha()
-    if idade <= 15:
+    if idade < 16:
         print(f'Idade: {idade} | Voto NEGADO.')
-    elif idade >= 16 and idade <= 17:
+    elif idade >= 16 and idade < 18:
         print(f'Idade: {idade} | Voto OPCIONAL.')
     elif idade >= 70:
         print(f'Idade: {idade} | Voto OPCIONAL.')
