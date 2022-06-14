@@ -3,4 +3,4 @@
 def fatorial(n, show):
     for c in range(n):
         print(f'{n} x {c}', end='')
-fatorial(5)
+fatorial(4)
