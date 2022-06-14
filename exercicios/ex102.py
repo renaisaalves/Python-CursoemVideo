@@ -9,4 +9,4 @@ def fatorial(n):
             fat *= c
         print(f'x {c} ', end='')
     print(f'= {fat}')
-fatorial(5)
+fatorial(4)
