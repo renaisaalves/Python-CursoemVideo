@@ -2,8 +2,9 @@
 
 def fatorial(n):
     for c in range(n-1, 0, -1):
-        fat = c * c-1
         if c == n-1:
             print(f'{n} ', end='')
+        fat = c * c-1
         print(f'x {c} ', end='')
+    print(f'= {fat}')
 fatorial(5)
