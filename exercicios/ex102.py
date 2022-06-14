@@ -2,5 +2,7 @@
 
 def fatorial(n):
     for c in range(n-1, 0, -1):
-        print(f'{n} x {c}')
+        if c == n-1:
+            print(f'{n} ', end='')
+        print(f'x {c} ', end='')
 fatorial(10)
