@@ -3,8 +3,10 @@
 def fatorial(n):
     for c in range(n, 0, -1):
         if c == n:
-            fat = n * n-1
+            fat = n * c-1
         if c < n:
-            fat = fat * n-1
+            fat = fat * c-1
         print(f'{n} ', end='')
+        print(f'x {c} ', end='')
+        print(f'{fat}', end='')
 fatorial(4)
