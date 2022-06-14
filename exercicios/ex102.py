@@ -2,10 +2,10 @@
 
 def fatorial(n):
     for c in range(n, 0, -1):
-        if c == 1:
-            print(f'{c} ', end='')
         if c != 1:
             print(f'{c} x ', end='')
+        if c == 1:
+            print(f'{c} = ', end='')
 fatorial(4)
 
 # n é um número qualquer a ser digitado pelo usuário. 
