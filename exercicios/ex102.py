@@ -9,5 +9,5 @@ def fatorial(n, show=False):
             else:
                 fat *= c
                 print(f'x {c} ', end='')
-        print(f'= {fat}')
-fatorial(4, show=True)
+    print(f'= {fat}')
+fatorial(4)
