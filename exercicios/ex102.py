@@ -4,7 +4,8 @@ def fatorial(n):
     for c in range(n-1, 0, -1):
         if c == n-1:
             print(f'{n} ', end='')
-        fat = c * c-1
+            fat = n * c
+        fat = fat * c-1
         print(f'x {c} ', end='')
     print(f'= {fat}')
-fatorial(5)
+fatorial(4)
