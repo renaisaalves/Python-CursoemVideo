@@ -4,6 +4,7 @@ def fatorial(n):
     for c in range(n-1, 0, -1):
         if c == n-1:
             fat = n * c
+            print(f'{n} ', end='')
         else:
             fat *= c
         print(f'x {c} ', end='')
