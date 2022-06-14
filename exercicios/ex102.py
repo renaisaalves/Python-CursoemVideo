@@ -2,11 +2,5 @@
 
 def fatorial(n):
     for c in range(n-1, 0, -1):
-        if c == n-1:
-            print(f'{n} ', end='')
-            mult = n * c
-        if c > n-1:
-            mult = mult * c
         print(f'x {c} ', end='')
-    print(f'= {mult}', end='')
 fatorial(5)
