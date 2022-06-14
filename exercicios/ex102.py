@@ -7,5 +7,6 @@ def fatorial(n):
             mult = n * c
         if c > n-1:
             mult = mult * c
-        print(f'x {c} = {mult} ', end='')    
-fatorial(2)
+        print(f'x {c} ', end='')
+    print(f'= {mult}', end='')
+fatorial(5)
