@@ -2,3 +2,5 @@
 
 def ficha(nome='<desconhecido>', gols=0):
     pass
+nome = str(input('Nome: ')).capitalize().strip()
+gol = int(input('Gol(s): '))
