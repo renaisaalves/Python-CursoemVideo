@@ -2,6 +2,13 @@
 
 def ficha(nome='<desconhecido>', gols=0):
     print(f'O jogador {nome} fez {gols} gol(s).')
-nome = str(input('Nome: ')).capitalize().strip()
-gol = int(input('Gol(s): '))
-ficha(nome, gol)
+n = str(input('Nome: ')).capitalize().strip()
+g = str(input('Gol(s): '))
+if g.isnumeric():
+    g = int(g)
+else:
+    g = 0
+if n.strip() == '':
+    ficha(gols = g)
+else:
+    ficha(n, g)
