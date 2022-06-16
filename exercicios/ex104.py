@@ -3,7 +3,7 @@
 def leiaInt():
     n = str(input('Digite um n: '))
     if n.isnumeric() == True:
-        print(f'O valor {n} é numérico')
+        print(f'Você acabou de digitar o número {n}')
     else:
-        print(f'O valor {n} NÃO é numérico.')
+        print(f'Você digitou um valor NÃO numérico.')
 leiaInt()
