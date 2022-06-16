@@ -4,8 +4,6 @@ def leiaInt():
     n = str(input('Digite um n: '))
     if n.isnumeric() == True:
         print(f'Você acabou de digitar o número {n}')
-    elif n == None:
-        print(f'Você não digitou nada.')
     else:
         print(f'Você digitou um valor NÃO numérico.')
 leiaInt()
