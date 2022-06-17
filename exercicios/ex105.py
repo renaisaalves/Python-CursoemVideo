@@ -13,8 +13,7 @@ def notas(*valores):
                 maior = c
             if c < menor:
                 menor = c
-        print(f'Testando {c}')
     boletim = {'quantidade de notas': quant, 'maior nota': maior, 'menor nota': menor, 'média': media}
     return boletim
 resp = notas(1, 3.6, 9.8, 5.5, 6, 4.7)
-print(resp) 
+print(resp)
