@@ -13,7 +13,11 @@ def notas(*valores):
                 menor = c
         a += c
         media = a / quant
-    boletim = {'quantidade de notas': quant, 'maior nota': maior, 'menor nota': menor, 'média': media}
+        if media >= 5.0:
+            sit = True
+        else:
+            sit = False
+    boletim = {'quantidade de notas': quant, 'maior nota': maior, 'menor nota': menor, 'média': media, 'situação': sit}
     return boletim
 resp = notas(5.5, 8, 1.5)
 print(resp)
