@@ -16,5 +16,5 @@ def notas(*valores):
         print(f'Testando {c}')
     boletim = {'quantidade de notas': quant, 'maior nota': maior, 'menor nota': menor, 'média': media}
     return boletim
-resp = notas(5.5, 8, 1.5)
+resp = notas(1, 3.6, 9.8, 5.5, 6, 4.7)
 print(resp) 
