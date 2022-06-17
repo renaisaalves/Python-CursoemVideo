@@ -3,6 +3,8 @@
 def notas(*valores):
     quant = len(valores)
     media = (sum(valores)) / quant
+    for c in valores:
+        print(f'Testando {c}')
     boletim = {'quantidade de notas': quant, 'média': media}
     return boletim
 resp = notas(5.5, 8, 1.5)
