@@ -2,16 +2,17 @@
 
 def notas(*valores):
     quant = len(valores)
-    for c in range(quant):
+    dados = list(valores)
+    for c, i in dados:
         if c == 0:
-            maior = menor = valores[0]
+            maior = menor = i
         if c > 0:
-            if c > maior:
-                maior = valores
-            if c < menor:
-                menor = valores
-    valores = {'quantidade de notas': quant, 'maior nota': maior, 'menor nota': menor}
-    return valores
+            if i > maior:
+                maior = i
+            if i < menor:
+                menor = i
+    boletim = {'quantidade de notas': quant, 'maior nota': maior, 'menor nota': menor}
+    return boletim
 resp = notas(5.5, 8, 1.5)
 print(resp)
 # sit=True
