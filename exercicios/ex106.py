@@ -2,5 +2,8 @@
 
 def interactive_help(com):
     help(com)
-comando = str(input('Digite um comando: '))
-interactive_help(comando)
+while True:
+    comando = str(input('Digite um comando: '))
+    if comando == 'fim':
+        break
+    interactive_help(comando)
