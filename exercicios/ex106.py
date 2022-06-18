@@ -2,6 +2,10 @@
 
 def interactive_help(com):
     help(com)
+
+def colors():
+    red = print('\033')
+    
 while True:
     comando = str(input('Digite um comando: '))
     if comando == 'fim':
