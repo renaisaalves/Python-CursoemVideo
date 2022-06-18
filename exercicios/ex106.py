@@ -3,5 +3,8 @@
 def interactive_help(com):
     help(com)
 
-comando = str(input('Digite um comando: '))
-interactive_help()
+while True:
+    comando = str(input('Digite um comando: ')).upper()
+    if comando in 'FIM':
+        break
+interactive_help(comando)
