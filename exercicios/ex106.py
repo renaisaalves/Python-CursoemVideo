@@ -17,7 +17,7 @@ while True:
     if comando == 'fim':
         break
     interactive_help(comando)
-colors(help()) 
+colors(interactive_help())
 
     
 
