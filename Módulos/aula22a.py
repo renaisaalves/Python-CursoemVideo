@@ -1,4 +1,4 @@
-from uteis import fatorial
+from uteis import fatorial, dobro
 
 num = int(input('Digite um valor: '))
 fat = uteis.fatorial(num)
