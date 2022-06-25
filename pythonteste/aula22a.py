@@ -9,4 +9,7 @@ def dobro(n):
 
 def triplo(n):
     return n*3
-        
+
+num = int(input('Digite um valor: '))
+fat = fatorial(num)
+print(f'O fatorial de {num} é {fat}')
