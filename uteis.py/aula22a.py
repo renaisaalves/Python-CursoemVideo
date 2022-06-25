@@ -1,6 +1,6 @@
-from uteis import numeros
+from uteis import fatorial
 
 num = int(input('Digite um valor: '))
-fat = fatorial(num)
+fat = uteis.fatorial(num)
 print(f'O fatorial de {num} é {fat}')
 print(f'O dobro de {num} é {dobro(num)}')
