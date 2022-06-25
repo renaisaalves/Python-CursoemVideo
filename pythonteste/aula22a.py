@@ -1,4 +1,4 @@
-import uteis 
+from uteis import numeros
 
 num = int(input('Digite um valor: '))
 fat = fatorial(num)
